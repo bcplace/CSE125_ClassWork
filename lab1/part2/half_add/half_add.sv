@@ -45,5 +45,18 @@ module half_add
    // 1 | 1 | 0 | 1
    // 
    // Your code here:
+   //XOR GATE
+   wire A_B;
+   wire _AB;
+   wire _A;
+   wire _B;
+   inv inverter0 (.a_i(a_i), .b_o(_A));
+   inv inverter1 (.a_i(b_i), .b_o(_B));
+   and2 andgate0 (.a_i(_A), .b_i(b_i), .c_o(_AB));
+   and2 andgate1 (.a_i(a_i), .b_i(_B), .c_o(A_B));
+   or2 orgate0 (.a_i(_AB), .b_i(A_B), .c_o(sum_o));
+   //
+   and2 carry (.a_i(a_i), .b_i(b_i), .c_o(carry_o));
+   
 
 endmodule

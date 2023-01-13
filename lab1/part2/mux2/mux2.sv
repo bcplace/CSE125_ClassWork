@@ -49,5 +49,11 @@ module mux2
    // 1 | 1 | 1 | 1
    // 
    // Your code here:
-
+   wire select_not;
+   wire and0out, and1out;
+   inv select_inv (.a_i(select_i), .b_o(select_not));
+   and2 and0 (.a_i(a_i), .b_i(select_not), .c_o(and0out));
+   and2 and1 (.a_i(b_i), .b_i(select_i), .c_o(and1out));
+   or2 or0 (.a_i(and1out), .b_i(and0out), .c_o(c_o));
+   //assign c_o = (~select_i & a_i) | (select_i & b_i);
 endmodule

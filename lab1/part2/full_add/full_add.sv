@@ -55,5 +55,9 @@ module full_add
    // 1 | 1 | 1  | 1 | 1
    // 
    // Your code here:
+   wire carry1, sum1, carry2;
+   half_add adder0 (.a_i(a_i), .b_i(b_i), .carry_o(carry1), .sum_o(sum1));
+   half_add adder1 (.a_i(sum1), .b_i(carry_i), .carry_o(carry2), .sum_o(sum_o));
+   or2 orgate (.a_i(carry1), .b_i(carry2), .c_o(carry_o));
 
 endmodule
