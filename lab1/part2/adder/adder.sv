@@ -46,5 +46,12 @@ module adder
    // Your adder module must correctly handle overflow (i.e. the bit at index width_p in sum_o)
    //
    // Your code here:
-
+   wire [width_p - 1:0] carry_w;
+   
+   half_add adder0 (.a_i(a_i[0]), .b_i(b_i[0]), .carry_o(carry_w[0]), .sum_o(sum_o[0]));
+   
+   for(genvar i = 1; i < width_p; i++) begin
+       full_add adder1 (.a_i(a_i[i]), .b_i(b_i[i]), .carry_i(carry_w[i-1]), .carry_o(carry_w[i]), .sum_o(sum_o[i]));
+   end
+   assign sum_o[width_p] = carry_w[width_p - 1];
 endmodule
