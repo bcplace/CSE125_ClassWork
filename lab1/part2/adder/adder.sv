@@ -1,3 +1,4 @@
+/* verilator lint_off UNOPTFLAT */
 module adder
   #(parameter width_p = 1)
   (input [width_p - 1 : 0] a_i
@@ -55,3 +56,4 @@ module adder
    end
    assign sum_o[width_p] = carry_w[width_p - 1];
 endmodule
+/* verilator lint_off UNOPTFLAT */

@@ -46,5 +46,76 @@ module counter
    // (In other words you don't need to handle over/underflow conditions).
    // 
    // Your code here:
-       
+   
+      wire [0:0] enable;
+      wire [width_p - 1:0] d_w;
+      wire overflow;
+      wire clk_enable;
+      
+      xor2 
+      xor2_inst1
+      (.a_i(up_i), 
+      .b_i(down_i),
+      .c_o(enable)
+      );
+      
+      and2 
+      #()
+      and0
+      (.a_i(clk_i), .b_i(enable), .c_o(clk_enable));
+      
+      genvar i;
+      for (i = 0; i < width_p; i++) begin
+      dff 
+      #()
+      dff_inst
+      (.clk_i(clk_i),
+      .reset_i(reset_i),
+      .d_i(d_w[i]),
+      .q_o(count_o[i])
+      );
+      end
+      
+      wire enableandup;
+      wire enableanddown;
+      wire [width_p - 1: 0] change_w;
+      
+      for (i = width_p - 1; i > 0; i--) begin
+      and2
+      #()
+      and_inst
+      (.a_i(enable), .b_i(down_i), .c_o(change_w[i]));
+      end
+      
+      mux2
+      #()
+      mux2_inst
+      (.a_i(1'b0), .b_i(1'b1), .select_i(enable), .c_o(change_w[0]));
+      
+      adder
+	#(.width_p(width_p))
+	adder0
+	(.a_i(count_o), 
+	.b_i(change_w), 
+	.sum_o({overflow, d_w}));
+      
+   /*always @* begin
+	if(enableandup)
+		adder
+		#(.width_p(width_p))
+		adder0
+		(.a_i(count_o), 
+		.b_i({{width_p - 1{1'b0}},1'b1}), 
+		.sum_o({overflow, d_w}));
+	end
+      
+      else begin
+              adder
+		#(.width_p(width_p))
+		adder0
+		(.a_i(count_o), 
+		.b_i({{width_p - 1{1'b0}},1'b1}), 
+		.sum_o({overflow, d_w}));
+	  end
+   end*/
 endmodule
