@@ -52,4 +52,14 @@ module shift
    // 
    // Your code here:
 
+   dff
+   #(reset_val_p[0])
+   flipf
+   (.clk_i(clk_i), .reset_i(reset_i), .d_i(data_i), .q_o(data_o[0]));
+   for (genvar i = 1; i < depth_p; i++) begin 
+   	dff
+   	#(reset_val_p[i])
+   	flop
+   	(.clk_i(clk_i), .reset_i(reset_i), .d_i(data_o[i-1]), .q_o(data_o[i]));
+   end
 endmodule

@@ -19,8 +19,23 @@ module lfsr
    // 
    // The values repeat after 2^bits - 1 cycles, because zero is never shown.
    //
-   // Your LFSR should reset to 5'b00001 at the positive edge of clk_i when reset_i is high
+   // Your LFSR should reset to 5'b00001 at the positive edge of clk_i when reset_i is high /////tap 1 and 4
    // 
    // Your code here:
+   wire tap;
+   dff
+   #(1'b1)
+   flip
+   (.clk_i(clk_i), .reset_i(reset_i), .d_i(tap), .q_o(data_o[0]));
+   for (genvar i = 1; i < 5; i++) begin
+   	dff
+   	#(1'b0)
+   	flop
+   	(.clk_i(clk_i), .reset_i(reset_i), .d_i(data_o[i-1]), .q_o(data_o[i]));
+   end
+
+   xor2
+   xorgate
+   (.a_i(data_o[1]), .b_i(data_o[4]), .c_o(tap));
 
 endmodule
