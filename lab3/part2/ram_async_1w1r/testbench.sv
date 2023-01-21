@@ -3,6 +3,9 @@
 `ifndef WIDTH
 `define WIDTH 5
 `endif
+`ifndef DEPTH
+`define DEPTH 10
+`endif
 module testbench();
    localparam width_lp = `WIDTH;
    localparam iterations_lp = 64;
