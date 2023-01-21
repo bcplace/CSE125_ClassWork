@@ -25,8 +25,22 @@ set_io -nowarn led_o[3]                25 # L3
 set_io -nowarn led_o[4]                23 # L4
 set_io -nowarn led_o[5]                21 # L5
 
-## SPI Interface (Renamed via: https://www.oshwa.org/a-resolution-to-redefine-spi-signal-names/)
-set_io -nowarn spi_cs_o                43 # PMOD B1
-set_io -nowarn spi_sd_o                38 # PMOD B2
-set_io -nowarn spi_sd_i                34 # PMOD B3
-set_io -nowarn spi_sck_o               31 # PMOD B4
+# PMOD 1A
+set_io -nowarn ssd_o[0]                 4
+set_io -nowarn ssd_o[1]                 2
+set_io -nowarn ssd_o[2]                47
+set_io -nowarn ssd_o[3]                45
+set_io -nowarn ssd_o[4]                 3
+set_io -nowarn ssd_o[5]                48
+set_io -nowarn ssd_o[6]                46
+set_io -nowarn ssd_o[7]                44
+
+# PMOD 1B
+set_io -nowarn kpyd_col_o[0]               43 
+set_io -nowarn kpyd_col_o[1]               38
+set_io -nowarn kpyd_col_o[2]               34
+set_io -nowarn kpyd_col_o[3]               31
+set_io -nowarn kpyd_row_i[0]               42
+set_io -nowarn kpyd_row_i[1]               36
+set_io -nowarn kpyd_row_i[2]               32
+set_io -nowarn kpyd_row_i[3]               28
