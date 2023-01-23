@@ -11,5 +11,9 @@ module adder
    // Your adder module must correctly handle overflow (i.e. the bit at index width_p in sum_o)
    //
    // Your code here:
-
+   logic [width_p:0] sum_l;
+   always_comb begin
+   	sum_l = a_i + b_i;
+   end
+   assign sum_o = sum_l;
 endmodule
