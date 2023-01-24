@@ -7,5 +7,11 @@ module half_add
    // Implement a Half-Adder Module (half_add). You must use behavioral verilog.
    // 
    // Your code here:
-
+   logic [1:0] carry;
+   always_comb begin
+   	carry = a_i + b_i;
+   end
+   assign sum_o = carry[0];
+   assign carry_o = carry[1];
+   
 endmodule

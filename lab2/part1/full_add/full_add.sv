@@ -8,5 +8,10 @@ module full_add
    // Implement a Full Adder Module (full_add). You must use behavioral verilog.
    // 
    // Your code here:
-
+   logic [1:0] carry;
+   always_comb begin
+   	carry = a_i + b_i + carry_i;
+   end
+   assign carry_o = carry[1];
+   assign sum_o = carry[0];
 endmodule

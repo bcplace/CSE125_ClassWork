@@ -7,5 +7,9 @@ module mux2
    // Implement a Two-Input Multiplexer (mux2). You must use behavioral verilog.
    // 
    // Your code here:
-
+   logic c;
+   always_comb begin
+   	c = (~select_i & a_i)|(select_i & b_i);
+   end
+   assign c_o = c;
 endmodule

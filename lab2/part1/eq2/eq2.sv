@@ -6,5 +6,10 @@ module eq2
    // Implement a Two-Input Equality Module (eq2). You must use behavioral verilog.
    // 
    // Your code here:
-
+   logic c;
+   always_comb begin
+       c = (a_i == b_i);
+   end
+   assign c_o = c;
+   
 endmodule

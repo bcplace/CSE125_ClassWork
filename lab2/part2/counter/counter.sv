@@ -25,5 +25,29 @@ module counter
    // (In other words you don't need to handle over/underflow conditions).
    // 
    // Your code here:
-       
+   logic [width_p - 1:0] counter_valc;
+   logic [width_p - 1:0] counter_valn;
+   always_ff @(posedge clk_i) begin
+   	if(reset_i) begin
+   		counter_valc <= '0;
+   	end else begin
+   		counter_valc <= counter_valn;
+   	end
+   end
+   
+   always_comb begin
+   	counter_valn = counter_valc;
+   	case (up_i ^ down_i)
+   		1'b1 : begin
+	   		if(up_i) begin 
+	   			counter_valn++; 
+	   		end else begin
+	   			counter_valn--;
+	   		end
+	   		end
+   		default : ;
+   	endcase
+   end
+   assign counter_o = counter_valc;
+        	
 endmodule

@@ -30,5 +30,19 @@ module shift
    // Your shift register should reset to reset_val_p when reset_i is high.
    // 
    // Your code here:
+   logic [depth_p - 1:0] data_c;
+   logic [depth_p - 1:0] data_n;
+   always_ff @(posedge clk_i) begin
+	if(reset_i) begin
+		data_c <= reset_val_p;
+	end else begin
+		data_c <= data_n;
+	end
+   end
+   
+   always_comb begin
+   	data_n = {data_c[depth_p - 2:0], data_i};
+   end
+   assign data_o = data_c;
 
 endmodule
