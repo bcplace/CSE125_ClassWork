@@ -10,6 +10,7 @@ module testbench();
    wire [0:0]  clk_i;
    wire [0:0]  reset_i;
    logic [0:0] reset_button;
+   logic [0:0] reset_button_n;
    logic [3:0] symbol_i;
    logic [0:0] valid_i;
    wire [0:0]  overflow_o;
@@ -66,7 +67,7 @@ module testbench();
       $display("Begin Test:");
 
       itervar = 0;
-      // {symbol_i[4:0], valid_i, reset_i, palindrome_o, x}
+      // {symbol_i[3:0], valid_i, reset_i, palindrome_o, x}
       $readmemh("palindrome.hex", test_symbols);
       {symbol_i, valid_i, reset_button, correct_palindrome_o, dontcare} = test_symbols[itervar];
 
@@ -75,9 +76,8 @@ module testbench();
       reset_done = 1'b1;
 
       for(itervar = 0; itervar <= num_symbols_lp; itervar ++) begin
-         correct_palindrome_o = test_symbols[itervar][2];
 	 @(posedge clk_i);
-	 $display("At Posedge %d: symbol_i: %h valid_i: %b reset_i = %b ", itervar, symbol_i, valid_i, reset_i);
+	 $display("At Posedge %d: symbol_i: %h valid_i: %b reset_i = %b %b ", itervar, symbol_i, valid_i, reset_i, correct_palindrome_o);
       end
 
       $finish();
@@ -87,9 +87,9 @@ module testbench();
 
    always @(negedge clk_i) begin
       // {symbol_i[4:0], valid_i, reset_i, palindrome_o, x}
-      {symbol_i, valid_i, reset_button, correct_palindrome_n, dontcare} = test_symbols[itervar];
-      if(!reset_i && (reset_done == 1) && (error_palindrome_o == 1)) begin
-         $display("\033[0;31mError!\033[0m: palindrome_o should be %b, but got %b", correct_palindrome_o, palindrome_o);
+      {symbol_i, valid_i, reset_button, correct_palindrome_o, dontcare} = test_symbols[itervar];
+      if(!reset_i && (reset_done == 1) && (correct_palindrome_o != palindrome_o)) begin
+         $display("\033[0;31mError!\033[0m: Iteration %d palindrome_o should be %b, but got %b", itervar, correct_palindrome_o, palindrome_o);
          $finish();
       end
       if (itervar >= num_symbols_lp)
