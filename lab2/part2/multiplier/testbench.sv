@@ -152,7 +152,7 @@ module testbench();
             wdt = wdt + 1;
          end
          timeout = (wdt > (2 << (2 * width_lp)));
-         @(posedge clk_i);
+         @(negedge clk_i);
       end
 
       valid_i = 0;
@@ -206,3 +206,4 @@ module testbench();
    end
 
 endmodule
+
