@@ -25,14 +25,41 @@ __________ ___________  _______________________________
  ASYNC  \/         \/         \/         \/            
 Iteration           1, correct result computed.
 Iteration           1 Starting: a_i = 00010, b_i = 01010
-ERROR: testbench.sv:170: [0;31mError![0m: Iteration           2 result_o should be 0000010100, got 0000011001
-       Time: 370000 Scope: testbench
-Simulation time is               370000
-[0;31m    ______                    [0m
-[0;31m   / ____/_____________  _____[0m
-[0;31m  / __/ / ___/ ___/ __ \/ ___/[0m
-[0;31m / /___/ /  / /  / /_/ / /    [0m
-[0;31m/_____/_/  /_/   \____/_/     [0m
+Iteration           2, correct result computed.
+Iteration           2 Starting: a_i = 01000, b_i = 00111
+Iteration           3, correct result computed.
+Iteration           3 Starting: a_i = 11111, b_i = 00100
+Iteration           4, correct result computed.
+Iteration           4 Starting: a_i = 00000, b_i = 01001
+Iteration           5, correct result computed.
+Iteration           5 Starting: a_i = 00011, b_i = 01011
+Iteration           6, correct result computed.
+Iteration           6 Starting: a_i = 00101, b_i = 01101
+Iteration           7, correct result computed.
+Iteration           7 Starting: a_i = 00000, b_i = 00000
+Iteration           8, correct result computed.
+Iteration           8 Starting: a_i = 00101, b_i = 00001
+Iteration           9, correct result computed.
+Iteration           9 Starting: a_i = 01010, b_i = 00010
+Iteration          10, correct result computed.
+Iteration          10 Starting: a_i = 00111, b_i = 01000
+Iteration          11, correct result computed.
+Iteration          11 Starting: a_i = 01001, b_i = 00000
+Iteration          12, correct result computed.
+Iteration          12 Starting: a_i = 01011, b_i = 00011
+Iteration          13, correct result computed.
+Iteration          13 Starting: a_i = 01101, b_i = 00101
+Iteration          14, correct result computed.
+Iteration          14 Starting: a_i = 00100, b_i = 11111
+Iteration          15, correct result computed.
+ERROR: testbench.sv:170: [0;31mError![0m: Iteration          16 result_o should be 0000000000, got 0011111100
+       Time: 2790000 Scope: testbench
+Simulation time is              2790000
+[0;32m    ____  ___   __________[0m
+[0;32m   / __ \/   | / ___/ ___/[0m
+[0;32m  / /_/ / /| | \__ \__  [0m
+[0;32m / ____/ ___ |___/ /__/ / [0m
+[0;32m/_/   /_/  |_/____/____/  [0m
 
-Simulation Failed
-Current System Time is: 05:04:48 PM--01/25/2023
+Simulation Succeeded!
+Current System Time is: 06:05:46 PM--01/26/2023

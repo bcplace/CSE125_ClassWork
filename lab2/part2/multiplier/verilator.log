@@ -21,8 +21,20 @@ __________ ___________  _______________________________
  |    |   \ |        \ /        \ |        \  |    |  1->0 time =        110
  |____|_  //_______  //_______  //_______  /  |____|   
  ASYNC  \/         \/         \/         \/            
-Iteration           1, correct result computed.
 Iteration           1 Starting: a_i = 00010, b_i = 01010
-[370000] %Error: testbench.sv:170: Assertion failed in TOP.testbench: [0;31mError![0m: Iteration           2 result_o should be 0000010100, got 0000011001
-%Error: testbench.sv:170: Verilog $stop
+Iteration           2 Starting: a_i = 01000, b_i = 00111
+Iteration           3 Starting: a_i = 11111, b_i = 00100
+Iteration           4 Starting: a_i = 00000, b_i = 01001
+Iteration           5 Starting: a_i = 00011, b_i = 01011
+Iteration           6 Starting: a_i = 00101, b_i = 01101
+Iteration           7 Starting: a_i = 00000, b_i = 00000
+Iteration           8 Starting: a_i = 00101, b_i = 00001
+Iteration           9 Starting: a_i = 01010, b_i = 00010
+Iteration          10 Starting: a_i = 00111, b_i = 01000
+Iteration          11 Starting: a_i = 01001, b_i = 00000
+Iteration          12 Starting: a_i = 01011, b_i = 00011
+Iteration          13 Starting: a_i = 01101, b_i = 00101
+Iteration          14 Starting: a_i = 00100, b_i = 11111
+[22640000] %Error: testbench.sv:179: Assertion failed in TOP.testbench: [0;31mError![0m: Result timed out. Result should be 0000000101
+%Error: testbench.sv:179: Verilog $stop
 Aborting...

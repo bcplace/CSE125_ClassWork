@@ -8,7 +8,6 @@ module multiplier
    ,input [width_p - 1 : 0] b_i
    ,output [0:0] done_o
    ,output [(2*width_p) - 1 : 0] result_o);
-
    // Implement a parameterized accumulating (iteratve) multiplier.
    //
    // *** The solution may use any previously created module from this lab ***
@@ -43,63 +42,41 @@ module multiplier
    		     comp = 3'b010,
    		     valid = 3'b100}
    		     states, next_state;
-   logic ready, done, end_comp;
    
    logic [(2*width_p) : 0] carry;
    logic [(2*width_p) - 1 : 0] product = '0;
    wire [width_p - 1 : 0] counter;
-   
-   logic [width_p - 1 : 0] reg1_o;
-   logic [width_p - 1 : 0] reg2_o;
-   logic reset_timer = 1'b0;
+   logic done;
+   logic [width_p - 1 : 0] reg_a;
+   logic [width_p - 1 : 0] reg_b;
+   wire reset_counter;
+   logic [(2*width_p) : 0] buffer_o;
    
    adder
    #(2*width_p)
-   add (.a_i(product), .b_i({{width_p{1'b0}}, reg1_o}), .sum_o(carry));
-   
+   add (.a_i(product), .b_i({{width_p{1'b0}}, reg_a}), .sum_o(carry));
    
    counter
    #(width_p) 
-   count (.clk_i(clk_i), .reset_i(reset_i|valid_i), .up_i(1'b1), .down_i(1'b0), .counter_o(counter));
-   
-   always_ff @(posedge clk_i) begin
-   	if(valid_i) begin
-   	    reset_timer <= 1'b1;
-   	    reg1_o <= a_i;
-   	    reg2_o <= b_i;
-   	end
-   end
+   count (.clk_i(clk_i), .reset_i(reset_i|reset_counter), .up_i(1'b1), .down_i(1'b0), .counter_o(counter));
    
    always_ff @(posedge clk_i) begin
        case(states)
-           Init :  begin
-                   ready <= 1'b1;
-   	           done <= 1'b0;
-   	           end_comp <= 1'b0;
-   	           end
-   	           
-   	   comp :  begin
-   	           reset_timer <= 1'b0;
-   	           ready <= 1'b0;
-   	           if(counter == reg2_o - 1) begin
-   	               end_comp <= 1'b1;
-   	           end else begin
-   	               product <= carry[(2*width_p) - 1 : 0];
-   	           end
-   	           end
-   	           
-   	   valid : begin 
-   	           done <= 1'b1;
-   	           end_comp <= 1'b0;
-   	           end
-   	   default;
+       comp : buffer_o <= carry;
+       default : buffer_o <= '0;
        endcase
+   end
+   
+   always_ff @(posedge clk_i) begin
+       if(valid_i) begin
+           reg_a <= a_i;
+           reg_b <= b_i;
+       end
    end
    
    always_comb begin : next_state_logic
    	case(states) 
    	    Init : begin 
-   	           carry = '0;
    	           if(~valid_i) begin
    	               next_state = Init;
    	           end else begin
@@ -107,8 +84,9 @@ module multiplier
    	           end
    	           end
    	           
-   	    comp : if(~end_comp) begin
+   	    comp : if(counter != reg_b + 1) begin
    	               next_state = comp;
+   	               product = buffer_o[(2*width_p) - 1 : 0];
    	           end else begin
    	               next_state = valid;
    	           end
@@ -127,9 +105,10 @@ module multiplier
    end
    
    
-   assign ready_then_o = ready;
-   assign done_o = done;
+   assign ready_then_o = states[0];
+   assign done_o = (counter == reg_b) & clk_i;
    assign result_o = product;
+   assign reset_counter = states[0] & valid_i;
                
        
 endmodule
