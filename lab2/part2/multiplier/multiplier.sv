@@ -45,8 +45,8 @@ module multiplier
    
    logic [(2*width_p) : 0] carry;
    logic [(2*width_p) - 1 : 0] product = '0;
-   wire [width_p - 1 : 0] counter;
-   logic done;
+   wire [width_p  : 0] counter;
+   logic end_comp;
    logic [width_p - 1 : 0] reg_a;
    logic [width_p - 1 : 0] reg_b;
    wire reset_counter;
@@ -57,7 +57,7 @@ module multiplier
    add (.a_i(product), .b_i({{width_p{1'b0}}, reg_a}), .sum_o(carry));
    
    counter
-   #(width_p) 
+   #(width_p + 1) 
    count (.clk_i(clk_i), .reset_i(reset_i|reset_counter), .up_i(1'b1), .down_i(1'b0), .counter_o(counter));
    
    always_ff @(posedge clk_i) begin
@@ -85,13 +85,17 @@ module multiplier
    	           end
    	           
    	    comp : if(counter != reg_b + 1) begin
-   	               next_state = comp;
    	               product = buffer_o[(2*width_p) - 1 : 0];
+   	               next_state = comp;
    	           end else begin
+   	               end_comp = 1'b1;
    	               next_state = valid;
    	           end
    	           
-   	   valid : next_state = Init;
+   	   valid : begin
+   	           next_state = Init;
+   	           end_comp = 1'b0;
+   	           end
    	   default : next_state = Init;
    	endcase
    end
@@ -106,7 +110,7 @@ module multiplier
    
    
    assign ready_then_o = states[0];
-   assign done_o = (counter == reg_b) & clk_i;
+   assign done_o = states[1] & end_comp;
    assign result_o = product;
    assign reset_counter = states[0] & valid_i;
                
