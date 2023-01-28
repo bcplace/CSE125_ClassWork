@@ -35,7 +35,38 @@ module konami
    //  DOWN UP UP UP DOWN DOWN LEFT RIGHT LEFT RIGHT B A START should
    //  assert cheat_code_unlocked_o
    // 
-   // Your code here:
+   // Your code here: 
+   wire [4:0] inputs;
+   logic [4:0] edges;
+   logic [10:0] reg_o [4:0];
+   enum logic [2:0] = {3'b001, 3'b010, 3'b100} state, next_state;
    
+   assign inputs = {up_i, down_i, left_i, right_i, b_i};
+   for(genvar i = 0; i < 5; i++) begin
+       edgedetector
+       edged
+       (.clk_i(clk_i), .btn_i(inputs[i]), .edge_o(edges[i]));
+   end
+   
+   for(genvar i = 0; i < 5; i++) begin
+       shift
+       #(11)
+       inputreg
+       (.clk_i(clk_i), .reset_i(1'b0), .data_i(edges[i]), .data_o(reg_o[i]));
+   end
+   
+   always_comb begin
+       
+   
+   
+   always_ff (@posedge clk_i) begin
+       if(reset_i) begin
+           state <= Init;
+       end else begin
+           state <= next_state;
+       end
+   end
+   
+   assign cheat_code_unlocked_o = 1'b0;
 endmodule
 

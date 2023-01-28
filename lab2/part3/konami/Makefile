@@ -1,6 +1,8 @@
 # CSE x25 Lab 2
 TOP_MODULE = konami
 SYNTH_SOURCES += $(TOP_MODULE).sv
+SYNTH_SOURCES += edgedetector.sv
+SYNTH_SOURCES += ../../part2/shift/shift.sv
 SYNTH_SOURCES += ../../provided_modules/inv.sv
 SYNTH_SOURCES += ../../provided_modules/dff.sv
 SYNTH_SOURCES += ../../provided_modules/jstk/PmodJSTK.sv
