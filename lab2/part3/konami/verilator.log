@@ -71,13 +71,24 @@ At Posedge          48: U: 0 D: 0, L: 0, R:1, B:0, A:0, S:0, R:0 reset_i = 0
 At Posedge          49: U: 0 D: 0, L: 0, R:0, B:1, A:0, S:0, R:0 reset_i = 0 
 At Posedge          50: U: 0 D: 0, L: 0, R:0, B:0, A:1, S:0, R:0 reset_i = 0 
 At Posedge          51: U: 0 D: 0, L: 0, R:0, B:0, A:0, S:1, R:0 reset_i = 0 
-[0;31mError![0m: cheat_code_unlocked_o should be 1, but got 0
-- testbench.sv:165: Verilog $finish
-Simulation time is               635000
-[0;31m    ______                    [0m
-[0;31m   / ____/_____________  _____[0m
-[0;31m  / __/ / ___/ ___/ __ \/ ___/[0m
-[0;31m / /___/ /  / /  / /_/ / /    [0m
-[0;31m/_____/_/  /_/   \____/_/     [0m
+At Posedge          52: U: 1 D: 0, L: 0, R:0, B:0, A:0, S:0, R:0 reset_i = 0 
+At Posedge          53: U: 1 D: 0, L: 0, R:0, B:0, A:0, S:0, R:0 reset_i = 0 
+At Posedge          54: U: 0 D: 1, L: 0, R:0, B:0, A:0, S:0, R:0 reset_i = 0 
+At Posedge          55: U: 0 D: 1, L: 0, R:0, B:0, A:0, S:0, R:0 reset_i = 0 
+At Posedge          56: U: 0 D: 0, L: 1, R:0, B:0, A:0, S:0, R:0 reset_i = 0 
+At Posedge          57: U: 0 D: 0, L: 0, R:1, B:0, A:0, S:0, R:0 reset_i = 0 
+At Posedge          58: U: 0 D: 0, L: 1, R:0, B:0, A:0, S:0, R:0 reset_i = 0 
+At Posedge          59: U: 0 D: 0, L: 0, R:1, B:0, A:0, S:0, R:0 reset_i = 0 
+At Posedge          60: U: 0 D: 0, L: 0, R:0, B:1, A:0, S:0, R:0 reset_i = 0 
+At Posedge          61: U: 0 D: 0, L: 0, R:0, B:0, A:1, S:0, R:0 reset_i = 0 
+At Posedge          62: U: 0 D: 0, L: 0, R:0, B:0, A:0, S:1, R:0 reset_i = 0 
+At Posedge          63: U: 0 D: 0, L: 0, R:0, B:0, A:0, S:0, R:0 reset_i = 0 
+- testbench.sv:168: Verilog $finish
+Simulation time is               755000
+[0;32m    ____  ___   __________[0m
+[0;32m   / __ \/   | / ___/ ___/[0m
+[0;32m  / /_/ / /| | \__ \__  [0m
+[0;32m / ____/ ___ |___/ /__/ / [0m
+[0;32m/_/   /_/  |_/____/____/  [0m
 
-Simulation Failed
+Simulation Succeeded!

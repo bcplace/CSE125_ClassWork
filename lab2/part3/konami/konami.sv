@@ -9,6 +9,7 @@ module konami
    ,input [0:0] a_i
    ,input [0:0] start_i
    ,output [0:0] cheat_code_unlocked_o);
+   /* verilator lint_off UNUSEDSIGNAL */
 
    // Implement a state machine to recognize the Konami Code.
    // 
@@ -36,30 +37,46 @@ module konami
    //  assert cheat_code_unlocked_o
    // 
    // Your code here: 
-   wire [4:0] inputs;
-   logic [4:0] edges;
-   logic [10:0] reg_o [4:0];
-   enum logic [2:0] = {3'b001, 3'b010, 3'b100} state, next_state;
+   wire [6:0] inputs;
+   logic [10:0] reg_o [6:0];
+   logic match_l;
+   logic [11:0] sum_o;
+   enum logic [1:0] {Init = 2'b01, check = 2'b10} state, next_state;
    
-   assign inputs = {up_i, down_i, left_i, right_i, b_i};
-   for(genvar i = 0; i < 5; i++) begin
-       edgedetector
-       edged
-       (.clk_i(clk_i), .btn_i(inputs[i]), .edge_o(edges[i]));
-   end
    
-   for(genvar i = 0; i < 5; i++) begin
+   assign inputs = {up_i, down_i, left_i, right_i, b_i, a_i, start_i};
+   
+   for(genvar i = 0; i < 7; i++) begin
        shift
        #(11)
        inputreg
-       (.clk_i(clk_i), .reset_i(1'b0), .data_i(edges[i]), .data_o(reg_o[i]));
+       (.clk_i(clk_i), .reset_i(1'b0), .data_i(inputs[i]), .data_o(reg_o[i]));
    end
    
    always_comb begin
-       
+      case(state)
+           Init : begin
+                  match_l = 1'b0;
+                  if(inputs[0]) begin
+                      next_state = check;
+                  end else begin
+                      next_state = Init;
+                  end
+                  end
+           check : begin
+                       sum_o = reg_o[6] + reg_o[5] + reg_o[4] + reg_o[3] + reg_o[2] + reg_o[1] + reg_o[0];
+                       if(~sum_o[11] & &sum_o[10:0]) begin
+                       match_l = 1'b1;
+                       next_state = Init;
+                       end else begin
+                           next_state = Init;
+                       end
+                   end
+           default;
+       endcase
+   end
    
-   
-   always_ff (@posedge clk_i) begin
+   always_ff @(posedge clk_i) begin
        if(reset_i) begin
            state <= Init;
        end else begin
@@ -67,6 +84,6 @@ module konami
        end
    end
    
-   assign cheat_code_unlocked_o = 1'b0;
+   assign cheat_code_unlocked_o = match_l;
 endmodule
 

@@ -1,4 +1,5 @@
 module multiplier
+  /* verilator lint_off UNUSEDSIGNAL*/
   #(parameter width_p = 4)
    (input [0:0] clk_i
    ,input [0:0] reset_i
