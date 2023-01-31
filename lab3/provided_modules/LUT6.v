@@ -36,7 +36,7 @@
 
 `timescale 1 ps/1 ps
 
-
+/* verilator lint_off WIDTH */
 module LUT6 #(
   parameter [63:0] INIT = 64'h0000000000000000
 )(
@@ -123,4 +123,4 @@ module LUT6 #(
 // end behavioral model
 
 endmodule
-
+/* verilator lint_on WIDTH */
