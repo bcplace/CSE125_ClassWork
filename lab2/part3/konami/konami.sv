@@ -54,9 +54,10 @@ module konami
    end
    
    always_comb begin
+      match_l = 1'b0;
+      sum_o = 12'd0;
       case(state)
            Init : begin
-                  match_l = 1'b0;
                   if(inputs[0]) begin
                       next_state = check;
                   end else begin
@@ -66,13 +67,15 @@ module konami
            check : begin
                        sum_o = reg_o[6] + reg_o[5] + reg_o[4] + reg_o[3] + reg_o[2] + reg_o[1] + reg_o[0];
                        if(~sum_o[11] & &sum_o[10:0]) begin
-                       match_l = 1'b1;
-                       next_state = Init;
+                           match_l = 1'b1;
+                           next_state = Init;
                        end else begin
                            next_state = Init;
                        end
                    end
-           default;
+           default : begin
+                         next_state = Init;
+                     end
        endcase
    end
    

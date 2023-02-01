@@ -57,6 +57,7 @@ module top
    wire [0:0] reset_n_sync_r;
    wire [0:0] reset_sync_r;
    wire [0:0] reset_r; // Use this as your reset_signal
+   wire btnA, btnB, btnstart, Up, Down, Left, Right;
 
    dff
      #()
@@ -65,6 +66,7 @@ module top
      ,.reset_i(1'b0)
      ,.d_i(reset_n_async_unsafe_i)
      ,.q_o(reset_n_sync_r));
+     
 
    inv
      #()
@@ -128,9 +130,95 @@ module top
    assign led_o[2] = position_y > 640;
 
    // Trigger Button
-   assign led_o[1] = data_o[1];
+   //assign led_o[1] = data_o[1];
 
    // Your code goes here
-
+   
+   logic [20:0] counter_o;
+   wire cheat_code_w;
+   logic slow_clk;
+   logic Up_unsafe, Down_unsafe, Left_unsafe, Right_unsafe;
+   
+   debouncer
+   btnA_debounce
+   (.clk_i(slow_clk),
+   .btn_i(button_async_unsafe_i[1]),
+   .debounced_o(btnA));
+   
+   debouncer
+   btnStart_debounce
+   (.clk_i(slow_clk),
+   .btn_i(button_async_unsafe_i[2]),
+   .debounced_o(btnstart));
+   
+   debouncer
+   btnB_debounce
+   (.clk_i(slow_clk),
+   .btn_i(button_async_unsafe_i[3]),
+   .debounced_o(btnB));
+   
+   debouncer
+   Upsafe_debounce
+   (.clk_i(slow_clk),
+   .btn_i(Up_unsafe),
+   .debounced_o(Up));
+   
+   debouncer
+   Downsafe_deboucne
+   (.clk_i(slow_clk),
+   .btn_i(Down_unsafe),
+   .debounced_o(Down));
+   
+   debouncer
+   Leftsafe_debounce
+   (.clk_i(slow_clk),
+   .btn_i(Left_unsafe),
+   .debounced_o(Left));
+   
+   debouncer
+   Rightsafe_debounce
+   (.clk_i(slow_clk),
+   .btn_i(Right_unsafe),
+   .debounced_o(Right));
+   
+   counter
+   #(21)
+   debouncer
+   (.clk_i(clk_12mhz_i), .reset_i(slow_clk), .up_i(1'b1), .down_i(1'b0), .counter_o(counter_o));
+   
+   konami
+   #()
+   statemachine (.clk_i(clk_12mhz_i), .reset_i(reset_r), .up_i(Up), .down_i(Down), .left_i(Left), .right_i(Right), .b_i(btnB), .a_i(btnA), .start_i(btnstart), .cheat_code_unlocked_o(cheat_code_w));
+   
+   always_comb begin
+       if(counter_o == 21'b100100100111110000000) begin
+           slow_clk = 1'b1;
+       end else begin
+           slow_clk = 1'b0;
+       end
+       if(position_x > 640) begin
+           Right_unsafe = 1'b1;
+       end else begin
+           Right_unsafe = 1'b0;
+       end
+       if(position_x < 384) begin
+           Left_unsafe = 1'b1;
+       end else begin
+           Left_unsafe = 1'b0;
+       end
+       if(position_y > 640) begin
+           Up_unsafe = 1'b1;
+       end else begin
+           Up_unsafe = 1'b0;
+       end
+       if(position_y < 384) begin
+           Down_unsafe = 1'b1;
+       end else begin
+           Down_unsafe = 1'b0;
+       end
+   end
+   
+   
+assign led_o[1] = cheat_code_w;
 
 endmodule
