@@ -174,11 +174,11 @@ Top module:  \top
 
 13.3.2. Executing AST frontend in derive mode using pre-parsed AST for module `\konami'.
 Generating RTLIL representation for module `\konami'.
-Parameter 1 (\width_p) = 21
+Parameter 1 (\width_p) = 22
 
 13.3.3. Executing AST frontend in derive mode using pre-parsed AST for module `\counter'.
-Parameter 1 (\width_p) = 21
-Generating RTLIL representation for module `$paramod\counter\width_p=s32'00000000000000000000000000010101'.
+Parameter 1 (\width_p) = 22
+Generating RTLIL representation for module `$paramod\counter\width_p=s32'00000000000000000000000000010110'.
 
 13.3.4. Executing AST frontend in derive mode using pre-parsed AST for module `\debouncer'.
 Generating RTLIL representation for module `\debouncer'.
@@ -195,7 +195,7 @@ Generating RTLIL representation for module `\inv'.
 13.3.8. Analyzing design hierarchy..
 Top module:  \top
 Used module:     \konami
-Used module:     $paramod\counter\width_p=s32'00000000000000000000000000010101
+Used module:     $paramod\counter\width_p=s32'00000000000000000000000000010110
 Used module:     \debouncer
 Used module:         \dff
 Used module:     \PmodJSTK
@@ -236,7 +236,7 @@ Warning: Replacing memory \reg_o with list of registers. See konami.sv:0
 13.3.14. Analyzing design hierarchy..
 Top module:  \top
 Used module:     \konami
-Used module:     $paramod\counter\width_p=s32'00000000000000000000000000010101
+Used module:     $paramod\counter\width_p=s32'00000000000000000000000000010110
 Used module:     \debouncer
 Used module:         \dff
 Used module:     \PmodJSTK
@@ -264,7 +264,7 @@ Found cached RTLIL representation for module `$paramod\shift\depth_p=s32'0000000
 Top module:  \top
 Used module:     \konami
 Used module:         $paramod\shift\depth_p=s32'00000000000000000000000000001011
-Used module:     $paramod\counter\width_p=s32'00000000000000000000000000010101
+Used module:     $paramod\counter\width_p=s32'00000000000000000000000000010110
 Used module:     \debouncer
 Used module:         \dff
 Used module:     \PmodJSTK
@@ -278,7 +278,7 @@ Used module:     \inv
 Top module:  \top
 Used module:     \konami
 Used module:         $paramod\shift\depth_p=s32'00000000000000000000000000001011
-Used module:     $paramod\counter\width_p=s32'00000000000000000000000000010101
+Used module:     $paramod\counter\width_p=s32'00000000000000000000000000010110
 Used module:     \debouncer
 Used module:         \dff
 Used module:     \PmodJSTK
@@ -323,8 +323,8 @@ Marked 1 switch rules as full_case in process $proc$/opt/oss-cad-suite/lib/../sh
 Marked 1 switch rules as full_case in process $proc$/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_sim.v:477$180 in module SB_DFFSS.
 Marked 1 switch rules as full_case in process $proc$/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_sim.v:406$177 in module SB_DFFR.
 Marked 1 switch rules as full_case in process $proc$/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_sim.v:356$174 in module SB_DFFSR.
-Marked 1 switch rules as full_case in process $proc$konami.sv:82$506 in module konami.
-Marked 3 switch rules as full_case in process $proc$konami.sv:0$496 in module konami.
+Marked 1 switch rules as full_case in process $proc$konami.sv:119$499 in module konami.
+Marked 3 switch rules as full_case in process $proc$konami.sv:0$489 in module konami.
 Marked 7 switch rules as full_case in process $proc$../../provided_modules/jstk/spiCtrl.v:60$457 in module spiCtrl.
 Removed 1 dead cases from process $proc$../../provided_modules/jstk/spiMode0.sv:137$447 in module spiMode0.
 Marked 5 switch rules as full_case in process $proc$../../provided_modules/jstk/spiMode0.sv:137$447 in module spiMode0.
@@ -333,8 +333,8 @@ Marked 2 switch rules as full_case in process $proc$../../provided_modules/jstk/
 Marked 2 switch rules as full_case in process $proc$../../provided_modules/jstk/ClkDiv_66_67kHz.sv:17$433 in module ClkDiv_66_67kHz.
 Marked 2 switch rules as full_case in process $proc$../../provided_modules/jstk/ClkDiv_20Hz.sv:14$426 in module ClkDiv_20Hz.
 Marked 1 switch rules as full_case in process $proc$../../provided_modules/dff.sv:21$424 in module dff.
-Marked 2 switch rules as full_case in process $proc$../../part2/counter/counter.sv:0$418 in module $paramod\counter\width_p=s32'00000000000000000000000000010101.
-Marked 1 switch rules as full_case in process $proc$../../part2/counter/counter.sv:30$417 in module $paramod\counter\width_p=s32'00000000000000000000000000010101.
+Marked 2 switch rules as full_case in process $proc$../../part2/counter/counter.sv:0$418 in module $paramod\counter\width_p=s32'00000000000000000000000000010110.
+Marked 1 switch rules as full_case in process $proc$../../part2/counter/counter.sv:30$417 in module $paramod\counter\width_p=s32'00000000000000000000000000010110.
 Marked 1 switch rules as full_case in process $proc$../../part2/shift/shift.sv:35$473 in module $paramod\shift\depth_p=s32'00000000000000000000000000001011.
 Marked 5 switch rules as full_case in process $proc$top.sv:0$386 in module top.
 Removed a total of 1 dead cases.
@@ -490,10 +490,10 @@ Creating decoders for process `\SB_DFFE.$proc$/opt/oss-cad-suite/lib/../share/yo
      1/1: $0\Q[0:0]
 Creating decoders for process `\SB_DFF.$proc$/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_sim.v:0$171'.
 Creating decoders for process `\SB_DFF.$proc$/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_sim.v:271$170'.
-Creating decoders for process `\konami.$proc$konami.sv:0$507'.
-Creating decoders for process `\konami.$proc$konami.sv:82$506'.
+Creating decoders for process `\konami.$proc$konami.sv:0$500'.
+Creating decoders for process `\konami.$proc$konami.sv:119$499'.
      1/1: $0\state[1:0]
-Creating decoders for process `\konami.$proc$konami.sv:0$496'.
+Creating decoders for process `\konami.$proc$konami.sv:0$489'.
      1/6: $3\next_state[1:0]
      2/6: $2\match_l[0:0]
      3/6: $2\next_state[1:0]
@@ -542,11 +542,11 @@ Creating decoders for process `\ClkDiv_20Hz.$proc$../../provided_modules/jstk/Cl
      2/2: $0\clk_r[0:0]
 Creating decoders for process `\dff.$proc$../../provided_modules/dff.sv:21$424'.
      1/1: $0\q_r[0:0]
-Creating decoders for process `$paramod\counter\width_p=s32'00000000000000000000000000010101.$proc$../../part2/counter/counter.sv:0$418'.
-     1/2: $2\counter_valn[20:0]
-     2/2: $1\counter_valn[20:0]
-Creating decoders for process `$paramod\counter\width_p=s32'00000000000000000000000000010101.$proc$../../part2/counter/counter.sv:30$417'.
-     1/1: $0\counter_valc[20:0]
+Creating decoders for process `$paramod\counter\width_p=s32'00000000000000000000000000010110.$proc$../../part2/counter/counter.sv:0$418'.
+     1/2: $2\counter_valn[21:0]
+     2/2: $1\counter_valn[21:0]
+Creating decoders for process `$paramod\counter\width_p=s32'00000000000000000000000000010110.$proc$../../part2/counter/counter.sv:30$417'.
+     1/1: $0\counter_valc[21:0]
 Creating decoders for process `$paramod\shift\depth_p=s32'00000000000000000000000000001011.$proc$../../part2/shift/shift.sv:0$474'.
 Creating decoders for process `$paramod\shift\depth_p=s32'00000000000000000000000000001011.$proc$../../part2/shift/shift.sv:35$473'.
      1/1: $0\data_c[10:0]
@@ -558,17 +558,17 @@ Creating decoders for process `\top.$proc$top.sv:0$386'.
      5/5: $1\slow_clk[0:0]
 
 13.4.8. Executing PROC_DLATCH pass (convert process syncs to latches).
-No latch inferred for signal `\konami.\reg_o[0]' from process `\konami.$proc$konami.sv:0$507'.
-No latch inferred for signal `\konami.\reg_o[1]' from process `\konami.$proc$konami.sv:0$507'.
-No latch inferred for signal `\konami.\reg_o[2]' from process `\konami.$proc$konami.sv:0$507'.
-No latch inferred for signal `\konami.\reg_o[3]' from process `\konami.$proc$konami.sv:0$507'.
-No latch inferred for signal `\konami.\reg_o[4]' from process `\konami.$proc$konami.sv:0$507'.
-No latch inferred for signal `\konami.\reg_o[5]' from process `\konami.$proc$konami.sv:0$507'.
-No latch inferred for signal `\konami.\reg_o[6]' from process `\konami.$proc$konami.sv:0$507'.
-No latch inferred for signal `\konami.\match_l' from process `\konami.$proc$konami.sv:0$496'.
-No latch inferred for signal `\konami.\sum_o' from process `\konami.$proc$konami.sv:0$496'.
-No latch inferred for signal `\konami.\next_state' from process `\konami.$proc$konami.sv:0$496'.
-No latch inferred for signal `$paramod\counter\width_p=s32'00000000000000000000000000010101.\counter_valn' from process `$paramod\counter\width_p=s32'00000000000000000000000000010101.$proc$../../part2/counter/counter.sv:0$418'.
+No latch inferred for signal `\konami.\reg_o[0]' from process `\konami.$proc$konami.sv:0$500'.
+No latch inferred for signal `\konami.\reg_o[1]' from process `\konami.$proc$konami.sv:0$500'.
+No latch inferred for signal `\konami.\reg_o[2]' from process `\konami.$proc$konami.sv:0$500'.
+No latch inferred for signal `\konami.\reg_o[3]' from process `\konami.$proc$konami.sv:0$500'.
+No latch inferred for signal `\konami.\reg_o[4]' from process `\konami.$proc$konami.sv:0$500'.
+No latch inferred for signal `\konami.\reg_o[5]' from process `\konami.$proc$konami.sv:0$500'.
+No latch inferred for signal `\konami.\reg_o[6]' from process `\konami.$proc$konami.sv:0$500'.
+No latch inferred for signal `\konami.\match_l' from process `\konami.$proc$konami.sv:0$489'.
+No latch inferred for signal `\konami.\sum_o' from process `\konami.$proc$konami.sv:0$489'.
+No latch inferred for signal `\konami.\next_state' from process `\konami.$proc$konami.sv:0$489'.
+No latch inferred for signal `$paramod\counter\width_p=s32'00000000000000000000000000010110.\counter_valn' from process `$paramod\counter\width_p=s32'00000000000000000000000000010110.$proc$../../part2/counter/counter.sv:0$418'.
 No latch inferred for signal `$paramod\shift\depth_p=s32'00000000000000000000000000001011.\data_n' from process `$paramod\shift\depth_p=s32'00000000000000000000000000001011.$proc$../../part2/shift/shift.sv:0$474'.
 No latch inferred for signal `\top.\slow_clk' from process `\top.$proc$top.sv:0$386'.
 No latch inferred for signal `\top.\Up_unsafe' from process `\top.$proc$top.sv:0$386'.
@@ -578,89 +578,89 @@ No latch inferred for signal `\top.\Right_unsafe' from process `\top.$proc$top.s
 
 13.4.9. Executing PROC_DFF pass (convert process syncs to FFs).
 Creating register for signal `\SB_DFFNES.\Q' using process `\SB_DFFNES.$proc$/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_sim.v:1414$242'.
-  created $adff cell `$procdff$786' with negative edge clock and positive level reset.
+  created $adff cell `$procdff$779' with negative edge clock and positive level reset.
 Creating register for signal `\SB_DFFNESS.\Q' using process `\SB_DFFNESS.$proc$/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_sim.v:1353$235'.
-  created $dff cell `$procdff$787' with negative edge clock.
+  created $dff cell `$procdff$780' with negative edge clock.
 Creating register for signal `\SB_DFFNER.\Q' using process `\SB_DFFNER.$proc$/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_sim.v:1273$231'.
-  created $adff cell `$procdff$788' with negative edge clock and positive level reset.
+  created $adff cell `$procdff$781' with negative edge clock and positive level reset.
 Creating register for signal `\SB_DFFNESR.\Q' using process `\SB_DFFNESR.$proc$/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_sim.v:1212$224'.
-  created $dff cell `$procdff$789' with negative edge clock.
+  created $dff cell `$procdff$782' with negative edge clock.
 Creating register for signal `\SB_DFFNS.\Q' using process `\SB_DFFNS.$proc$/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_sim.v:1138$221'.
-  created $adff cell `$procdff$790' with negative edge clock and positive level reset.
+  created $adff cell `$procdff$783' with negative edge clock and positive level reset.
 Creating register for signal `\SB_DFFNSS.\Q' using process `\SB_DFFNSS.$proc$/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_sim.v:1088$218'.
-  created $dff cell `$procdff$791' with negative edge clock.
+  created $dff cell `$procdff$784' with negative edge clock.
 Creating register for signal `\SB_DFFNR.\Q' using process `\SB_DFFNR.$proc$/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_sim.v:1017$215'.
-  created $adff cell `$procdff$792' with negative edge clock and positive level reset.
+  created $adff cell `$procdff$785' with negative edge clock and positive level reset.
 Creating register for signal `\SB_DFFNSR.\Q' using process `\SB_DFFNSR.$proc$/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_sim.v:967$212'.
-  created $dff cell `$procdff$793' with negative edge clock.
+  created $dff cell `$procdff$786' with negative edge clock.
 Creating register for signal `\SB_DFFNE.\Q' using process `\SB_DFFNE.$proc$/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_sim.v:922$210'.
-  created $dff cell `$procdff$794' with negative edge clock.
+  created $dff cell `$procdff$787' with negative edge clock.
 Creating register for signal `\SB_DFFN.\Q' using process `\SB_DFFN.$proc$/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_sim.v:882$208'.
-  created $dff cell `$procdff$795' with negative edge clock.
+  created $dff cell `$procdff$788' with negative edge clock.
 Creating register for signal `\SB_DFFES.\Q' using process `\SB_DFFES.$proc$/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_sim.v:803$204'.
-  created $adff cell `$procdff$796' with positive edge clock and positive level reset.
+  created $adff cell `$procdff$789' with positive edge clock and positive level reset.
 Creating register for signal `\SB_DFFESS.\Q' using process `\SB_DFFESS.$proc$/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_sim.v:742$197'.
-  created $dff cell `$procdff$797' with positive edge clock.
+  created $dff cell `$procdff$790' with positive edge clock.
 Creating register for signal `\SB_DFFER.\Q' using process `\SB_DFFER.$proc$/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_sim.v:662$193'.
-  created $adff cell `$procdff$798' with positive edge clock and positive level reset.
+  created $adff cell `$procdff$791' with positive edge clock and positive level reset.
 Creating register for signal `\SB_DFFESR.\Q' using process `\SB_DFFESR.$proc$/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_sim.v:601$186'.
-  created $dff cell `$procdff$799' with positive edge clock.
+  created $dff cell `$procdff$792' with positive edge clock.
 Creating register for signal `\SB_DFFS.\Q' using process `\SB_DFFS.$proc$/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_sim.v:527$183'.
-  created $adff cell `$procdff$800' with positive edge clock and positive level reset.
+  created $adff cell `$procdff$793' with positive edge clock and positive level reset.
 Creating register for signal `\SB_DFFSS.\Q' using process `\SB_DFFSS.$proc$/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_sim.v:477$180'.
-  created $dff cell `$procdff$801' with positive edge clock.
+  created $dff cell `$procdff$794' with positive edge clock.
 Creating register for signal `\SB_DFFR.\Q' using process `\SB_DFFR.$proc$/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_sim.v:406$177'.
-  created $adff cell `$procdff$802' with positive edge clock and positive level reset.
+  created $adff cell `$procdff$795' with positive edge clock and positive level reset.
 Creating register for signal `\SB_DFFSR.\Q' using process `\SB_DFFSR.$proc$/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_sim.v:356$174'.
-  created $dff cell `$procdff$803' with positive edge clock.
+  created $dff cell `$procdff$796' with positive edge clock.
 Creating register for signal `\SB_DFFE.\Q' using process `\SB_DFFE.$proc$/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_sim.v:311$172'.
-  created $dff cell `$procdff$804' with positive edge clock.
+  created $dff cell `$procdff$797' with positive edge clock.
 Creating register for signal `\SB_DFF.\Q' using process `\SB_DFF.$proc$/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_sim.v:271$170'.
-  created $dff cell `$procdff$805' with positive edge clock.
-Creating register for signal `\konami.\state' using process `\konami.$proc$konami.sv:82$506'.
-  created $dff cell `$procdff$806' with positive edge clock.
+  created $dff cell `$procdff$798' with positive edge clock.
+Creating register for signal `\konami.\state' using process `\konami.$proc$konami.sv:119$499'.
+  created $dff cell `$procdff$799' with positive edge clock.
 Creating register for signal `\spiCtrl.\SS' using process `\spiCtrl.$proc$../../provided_modules/jstk/spiCtrl.v:60$457'.
-  created $dff cell `$procdff$807' with negative edge clock.
+  created $dff cell `$procdff$800' with negative edge clock.
 Creating register for signal `\spiCtrl.\getByte' using process `\spiCtrl.$proc$../../provided_modules/jstk/spiCtrl.v:60$457'.
-  created $dff cell `$procdff$808' with negative edge clock.
+  created $dff cell `$procdff$801' with negative edge clock.
 Creating register for signal `\spiCtrl.\sndData' using process `\spiCtrl.$proc$../../provided_modules/jstk/spiCtrl.v:60$457'.
-  created $dff cell `$procdff$809' with negative edge clock.
+  created $dff cell `$procdff$802' with negative edge clock.
 Creating register for signal `\spiCtrl.\DOUT' using process `\spiCtrl.$proc$../../provided_modules/jstk/spiCtrl.v:60$457'.
-  created $dff cell `$procdff$810' with negative edge clock.
+  created $dff cell `$procdff$803' with negative edge clock.
 Creating register for signal `\spiCtrl.\pState' using process `\spiCtrl.$proc$../../provided_modules/jstk/spiCtrl.v:60$457'.
-  created $dff cell `$procdff$811' with negative edge clock.
+  created $dff cell `$procdff$804' with negative edge clock.
 Creating register for signal `\spiCtrl.\byteCnt' using process `\spiCtrl.$proc$../../provided_modules/jstk/spiCtrl.v:60$457'.
-  created $dff cell `$procdff$812' with negative edge clock.
+  created $dff cell `$procdff$805' with negative edge clock.
 Creating register for signal `\spiCtrl.\tmpSR' using process `\spiCtrl.$proc$../../provided_modules/jstk/spiCtrl.v:60$457'.
-  created $dff cell `$procdff$813' with negative edge clock.
+  created $dff cell `$procdff$806' with negative edge clock.
 Creating register for signal `\spiCtrl.\tmpSRsend' using process `\spiCtrl.$proc$../../provided_modules/jstk/spiCtrl.v:60$457'.
-  created $dff cell `$procdff$814' with negative edge clock.
+  created $dff cell `$procdff$807' with negative edge clock.
 Creating register for signal `\spiMode0.\CE' using process `\spiMode0.$proc$../../provided_modules/jstk/spiMode0.sv:137$447'.
-  created $dff cell `$procdff$815' with negative edge clock.
+  created $dff cell `$procdff$808' with negative edge clock.
 Creating register for signal `\spiMode0.\BUSY' using process `\spiMode0.$proc$../../provided_modules/jstk/spiMode0.sv:137$447'.
-  created $dff cell `$procdff$816' with negative edge clock.
+  created $dff cell `$procdff$809' with negative edge clock.
 Creating register for signal `\spiMode0.\bitCount' using process `\spiMode0.$proc$../../provided_modules/jstk/spiMode0.sv:137$447'.
-  created $dff cell `$procdff$817' with negative edge clock.
+  created $dff cell `$procdff$810' with negative edge clock.
 Creating register for signal `\spiMode0.\pState' using process `\spiMode0.$proc$../../provided_modules/jstk/spiMode0.sv:137$447'.
-  created $dff cell `$procdff$818' with negative edge clock.
+  created $dff cell `$procdff$811' with negative edge clock.
 Creating register for signal `\spiMode0.\rSR' using process `\spiMode0.$proc$../../provided_modules/jstk/spiMode0.sv:103$444'.
-  created $dff cell `$procdff$819' with positive edge clock.
+  created $dff cell `$procdff$812' with positive edge clock.
 Creating register for signal `\spiMode0.\wSR' using process `\spiMode0.$proc$../../provided_modules/jstk/spiMode0.sv:67$441'.
-  created $dff cell `$procdff$820' with negative edge clock.
+  created $dff cell `$procdff$813' with negative edge clock.
 Creating register for signal `\ClkDiv_66_67kHz.\clk_r' using process `\ClkDiv_66_67kHz.$proc$../../provided_modules/jstk/ClkDiv_66_67kHz.sv:17$433'.
-  created $dff cell `$procdff$821' with positive edge clock.
+  created $dff cell `$procdff$814' with positive edge clock.
 Creating register for signal `\ClkDiv_66_67kHz.\count_r' using process `\ClkDiv_66_67kHz.$proc$../../provided_modules/jstk/ClkDiv_66_67kHz.sv:17$433'.
-  created $dff cell `$procdff$822' with positive edge clock.
+  created $dff cell `$procdff$815' with positive edge clock.
 Creating register for signal `\ClkDiv_20Hz.\clk_r' using process `\ClkDiv_20Hz.$proc$../../provided_modules/jstk/ClkDiv_20Hz.sv:14$426'.
-  created $dff cell `$procdff$823' with positive edge clock.
+  created $dff cell `$procdff$816' with positive edge clock.
 Creating register for signal `\ClkDiv_20Hz.\count_r' using process `\ClkDiv_20Hz.$proc$../../provided_modules/jstk/ClkDiv_20Hz.sv:14$426'.
-  created $dff cell `$procdff$824' with positive edge clock.
+  created $dff cell `$procdff$817' with positive edge clock.
 Creating register for signal `\dff.\q_r' using process `\dff.$proc$../../provided_modules/dff.sv:21$424'.
-  created $dff cell `$procdff$825' with positive edge clock.
-Creating register for signal `$paramod\counter\width_p=s32'00000000000000000000000000010101.\counter_valc' using process `$paramod\counter\width_p=s32'00000000000000000000000000010101.$proc$../../part2/counter/counter.sv:30$417'.
-  created $dff cell `$procdff$826' with positive edge clock.
+  created $dff cell `$procdff$818' with positive edge clock.
+Creating register for signal `$paramod\counter\width_p=s32'00000000000000000000000000010110.\counter_valc' using process `$paramod\counter\width_p=s32'00000000000000000000000000010110.$proc$../../part2/counter/counter.sv:30$417'.
+  created $dff cell `$procdff$819' with positive edge clock.
 Creating register for signal `$paramod\shift\depth_p=s32'00000000000000000000000000001011.\data_c' using process `$paramod\shift\depth_p=s32'00000000000000000000000000001011.$proc$../../part2/shift/shift.sv:35$473'.
-  created $dff cell `$procdff$827' with positive edge clock.
+  created $dff cell `$procdff$820' with positive edge clock.
 
 13.4.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
@@ -719,11 +719,11 @@ Found and cleaned up 1 empty switch in `\SB_DFFE.$proc$/opt/oss-cad-suite/lib/..
 Removing empty process `SB_DFFE.$proc$/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_sim.v:311$172'.
 Removing empty process `SB_DFF.$proc$/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_sim.v:0$171'.
 Removing empty process `SB_DFF.$proc$/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_sim.v:271$170'.
-Removing empty process `konami.$proc$konami.sv:0$507'.
-Found and cleaned up 1 empty switch in `\konami.$proc$konami.sv:82$506'.
-Removing empty process `konami.$proc$konami.sv:82$506'.
-Found and cleaned up 3 empty switches in `\konami.$proc$konami.sv:0$496'.
-Removing empty process `konami.$proc$konami.sv:0$496'.
+Removing empty process `konami.$proc$konami.sv:0$500'.
+Found and cleaned up 1 empty switch in `\konami.$proc$konami.sv:119$499'.
+Removing empty process `konami.$proc$konami.sv:119$499'.
+Found and cleaned up 3 empty switches in `\konami.$proc$konami.sv:0$489'.
+Removing empty process `konami.$proc$konami.sv:0$489'.
 Removing empty process `spiCtrl.$proc$../../provided_modules/jstk/spiCtrl.v:53$472'.
 Removing empty process `spiCtrl.$proc$../../provided_modules/jstk/spiCtrl.v:51$471'.
 Removing empty process `spiCtrl.$proc$../../provided_modules/jstk/spiCtrl.v:49$470'.
@@ -754,10 +754,10 @@ Found and cleaned up 2 empty switches in `\ClkDiv_20Hz.$proc$../../provided_modu
 Removing empty process `ClkDiv_20Hz.$proc$../../provided_modules/jstk/ClkDiv_20Hz.sv:14$426'.
 Found and cleaned up 1 empty switch in `\dff.$proc$../../provided_modules/dff.sv:21$424'.
 Removing empty process `dff.$proc$../../provided_modules/dff.sv:21$424'.
-Found and cleaned up 2 empty switches in `$paramod\counter\width_p=s32'00000000000000000000000000010101.$proc$../../part2/counter/counter.sv:0$418'.
-Removing empty process `$paramod\counter\width_p=s32'00000000000000000000000000010101.$proc$../../part2/counter/counter.sv:0$418'.
-Found and cleaned up 1 empty switch in `$paramod\counter\width_p=s32'00000000000000000000000000010101.$proc$../../part2/counter/counter.sv:30$417'.
-Removing empty process `$paramod\counter\width_p=s32'00000000000000000000000000010101.$proc$../../part2/counter/counter.sv:30$417'.
+Found and cleaned up 2 empty switches in `$paramod\counter\width_p=s32'00000000000000000000000000010110.$proc$../../part2/counter/counter.sv:0$418'.
+Removing empty process `$paramod\counter\width_p=s32'00000000000000000000000000010110.$proc$../../part2/counter/counter.sv:0$418'.
+Found and cleaned up 1 empty switch in `$paramod\counter\width_p=s32'00000000000000000000000000010110.$proc$../../part2/counter/counter.sv:30$417'.
+Removing empty process `$paramod\counter\width_p=s32'00000000000000000000000000010110.$proc$../../part2/counter/counter.sv:30$417'.
 Removing empty process `$paramod\shift\depth_p=s32'00000000000000000000000000001011.$proc$../../part2/shift/shift.sv:0$474'.
 Found and cleaned up 1 empty switch in `$paramod\shift\depth_p=s32'00000000000000000000000000001011.$proc$../../part2/shift/shift.sv:35$473'.
 Removing empty process `$paramod\shift\depth_p=s32'00000000000000000000000000001011.$proc$../../part2/shift/shift.sv:35$473'.
@@ -778,7 +778,7 @@ Optimizing module inv.
 Optimizing module dff.
 Optimizing module PmodJSTK.
 Optimizing module debouncer.
-Optimizing module $paramod\counter\width_p=s32'00000000000000000000000000010101.
+Optimizing module $paramod\counter\width_p=s32'00000000000000000000000000010110.
 Optimizing module $paramod\shift\depth_p=s32'00000000000000000000000000001011.
 Optimizing module top.
 
@@ -792,7 +792,7 @@ Deleting now unused module inv.
 Deleting now unused module dff.
 Deleting now unused module PmodJSTK.
 Deleting now unused module debouncer.
-Deleting now unused module $paramod\counter\width_p=s32'00000000000000000000000000010101.
+Deleting now unused module $paramod\counter\width_p=s32'00000000000000000000000000010110.
 Deleting now unused module $paramod\shift\depth_p=s32'00000000000000000000000000001011.
 <suppressed ~26 debug messages>
 
@@ -802,11 +802,11 @@ Deleting now unused module $paramod\shift\depth_p=s32'00000000000000000000000000
 
 13.8. Executing OPT_EXPR pass (perform const folding).
 Optimizing module top.
-<suppressed ~28 debug messages>
+<suppressed ~21 debug messages>
 
 13.9. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \top..
-Removed 5 unused cells and 249 unused wires.
+Removed 5 unused cells and 235 unused wires.
 <suppressed ~7 debug messages>
 
 13.10. Executing CHECK pass (checking for obvious problems).
@@ -828,21 +828,21 @@ Running muxtree optimizer on module \top..
   Creating internal representation of mux trees.
   Evaluating internal representation of mux trees.
   Analyzing evaluation results.
-    dead port 2/2 on $mux $flatten\statemachine.$procmux$558.
+    dead port 2/2 on $mux $flatten\statemachine.$procmux$551.
+    dead port 2/2 on $mux $flatten\statemachine.$procmux$557.
     dead port 2/2 on $mux $flatten\statemachine.$procmux$564.
-    dead port 2/2 on $mux $flatten\statemachine.$procmux$571.
 Removed 3 multiplexer ports.
-<suppressed ~27 debug messages>
+<suppressed ~34 debug messages>
 
 13.11.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
   Optimizing cells in module \top.
-    New ctrl vector for $pmux cell $flatten\jstk_i.\SPI_Ctrl.$procmux$644: { $flatten\jstk_i.\SPI_Ctrl.$procmux$600_CMP $auto$opt_reduce.cc:134:opt_pmux$831 }
-    New ctrl vector for $pmux cell $flatten\jstk_i.\SPI_Ctrl.$procmux$652: { $flatten\jstk_i.\SPI_Ctrl.$procmux$600_CMP $auto$opt_reduce.cc:134:opt_pmux$833 }
-    New ctrl vector for $pmux cell $flatten\jstk_i.\SPI_Ctrl.$procmux$662: { $auto$opt_reduce.cc:134:opt_pmux$837 $auto$opt_reduce.cc:134:opt_pmux$835 }
-    New ctrl vector for $pmux cell $flatten\jstk_i.\SPI_Int.$procmux$685: { $flatten\jstk_i.\SPI_Int.$procmux$676_CMP $auto$opt_reduce.cc:134:opt_pmux$839 }
-    New ctrl vector for $pmux cell $flatten\jstk_i.\SPI_Int.$procmux$693: { $flatten\jstk_i.\SPI_Int.$procmux$681_CMP $auto$opt_reduce.cc:134:opt_pmux$841 }
-    New ctrl vector for $pmux cell $flatten\jstk_i.\SPI_Int.$procmux$701: { $flatten\jstk_i.\SPI_Int.$procmux$676_CMP $auto$opt_reduce.cc:134:opt_pmux$843 }
-    New ctrl vector for $pmux cell $flatten\statemachine.$procmux$574: $flatten\statemachine.$procmux$572_CMP
+    New ctrl vector for $pmux cell $flatten\jstk_i.\SPI_Ctrl.$procmux$637: { $flatten\jstk_i.\SPI_Ctrl.$procmux$593_CMP $auto$opt_reduce.cc:134:opt_pmux$824 }
+    New ctrl vector for $pmux cell $flatten\jstk_i.\SPI_Ctrl.$procmux$645: { $flatten\jstk_i.\SPI_Ctrl.$procmux$593_CMP $auto$opt_reduce.cc:134:opt_pmux$826 }
+    New ctrl vector for $pmux cell $flatten\jstk_i.\SPI_Ctrl.$procmux$655: { $auto$opt_reduce.cc:134:opt_pmux$830 $auto$opt_reduce.cc:134:opt_pmux$828 }
+    New ctrl vector for $pmux cell $flatten\jstk_i.\SPI_Int.$procmux$678: { $flatten\jstk_i.\SPI_Int.$procmux$669_CMP $auto$opt_reduce.cc:134:opt_pmux$832 }
+    New ctrl vector for $pmux cell $flatten\jstk_i.\SPI_Int.$procmux$686: { $flatten\jstk_i.\SPI_Int.$procmux$674_CMP $auto$opt_reduce.cc:134:opt_pmux$834 }
+    New ctrl vector for $pmux cell $flatten\jstk_i.\SPI_Int.$procmux$694: { $flatten\jstk_i.\SPI_Int.$procmux$669_CMP $auto$opt_reduce.cc:134:opt_pmux$836 }
+    New ctrl vector for $pmux cell $flatten\statemachine.$procmux$567: $flatten\statemachine.$procmux$565_CMP
   Optimizing cells in module \top.
 Performed a total of 7 changes.
 
@@ -869,7 +869,7 @@ Running muxtree optimizer on module \top..
   Evaluating internal representation of mux trees.
   Analyzing evaluation results.
 Removed 0 multiplexer ports.
-<suppressed ~27 debug messages>
+<suppressed ~34 debug messages>
 
 13.11.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
   Optimizing cells in module \top.
@@ -900,18 +900,18 @@ Found FSM state register top.statemachine.state.
 
 13.12.2. Executing FSM_EXTRACT pass (extracting FSM from design).
 Extracting FSM `\statemachine.state' from module `\top'.
-  found $dff cell for state register: $flatten\statemachine.$procdff$806
+  found $dff cell for state register: $flatten\statemachine.$procdff$799
   root of input selection tree: $flatten\statemachine.$0\state[1:0]
   found reset state: 2'01 (guessed from mux tree)
   found ctrl input: \sync_b.q_r
-  found ctrl input: $flatten\statemachine.$procmux$572_CMP
+  found ctrl input: $flatten\statemachine.$procmux$565_CMP
   found state code: 2'01
   found ctrl input: \btnStart_debounce.debounced_o
   found state code: 2'10
-  found ctrl output: $flatten\statemachine.$procmux$572_CMP
-  found ctrl output: $flatten\statemachine.$procmux$559_CMP
+  found ctrl output: $flatten\statemachine.$procmux$565_CMP
+  found ctrl output: $flatten\statemachine.$procmux$552_CMP
   ctrl inputs: { \btnStart_debounce.debounced_o \sync_b.q_r }
-  ctrl outputs: { $flatten\statemachine.$0\state[1:0] $flatten\statemachine.$procmux$559_CMP $flatten\statemachine.$procmux$572_CMP }
+  ctrl outputs: { $flatten\statemachine.$0\state[1:0] $flatten\statemachine.$procmux$552_CMP $flatten\statemachine.$procmux$565_CMP }
   transition:       2'10 2'-0 ->       2'01 4'0110
   transition:       2'10 2'-1 ->       2'01 4'0110
   transition:       2'01 2'00 ->       2'01 4'0101
@@ -919,7 +919,7 @@ Extracting FSM `\statemachine.state' from module `\top'.
   transition:       2'01 2'-1 ->       2'01 4'0101
 
 13.12.3. Executing FSM_OPT pass (simple optimizations of FSMs).
-Optimizing FSM `$fsm$\statemachine.state$844' from module `\top'.
+Optimizing FSM `$fsm$\statemachine.state$837' from module `\top'.
   Merging pattern 2'-0 and 2'-1 from group (0 1 4'0110).
   Merging pattern 2'-1 and 2'-0 from group (0 1 4'0110).
 
@@ -929,23 +929,23 @@ Removed 6 unused cells and 6 unused wires.
 <suppressed ~8 debug messages>
 
 13.12.5. Executing FSM_OPT pass (simple optimizations of FSMs).
-Optimizing FSM `$fsm$\statemachine.state$844' from module `\top'.
-  Removing unused output signal $flatten\statemachine.$procmux$572_CMP.
+Optimizing FSM `$fsm$\statemachine.state$837' from module `\top'.
+  Removing unused output signal $flatten\statemachine.$procmux$565_CMP.
   Removing unused output signal $flatten\statemachine.$0\state[1:0] [0].
   Removing unused output signal $flatten\statemachine.$0\state[1:0] [1].
 
 13.12.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
-Recoding FSM `$fsm$\statemachine.state$844' from module `\top' using `auto' encoding:
+Recoding FSM `$fsm$\statemachine.state$837' from module `\top' using `auto' encoding:
   mapping auto encoding to `one-hot` for this FSM.
   10 -> 1-
   01 -> -1
 
 13.12.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
 
-FSM `$fsm$\statemachine.state$844' from module `top':
+FSM `$fsm$\statemachine.state$837' from module `top':
 -------------------------------------
 
-  Information on FSM $fsm$\statemachine.state$844 (\statemachine.state):
+  Information on FSM $fsm$\statemachine.state$837 (\statemachine.state):
 
   Number of input signals:    2
   Number of output signals:   1
@@ -956,7 +956,7 @@ FSM `$fsm$\statemachine.state$844' from module `top':
     1: \btnStart_debounce.debounced_o
 
   Output signals:
-    0: $flatten\statemachine.$procmux$559_CMP
+    0: $flatten\statemachine.$procmux$552_CMP
 
   State encoding:
     0:       2'1-
@@ -971,7 +971,7 @@ FSM `$fsm$\statemachine.state$844' from module `top':
 -------------------------------------
 
 13.12.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
-Mapping FSM `$fsm$\statemachine.state$844' from module `\top'.
+Mapping FSM `$fsm$\statemachine.state$837' from module `\top'.
 
 13.13. Executing OPT pass (performing simple optimizations).
 
@@ -989,7 +989,7 @@ Running muxtree optimizer on module \top..
   Evaluating internal representation of mux trees.
   Analyzing evaluation results.
 Removed 0 multiplexer ports.
-<suppressed ~26 debug messages>
+<suppressed ~33 debug messages>
 
 13.13.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
   Optimizing cells in module \top.
@@ -1000,41 +1000,48 @@ Finding identical cells in module `\top'.
 Removed a total of 0 cells.
 
 13.13.6. Executing OPT_DFF pass (perform DFF optimizations).
-Adding SRST signal on $flatten\jstk_i.\genSndRec.$procdff$824 ($dff) from module top (D = $flatten\jstk_i.\genSndRec.$add$../../provided_modules/jstk/ClkDiv_20Hz.sv:26$430_Y, Q = \jstk_i.genSndRec.count_r, rval = 19'0000000000000000000).
-Adding SRST signal on $flatten\jstk_i.\genSndRec.$procdff$823 ($dff) from module top (D = $flatten\jstk_i.\genSndRec.$procmux$748_Y, Q = \jstk_i.genSndRec.clk_r, rval = 1'0).
+Adding SRST signal on $flatten\statemachine.\genblk1[6].inputreg.$procdff$820 ($dff) from module top (D = { \statemachine.genblk1[6].inputreg.data_c [9:0] \Upsafe_debounce.debounced_o }, Q = \statemachine.genblk1[6].inputreg.data_c, rval = 11'00000000000).
+Adding SRST signal on $flatten\statemachine.\genblk1[5].inputreg.$procdff$820 ($dff) from module top (D = { \statemachine.genblk1[5].inputreg.data_c [9:0] \Downsafe_deboucne.debounced_o }, Q = \statemachine.genblk1[5].inputreg.data_c, rval = 11'00000000000).
+Adding SRST signal on $flatten\statemachine.\genblk1[4].inputreg.$procdff$820 ($dff) from module top (D = { \statemachine.genblk1[4].inputreg.data_c [9:0] \Leftsafe_debounce.debounced_o }, Q = \statemachine.genblk1[4].inputreg.data_c, rval = 11'00000000000).
+Adding SRST signal on $flatten\statemachine.\genblk1[3].inputreg.$procdff$820 ($dff) from module top (D = { \statemachine.genblk1[3].inputreg.data_c [9:0] \Rightsafe_debounce.debounced_o }, Q = \statemachine.genblk1[3].inputreg.data_c, rval = 11'00000000000).
+Adding SRST signal on $flatten\statemachine.\genblk1[2].inputreg.$procdff$820 ($dff) from module top (D = { \statemachine.genblk1[2].inputreg.data_c [9:0] \btnB_debounce.debounced_o }, Q = \statemachine.genblk1[2].inputreg.data_c, rval = 11'00000000000).
+Adding SRST signal on $flatten\statemachine.\genblk1[1].inputreg.$procdff$820 ($dff) from module top (D = { \statemachine.genblk1[1].inputreg.data_c [9:0] \btnA_debounce.debounced_o }, Q = \statemachine.genblk1[1].inputreg.data_c, rval = 11'00000000000).
+Adding SRST signal on $flatten\statemachine.\genblk1[0].inputreg.$procdff$820 ($dff) from module top (D = { \statemachine.genblk1[0].inputreg.data_c [9:0] \btnStart_debounce.debounced_o }, Q = \statemachine.genblk1[0].inputreg.data_c, rval = 11'00000000000).
+Adding SRST signal on $flatten\jstk_i.\genSndRec.$procdff$817 ($dff) from module top (D = $flatten\jstk_i.\genSndRec.$add$../../provided_modules/jstk/ClkDiv_20Hz.sv:26$430_Y, Q = \jstk_i.genSndRec.count_r, rval = 19'0000000000000000000).
+Adding SRST signal on $flatten\jstk_i.\genSndRec.$procdff$816 ($dff) from module top (D = $flatten\jstk_i.\genSndRec.$procmux$741_Y, Q = \jstk_i.genSndRec.clk_r, rval = 1'0).
 Adding EN signal on $auto$ff.cc:266:slice$864 ($sdff) from module top (D = $flatten\jstk_i.\genSndRec.$not$../../provided_modules/jstk/ClkDiv_20Hz.sv:22$429_Y, Q = \jstk_i.genSndRec.clk_r).
-Adding SRST signal on $flatten\jstk_i.\SerialClock.$procdff$822 ($dff) from module top (D = $flatten\jstk_i.\SerialClock.$add$../../provided_modules/jstk/ClkDiv_66_67kHz.sv:27$436_Y, Q = \jstk_i.SerialClock.count_r, rval = 7'0000000).
-Adding SRST signal on $flatten\jstk_i.\SerialClock.$procdff$821 ($dff) from module top (D = $flatten\jstk_i.\SerialClock.$procmux$736_Y, Q = \jstk_i.SerialClock.clk_r, rval = 1'0).
+Adding SRST signal on $flatten\jstk_i.\SerialClock.$procdff$815 ($dff) from module top (D = $flatten\jstk_i.\SerialClock.$add$../../provided_modules/jstk/ClkDiv_66_67kHz.sv:27$436_Y, Q = \jstk_i.SerialClock.count_r, rval = 7'0000000).
+Adding SRST signal on $flatten\jstk_i.\SerialClock.$procdff$814 ($dff) from module top (D = $flatten\jstk_i.\SerialClock.$procmux$729_Y, Q = \jstk_i.SerialClock.clk_r, rval = 1'0).
 Adding EN signal on $auto$ff.cc:266:slice$869 ($sdff) from module top (D = $flatten\jstk_i.\SerialClock.$not$../../provided_modules/jstk/ClkDiv_66_67kHz.sv:23$435_Y, Q = \jstk_i.SerialClock.clk_r).
-Adding SRST signal on $flatten\jstk_i.\SPI_Int.$procdff$820 ($dff) from module top (D = $flatten\jstk_i.\SPI_Int.$procmux$723_Y, Q = \jstk_i.SPI_Int.wSR, rval = 8'00000000).
-Adding EN signal on $auto$ff.cc:266:slice$871 ($sdff) from module top (D = $flatten\jstk_i.\SPI_Int.$procmux$723_Y, Q = \jstk_i.SPI_Int.wSR).
-Adding SRST signal on $flatten\jstk_i.\SPI_Int.$procdff$819 ($dff) from module top (D = $flatten\jstk_i.\SPI_Int.$procmux$715_Y, Q = \jstk_i.SPI_Int.rSR, rval = 8'00000000).
+Adding SRST signal on $flatten\jstk_i.\SPI_Int.$procdff$813 ($dff) from module top (D = $flatten\jstk_i.\SPI_Int.$procmux$716_Y, Q = \jstk_i.SPI_Int.wSR, rval = 8'00000000).
+Adding EN signal on $auto$ff.cc:266:slice$871 ($sdff) from module top (D = $flatten\jstk_i.\SPI_Int.$procmux$716_Y, Q = \jstk_i.SPI_Int.wSR).
+Adding SRST signal on $flatten\jstk_i.\SPI_Int.$procdff$812 ($dff) from module top (D = $flatten\jstk_i.\SPI_Int.$procmux$708_Y, Q = \jstk_i.SPI_Int.rSR, rval = 8'00000000).
 Adding EN signal on $auto$ff.cc:266:slice$879 ($sdff) from module top (D = { \jstk_i.SPI_Int.rSR [6:0] \spi_sd_i }, Q = \jstk_i.SPI_Int.rSR).
-Adding SRST signal on $flatten\jstk_i.\SPI_Int.$procdff$818 ($dff) from module top (D = $flatten\jstk_i.\SPI_Int.$procmux$671_Y, Q = \jstk_i.SPI_Int.pState, rval = 2'00).
-Adding SRST signal on $flatten\jstk_i.\SPI_Int.$procdff$817 ($dff) from module top (D = $flatten\jstk_i.\SPI_Int.$procmux$685_Y, Q = \jstk_i.SPI_Int.bitCount, rval = 5'00000).
-Adding SRST signal on $flatten\jstk_i.\SPI_Int.$procdff$816 ($dff) from module top (D = $flatten\jstk_i.\SPI_Int.$procmux$693_Y, Q = \jstk_i.SPI_Int.BUSY, rval = 1'0).
-Adding SRST signal on $flatten\jstk_i.\SPI_Int.$procdff$815 ($dff) from module top (D = $flatten\jstk_i.\SPI_Int.$procmux$701_Y, Q = \jstk_i.SPI_Int.CE, rval = 1'0).
-Adding SRST signal on $flatten\jstk_i.\SPI_Ctrl.$procdff$814 ($dff) from module top (D = $flatten\jstk_i.\SPI_Ctrl.$procmux$610_Y, Q = \jstk_i.SPI_Ctrl.tmpSRsend, rval = 40'0000000000000000000000000000000000000000).
-Adding EN signal on $auto$ff.cc:266:slice$887 ($sdff) from module top (D = $flatten\jstk_i.\SPI_Ctrl.$procmux$610_Y, Q = \jstk_i.SPI_Ctrl.tmpSRsend).
-Adding SRST signal on $flatten\jstk_i.\SPI_Ctrl.$procdff$813 ($dff) from module top (D = $flatten\jstk_i.\SPI_Ctrl.$procmux$618_Y, Q = \jstk_i.SPI_Ctrl.tmpSR, rval = 40'0000000000000000000000000000000000000000).
-Adding EN signal on $auto$ff.cc:266:slice$891 ($sdff) from module top (D = $flatten\jstk_i.\SPI_Ctrl.$procmux$618_Y, Q = \jstk_i.SPI_Ctrl.tmpSR).
-Adding SRST signal on $flatten\jstk_i.\SPI_Ctrl.$procdff$812 ($dff) from module top (D = $flatten\jstk_i.\SPI_Ctrl.$procmux$631_Y, Q = \jstk_i.SPI_Ctrl.byteCnt, rval = 3'000).
-Adding EN signal on $auto$ff.cc:266:slice$895 ($sdff) from module top (D = $flatten\jstk_i.\SPI_Ctrl.$procmux$631_Y, Q = \jstk_i.SPI_Ctrl.byteCnt).
-Adding SRST signal on $flatten\jstk_i.\SPI_Ctrl.$procdff$811 ($dff) from module top (D = $flatten\jstk_i.\SPI_Ctrl.$procmux$587_Y, Q = \jstk_i.SPI_Ctrl.pState, rval = 3'000).
-Adding SRST signal on $flatten\jstk_i.\SPI_Ctrl.$procdff$810 ($dff) from module top (D = $flatten\jstk_i.\SPI_Ctrl.$procmux$638_Y, Q = \jstk_i.SPI_Ctrl.DOUT, rval = 40'0000000000000000000000000000000000000000).
+Adding SRST signal on $flatten\jstk_i.\SPI_Int.$procdff$811 ($dff) from module top (D = $flatten\jstk_i.\SPI_Int.$procmux$664_Y, Q = \jstk_i.SPI_Int.pState, rval = 2'00).
+Adding SRST signal on $flatten\jstk_i.\SPI_Int.$procdff$810 ($dff) from module top (D = $flatten\jstk_i.\SPI_Int.$procmux$678_Y, Q = \jstk_i.SPI_Int.bitCount, rval = 5'00000).
+Adding SRST signal on $flatten\jstk_i.\SPI_Int.$procdff$809 ($dff) from module top (D = $flatten\jstk_i.\SPI_Int.$procmux$686_Y, Q = \jstk_i.SPI_Int.BUSY, rval = 1'0).
+Adding SRST signal on $flatten\jstk_i.\SPI_Int.$procdff$808 ($dff) from module top (D = $flatten\jstk_i.\SPI_Int.$procmux$694_Y, Q = \jstk_i.SPI_Int.CE, rval = 1'0).
+Adding SRST signal on $flatten\jstk_i.\SPI_Ctrl.$procdff$807 ($dff) from module top (D = $flatten\jstk_i.\SPI_Ctrl.$procmux$603_Y, Q = \jstk_i.SPI_Ctrl.tmpSRsend, rval = 40'0000000000000000000000000000000000000000).
+Adding EN signal on $auto$ff.cc:266:slice$887 ($sdff) from module top (D = $flatten\jstk_i.\SPI_Ctrl.$procmux$603_Y, Q = \jstk_i.SPI_Ctrl.tmpSRsend).
+Adding SRST signal on $flatten\jstk_i.\SPI_Ctrl.$procdff$806 ($dff) from module top (D = $flatten\jstk_i.\SPI_Ctrl.$procmux$611_Y, Q = \jstk_i.SPI_Ctrl.tmpSR, rval = 40'0000000000000000000000000000000000000000).
+Adding EN signal on $auto$ff.cc:266:slice$891 ($sdff) from module top (D = $flatten\jstk_i.\SPI_Ctrl.$procmux$611_Y, Q = \jstk_i.SPI_Ctrl.tmpSR).
+Adding SRST signal on $flatten\jstk_i.\SPI_Ctrl.$procdff$805 ($dff) from module top (D = $flatten\jstk_i.\SPI_Ctrl.$procmux$624_Y, Q = \jstk_i.SPI_Ctrl.byteCnt, rval = 3'000).
+Adding EN signal on $auto$ff.cc:266:slice$895 ($sdff) from module top (D = $flatten\jstk_i.\SPI_Ctrl.$procmux$624_Y, Q = \jstk_i.SPI_Ctrl.byteCnt).
+Adding SRST signal on $flatten\jstk_i.\SPI_Ctrl.$procdff$804 ($dff) from module top (D = $flatten\jstk_i.\SPI_Ctrl.$procmux$580_Y, Q = \jstk_i.SPI_Ctrl.pState, rval = 3'000).
+Adding SRST signal on $flatten\jstk_i.\SPI_Ctrl.$procdff$803 ($dff) from module top (D = $flatten\jstk_i.\SPI_Ctrl.$procmux$631_Y, Q = \jstk_i.SPI_Ctrl.DOUT, rval = 40'0000000000000000000000000000000000000000).
 Adding EN signal on $auto$ff.cc:266:slice$904 ($sdff) from module top (D = \jstk_i.SPI_Ctrl.tmpSR, Q = \jstk_i.SPI_Ctrl.DOUT).
-Adding SRST signal on $flatten\jstk_i.\SPI_Ctrl.$procdff$809 ($dff) from module top (D = $flatten\jstk_i.\SPI_Ctrl.$procmux$644_Y, Q = \jstk_i.SPI_Ctrl.sndData, rval = 8'00000000).
-Adding EN signal on $auto$ff.cc:266:slice$906 ($sdff) from module top (D = $flatten\jstk_i.\SPI_Ctrl.$procmux$644_Y, Q = \jstk_i.SPI_Ctrl.sndData).
-Adding SRST signal on $flatten\jstk_i.\SPI_Ctrl.$procdff$808 ($dff) from module top (D = $flatten\jstk_i.\SPI_Ctrl.$procmux$652_Y, Q = \jstk_i.SPI_Ctrl.getByte, rval = 1'0).
-Adding EN signal on $auto$ff.cc:266:slice$910 ($sdff) from module top (D = $flatten\jstk_i.\SPI_Ctrl.$procmux$652_Y, Q = \jstk_i.SPI_Ctrl.getByte).
-Adding SRST signal on $flatten\jstk_i.\SPI_Ctrl.$procdff$807 ($dff) from module top (D = $flatten\jstk_i.\SPI_Ctrl.$procmux$662_Y, Q = \jstk_i.SPI_Ctrl.SS, rval = 1'1).
-Adding EN signal on $auto$ff.cc:266:slice$914 ($sdff) from module top (D = $flatten\jstk_i.\SPI_Ctrl.$procmux$662_Y, Q = \jstk_i.SPI_Ctrl.SS).
-Adding SRST signal on $flatten\debouncer.$procdff$826 ($dff) from module top (D = \debouncer.counter_valn, Q = \debouncer.counter_valc, rval = 21'000000000000000000000).
+Adding SRST signal on $flatten\jstk_i.\SPI_Ctrl.$procdff$802 ($dff) from module top (D = $flatten\jstk_i.\SPI_Ctrl.$procmux$637_Y, Q = \jstk_i.SPI_Ctrl.sndData, rval = 8'00000000).
+Adding EN signal on $auto$ff.cc:266:slice$906 ($sdff) from module top (D = $flatten\jstk_i.\SPI_Ctrl.$procmux$637_Y, Q = \jstk_i.SPI_Ctrl.sndData).
+Adding SRST signal on $flatten\jstk_i.\SPI_Ctrl.$procdff$801 ($dff) from module top (D = $flatten\jstk_i.\SPI_Ctrl.$procmux$645_Y, Q = \jstk_i.SPI_Ctrl.getByte, rval = 1'0).
+Adding EN signal on $auto$ff.cc:266:slice$910 ($sdff) from module top (D = $flatten\jstk_i.\SPI_Ctrl.$procmux$645_Y, Q = \jstk_i.SPI_Ctrl.getByte).
+Adding SRST signal on $flatten\jstk_i.\SPI_Ctrl.$procdff$800 ($dff) from module top (D = $flatten\jstk_i.\SPI_Ctrl.$procmux$655_Y, Q = \jstk_i.SPI_Ctrl.SS, rval = 1'1).
+Adding EN signal on $auto$ff.cc:266:slice$914 ($sdff) from module top (D = $flatten\jstk_i.\SPI_Ctrl.$procmux$655_Y, Q = \jstk_i.SPI_Ctrl.SS).
+Adding SRST signal on $flatten\debouncer.$procdff$819 ($dff) from module top (D = \debouncer.counter_valn, Q = \debouncer.counter_valc, rval = 22'0000000000000000000000).
 
 13.13.7. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \top..
-Removed 26 unused cells and 32 unused wires.
-<suppressed ~27 debug messages>
+Removed 33 unused cells and 39 unused wires.
+<suppressed ~34 debug messages>
 
 13.13.8. Executing OPT_EXPR pass (perform const folding).
 Optimizing module top.
@@ -1102,22 +1109,22 @@ Removed top 23 bits (of 32) from port B of cell top.$lt$top.sv:127$382 ($lt).
 Removed top 22 bits (of 32) from port B of cell top.$gt$top.sv:128$383 ($gt).
 Removed top 23 bits (of 32) from port B of cell top.$lt$top.sv:129$384 ($lt).
 Removed top 22 bits (of 32) from port B of cell top.$gt$top.sv:130$385 ($gt).
-Removed top 1 bits (of 2) from mux cell top.$flatten\jstk_i.\SPI_Int.$procmux$674 ($mux).
-Removed top 1 bits (of 2) from port B of cell top.$flatten\jstk_i.\SPI_Int.$procmux$677_CMP0 ($eq).
-Removed top 1 bits (of 2) from mux cell top.$flatten\jstk_i.\SPI_Int.$procmux$679 ($mux).
+Removed top 1 bits (of 2) from mux cell top.$flatten\jstk_i.\SPI_Int.$procmux$667 ($mux).
+Removed top 1 bits (of 2) from port B of cell top.$flatten\jstk_i.\SPI_Int.$procmux$670_CMP0 ($eq).
+Removed top 1 bits (of 2) from mux cell top.$flatten\jstk_i.\SPI_Int.$procmux$672 ($mux).
 Removed top 31 bits (of 32) from port B of cell top.$flatten\jstk_i.\SPI_Ctrl.$add$../../provided_modules/jstk/spiCtrl.v:109$461 ($add).
 Removed top 29 bits (of 32) from port Y of cell top.$flatten\jstk_i.\SPI_Ctrl.$add$../../provided_modules/jstk/spiCtrl.v:109$461 ($add).
-Removed top 1 bits (of 3) from port B of cell top.$flatten\jstk_i.\SPI_Ctrl.$procmux$592_CMP0 ($eq).
-Removed top 2 bits (of 3) from mux cell top.$flatten\jstk_i.\SPI_Ctrl.$procmux$594 ($mux).
-Removed top 1 bits (of 3) from port B of cell top.$flatten\jstk_i.\SPI_Ctrl.$procmux$596_CMP0 ($eq).
-Removed top 1 bits (of 3) from mux cell top.$flatten\jstk_i.\SPI_Ctrl.$procmux$598 ($mux).
-Removed top 2 bits (of 3) from port B of cell top.$flatten\jstk_i.\SPI_Ctrl.$procmux$600_CMP0 ($eq).
-Removed top 2 bits (of 3) from mux cell top.$flatten\jstk_i.\SPI_Ctrl.$procmux$602 ($mux).
+Removed top 1 bits (of 3) from port B of cell top.$flatten\jstk_i.\SPI_Ctrl.$procmux$585_CMP0 ($eq).
+Removed top 2 bits (of 3) from mux cell top.$flatten\jstk_i.\SPI_Ctrl.$procmux$587 ($mux).
+Removed top 1 bits (of 3) from port B of cell top.$flatten\jstk_i.\SPI_Ctrl.$procmux$589_CMP0 ($eq).
+Removed top 1 bits (of 3) from mux cell top.$flatten\jstk_i.\SPI_Ctrl.$procmux$591 ($mux).
+Removed top 2 bits (of 3) from port B of cell top.$flatten\jstk_i.\SPI_Ctrl.$procmux$593_CMP0 ($eq).
+Removed top 2 bits (of 3) from mux cell top.$flatten\jstk_i.\SPI_Ctrl.$procmux$595 ($mux).
 Removed top 31 bits (of 32) from port B of cell top.$flatten\debouncer.$add$../../part2/counter/counter.sv:0$420 ($add).
-Removed top 11 bits (of 32) from port Y of cell top.$flatten\debouncer.$add$../../part2/counter/counter.sv:0$420 ($add).
+Removed top 10 bits (of 32) from port Y of cell top.$flatten\debouncer.$add$../../part2/counter/counter.sv:0$420 ($add).
 Removed top 29 bits (of 32) from wire top.$flatten\jstk_i.\SPI_Ctrl.$add$../../provided_modules/jstk/spiCtrl.v:109$461_Y.
-Removed top 1 bits (of 2) from wire top.$flatten\jstk_i.\SPI_Int.$procmux$674_Y.
-Removed top 1 bits (of 2) from wire top.$flatten\jstk_i.\SPI_Int.$procmux$679_Y.
+Removed top 1 bits (of 2) from wire top.$flatten\jstk_i.\SPI_Int.$procmux$667_Y.
+Removed top 1 bits (of 2) from wire top.$flatten\jstk_i.\SPI_Int.$procmux$672_Y.
 
 13.15. Executing PEEPOPT pass (run peephole optimizers).
 
@@ -1152,23 +1159,23 @@ Extracting $alu and $macc cells in module top:
   creating $macc model for $flatten\jstk_i.\SPI_Int.$add$../../provided_modules/jstk/spiMode0.sv:183$450 ($add).
   creating $macc model for $flatten\jstk_i.\SerialClock.$add$../../provided_modules/jstk/ClkDiv_66_67kHz.sv:27$436 ($add).
   creating $macc model for $flatten\jstk_i.\genSndRec.$add$../../provided_modules/jstk/ClkDiv_20Hz.sv:26$430 ($add).
-  creating $macc model for $flatten\statemachine.$add$konami.sv:68$497 ($add).
-  creating $macc model for $flatten\statemachine.$add$konami.sv:68$498 ($add).
-  creating $macc model for $flatten\statemachine.$add$konami.sv:68$499 ($add).
-  creating $macc model for $flatten\statemachine.$add$konami.sv:68$500 ($add).
-  creating $macc model for $flatten\statemachine.$add$konami.sv:68$501 ($add).
-  creating $macc model for $flatten\statemachine.$add$konami.sv:68$502 ($add).
-  merging $macc model for $flatten\statemachine.$add$konami.sv:68$501 into $flatten\statemachine.$add$konami.sv:68$502.
-  merging $macc model for $flatten\statemachine.$add$konami.sv:68$500 into $flatten\statemachine.$add$konami.sv:68$502.
-  merging $macc model for $flatten\statemachine.$add$konami.sv:68$499 into $flatten\statemachine.$add$konami.sv:68$502.
-  merging $macc model for $flatten\statemachine.$add$konami.sv:68$498 into $flatten\statemachine.$add$konami.sv:68$502.
-  merging $macc model for $flatten\statemachine.$add$konami.sv:68$497 into $flatten\statemachine.$add$konami.sv:68$502.
+  creating $macc model for $flatten\statemachine.$add$konami.sv:104$490 ($add).
+  creating $macc model for $flatten\statemachine.$add$konami.sv:104$491 ($add).
+  creating $macc model for $flatten\statemachine.$add$konami.sv:104$492 ($add).
+  creating $macc model for $flatten\statemachine.$add$konami.sv:104$493 ($add).
+  creating $macc model for $flatten\statemachine.$add$konami.sv:104$494 ($add).
+  creating $macc model for $flatten\statemachine.$add$konami.sv:104$495 ($add).
+  merging $macc model for $flatten\statemachine.$add$konami.sv:104$494 into $flatten\statemachine.$add$konami.sv:104$495.
+  merging $macc model for $flatten\statemachine.$add$konami.sv:104$493 into $flatten\statemachine.$add$konami.sv:104$495.
+  merging $macc model for $flatten\statemachine.$add$konami.sv:104$492 into $flatten\statemachine.$add$konami.sv:104$495.
+  merging $macc model for $flatten\statemachine.$add$konami.sv:104$491 into $flatten\statemachine.$add$konami.sv:104$495.
+  merging $macc model for $flatten\statemachine.$add$konami.sv:104$490 into $flatten\statemachine.$add$konami.sv:104$495.
   creating $alu model for $macc $flatten\jstk_i.\genSndRec.$add$../../provided_modules/jstk/ClkDiv_20Hz.sv:26$430.
   creating $alu model for $macc $flatten\jstk_i.\SerialClock.$add$../../provided_modules/jstk/ClkDiv_66_67kHz.sv:27$436.
   creating $alu model for $macc $flatten\jstk_i.\SPI_Int.$add$../../provided_modules/jstk/spiMode0.sv:183$450.
   creating $alu model for $macc $flatten\jstk_i.\SPI_Ctrl.$add$../../provided_modules/jstk/spiCtrl.v:109$461.
   creating $alu model for $macc $flatten\debouncer.$add$../../part2/counter/counter.sv:0$420.
-  creating $macc cell for $flatten\statemachine.$add$konami.sv:68$502: $auto$alumacc.cc:365:replace_macc$923
+  creating $macc cell for $flatten\statemachine.$add$konami.sv:104$495: $auto$alumacc.cc:365:replace_macc$923
   creating $alu model for $flatten\jstk_i.\SPI_Int.$ge$../../provided_modules/jstk/spiMode0.sv:186$451 ($ge): new $alu
   creating $alu model for $gt$top.sv:128$383 ($gt): new $alu
   creating $alu model for $gt$top.sv:130$385 ($gt): new $alu
@@ -1312,7 +1319,7 @@ Finding identical cells in module `\top'.
 Removed a total of 0 cells.
 
 13.28.3. Executing OPT_DFF pass (perform DFF optimizations).
-Adding SRST signal on $auto$ff.cc:266:slice$886 ($sdff) from module top (D = $flatten\jstk_i.\SPI_Int.$procmux$704_Y, Q = \jstk_i.SPI_Int.CE, rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$886 ($sdff) from module top (D = $flatten\jstk_i.\SPI_Int.$procmux$697_Y, Q = \jstk_i.SPI_Int.CE, rval = 1'0).
 Adding SRST signal on $auto$ff.cc:266:slice$884 ($sdff) from module top (D = $flatten\jstk_i.\SPI_Int.$add$../../provided_modules/jstk/spiMode0.sv:183$450_Y, Q = \jstk_i.SPI_Int.bitCount, rval = 5'00000).
 
 13.28.4. Executing OPT_CLEAN pass (remove unused cells and wires).
@@ -1360,19 +1367,19 @@ Removed 0 multiplexer ports.
 
 13.30.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
   Optimizing cells in module \top.
-    New input vector for $reduce_or cell $auto$opt_dff.cc:254:combine_resets$1007: { $flatten\jstk_i.\SPI_Int.$procmux$681_CMP $flatten\jstk_i.\SPI_Int.$procmux$677_CMP $flatten\jstk_i.\SPI_Int.$procmux$672_CMP \sync_b.q_r }
-    Consolidated identical input bits for $mux cell $flatten\jstk_i.\SPI_Ctrl.$procmux$585:
-      Old ports: A=3'000, B=3'100, Y=$flatten\jstk_i.\SPI_Ctrl.$procmux$585_Y
-      New ports: A=1'0, B=1'1, Y=$flatten\jstk_i.\SPI_Ctrl.$procmux$585_Y [2]
-      New connections: $flatten\jstk_i.\SPI_Ctrl.$procmux$585_Y [1:0] = 2'00
-    Consolidated identical input bits for $mux cell $flatten\jstk_i.\SPI_Ctrl.$procmux$590:
-      Old ports: A=3'001, B=3'100, Y=$flatten\jstk_i.\SPI_Ctrl.$procmux$590_Y
-      New ports: A=2'01, B=2'10, Y={ $flatten\jstk_i.\SPI_Ctrl.$procmux$590_Y [2] $flatten\jstk_i.\SPI_Ctrl.$procmux$590_Y [0] }
-      New connections: $flatten\jstk_i.\SPI_Ctrl.$procmux$590_Y [1] = 1'0
-    Consolidated identical input bits for $mux cell $flatten\jstk_i.\SPI_Ctrl.$procmux$610:
-      Old ports: A=40'1000010011111111000000000000000000000000, B={ \jstk_i.SPI_Ctrl.tmpSRsend [31:0] 8'00000000 }, Y=$flatten\jstk_i.\SPI_Ctrl.$procmux$610_Y
-      New ports: A=32'10000100111111110000000000000000, B=\jstk_i.SPI_Ctrl.tmpSRsend [31:0], Y=$flatten\jstk_i.\SPI_Ctrl.$procmux$610_Y [39:8]
-      New connections: $flatten\jstk_i.\SPI_Ctrl.$procmux$610_Y [7:0] = 8'00000000
+    New input vector for $reduce_or cell $auto$opt_dff.cc:254:combine_resets$1007: { $flatten\jstk_i.\SPI_Int.$procmux$674_CMP $flatten\jstk_i.\SPI_Int.$procmux$670_CMP $flatten\jstk_i.\SPI_Int.$procmux$665_CMP \sync_b.q_r }
+    Consolidated identical input bits for $mux cell $flatten\jstk_i.\SPI_Ctrl.$procmux$578:
+      Old ports: A=3'000, B=3'100, Y=$flatten\jstk_i.\SPI_Ctrl.$procmux$578_Y
+      New ports: A=1'0, B=1'1, Y=$flatten\jstk_i.\SPI_Ctrl.$procmux$578_Y [2]
+      New connections: $flatten\jstk_i.\SPI_Ctrl.$procmux$578_Y [1:0] = 2'00
+    Consolidated identical input bits for $mux cell $flatten\jstk_i.\SPI_Ctrl.$procmux$583:
+      Old ports: A=3'001, B=3'100, Y=$flatten\jstk_i.\SPI_Ctrl.$procmux$583_Y
+      New ports: A=2'01, B=2'10, Y={ $flatten\jstk_i.\SPI_Ctrl.$procmux$583_Y [2] $flatten\jstk_i.\SPI_Ctrl.$procmux$583_Y [0] }
+      New connections: $flatten\jstk_i.\SPI_Ctrl.$procmux$583_Y [1] = 1'0
+    Consolidated identical input bits for $mux cell $flatten\jstk_i.\SPI_Ctrl.$procmux$603:
+      Old ports: A=40'1000010011111111000000000000000000000000, B={ \jstk_i.SPI_Ctrl.tmpSRsend [31:0] 8'00000000 }, Y=$flatten\jstk_i.\SPI_Ctrl.$procmux$603_Y
+      New ports: A=32'10000100111111110000000000000000, B=\jstk_i.SPI_Ctrl.tmpSRsend [31:0], Y=$flatten\jstk_i.\SPI_Ctrl.$procmux$603_Y [39:8]
+      New connections: $flatten\jstk_i.\SPI_Ctrl.$procmux$603_Y [7:0] = 8'00000000
   Optimizing cells in module \top.
 Performed a total of 4 changes.
 
@@ -1436,10 +1443,10 @@ Removed 0 multiplexer ports.
 
 13.30.18. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
   Optimizing cells in module \top.
-    Consolidated identical input bits for $mux cell $flatten\jstk_i.\SPI_Ctrl.$procmux$610:
-      Old ports: A=32'10000100111111110000000000000000, B={ \jstk_i.SPI_Ctrl.tmpSRsend [31:8] 8'00000000 }, Y=$flatten\jstk_i.\SPI_Ctrl.$procmux$610_Y [39:8]
-      New ports: A=24'100001001111111100000000, B=\jstk_i.SPI_Ctrl.tmpSRsend [31:8], Y=$flatten\jstk_i.\SPI_Ctrl.$procmux$610_Y [39:16]
-      New connections: $flatten\jstk_i.\SPI_Ctrl.$procmux$610_Y [15:8] = 8'00000000
+    Consolidated identical input bits for $mux cell $flatten\jstk_i.\SPI_Ctrl.$procmux$603:
+      Old ports: A=32'10000100111111110000000000000000, B={ \jstk_i.SPI_Ctrl.tmpSRsend [31:8] 8'00000000 }, Y=$flatten\jstk_i.\SPI_Ctrl.$procmux$603_Y [39:8]
+      New ports: A=24'100001001111111100000000, B=\jstk_i.SPI_Ctrl.tmpSRsend [31:8], Y=$flatten\jstk_i.\SPI_Ctrl.$procmux$603_Y [39:16]
+      New connections: $flatten\jstk_i.\SPI_Ctrl.$procmux$603_Y [15:8] = 8'00000000
   Optimizing cells in module \top.
 Performed a total of 1 changes.
 
@@ -1501,10 +1508,10 @@ Removed 0 multiplexer ports.
 
 13.30.32. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
   Optimizing cells in module \top.
-    Consolidated identical input bits for $mux cell $flatten\jstk_i.\SPI_Ctrl.$procmux$610:
-      Old ports: A=24'100001001111111100000000, B={ \jstk_i.SPI_Ctrl.tmpSRsend [31:16] 8'00000000 }, Y=$flatten\jstk_i.\SPI_Ctrl.$procmux$610_Y [39:16]
-      New ports: A=16'1000010011111111, B=\jstk_i.SPI_Ctrl.tmpSRsend [31:16], Y=$flatten\jstk_i.\SPI_Ctrl.$procmux$610_Y [39:24]
-      New connections: $flatten\jstk_i.\SPI_Ctrl.$procmux$610_Y [23:16] = 8'00000000
+    Consolidated identical input bits for $mux cell $flatten\jstk_i.\SPI_Ctrl.$procmux$603:
+      Old ports: A=24'100001001111111100000000, B={ \jstk_i.SPI_Ctrl.tmpSRsend [31:16] 8'00000000 }, Y=$flatten\jstk_i.\SPI_Ctrl.$procmux$603_Y [39:16]
+      New ports: A=16'1000010011111111, B=\jstk_i.SPI_Ctrl.tmpSRsend [31:16], Y=$flatten\jstk_i.\SPI_Ctrl.$procmux$603_Y [39:24]
+      New connections: $flatten\jstk_i.\SPI_Ctrl.$procmux$603_Y [23:16] = 8'00000000
   Optimizing cells in module \top.
 Performed a total of 1 changes.
 
@@ -1566,10 +1573,10 @@ Removed 0 multiplexer ports.
 
 13.30.46. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
   Optimizing cells in module \top.
-    Consolidated identical input bits for $mux cell $flatten\jstk_i.\SPI_Ctrl.$procmux$610:
-      Old ports: A=16'1000010011111111, B={ \jstk_i.SPI_Ctrl.tmpSRsend [31:24] 8'00000000 }, Y=$flatten\jstk_i.\SPI_Ctrl.$procmux$610_Y [39:24]
-      New ports: A=9'100001001, B={ \jstk_i.SPI_Ctrl.tmpSRsend [31:24] 1'0 }, Y={ $flatten\jstk_i.\SPI_Ctrl.$procmux$610_Y [39:32] $flatten\jstk_i.\SPI_Ctrl.$procmux$610_Y [24] }
-      New connections: $flatten\jstk_i.\SPI_Ctrl.$procmux$610_Y [31:25] = { $flatten\jstk_i.\SPI_Ctrl.$procmux$610_Y [24] $flatten\jstk_i.\SPI_Ctrl.$procmux$610_Y [24] $flatten\jstk_i.\SPI_Ctrl.$procmux$610_Y [24] $flatten\jstk_i.\SPI_Ctrl.$procmux$610_Y [24] $flatten\jstk_i.\SPI_Ctrl.$procmux$610_Y [24] $flatten\jstk_i.\SPI_Ctrl.$procmux$610_Y [24] $flatten\jstk_i.\SPI_Ctrl.$procmux$610_Y [24] }
+    Consolidated identical input bits for $mux cell $flatten\jstk_i.\SPI_Ctrl.$procmux$603:
+      Old ports: A=16'1000010011111111, B={ \jstk_i.SPI_Ctrl.tmpSRsend [31:24] 8'00000000 }, Y=$flatten\jstk_i.\SPI_Ctrl.$procmux$603_Y [39:24]
+      New ports: A=9'100001001, B={ \jstk_i.SPI_Ctrl.tmpSRsend [31:24] 1'0 }, Y={ $flatten\jstk_i.\SPI_Ctrl.$procmux$603_Y [39:32] $flatten\jstk_i.\SPI_Ctrl.$procmux$603_Y [24] }
+      New connections: $flatten\jstk_i.\SPI_Ctrl.$procmux$603_Y [31:25] = { $flatten\jstk_i.\SPI_Ctrl.$procmux$603_Y [24] $flatten\jstk_i.\SPI_Ctrl.$procmux$603_Y [24] $flatten\jstk_i.\SPI_Ctrl.$procmux$603_Y [24] $flatten\jstk_i.\SPI_Ctrl.$procmux$603_Y [24] $flatten\jstk_i.\SPI_Ctrl.$procmux$603_Y [24] $flatten\jstk_i.\SPI_Ctrl.$procmux$603_Y [24] $flatten\jstk_i.\SPI_Ctrl.$procmux$603_Y [24] }
   Optimizing cells in module \top.
 Performed a total of 1 changes.
 
@@ -1675,7 +1682,7 @@ Using extmapper simplemap for cells of type $sdff.
 Using extmapper simplemap for cells of type $sdffe.
 Using template $paramod$20b1d0597707d55efcb9664e40f63985956d7680\_80_ice40_alu for cells of type $alu.
 Using template $paramod$103b4016182df467cceab67bcf3e18e6361ec0fd\_80_ice40_alu for cells of type $alu.
-Using template $paramod$93b49458bab1c00eb32aff458c583f46ff61e60f\_80_ice40_alu for cells of type $alu.
+Using template $paramod$080e6a70eb8bfa1ccf22d9718e795074645029a4\_80_ice40_alu for cells of type $alu.
 Using template $paramod$97565c3687be688407d1272a293bd9d0ae6852dc\_90_pmux for cells of type $pmux.
 Using extmapper simplemap for cells of type $logic_not.
 Using template $paramod$672a140277c71df8314410f22acc08d55222c3c7\_80_ice40_alu for cells of type $alu.
@@ -1694,19 +1701,19 @@ No more expansions possible.
 
 13.33.1. Executing OPT_EXPR pass (perform const folding).
 Optimizing module top.
-<suppressed ~487 debug messages>
+<suppressed ~570 debug messages>
 
 13.33.2. Executing OPT_MERGE pass (detect identical cells).
 Finding identical cells in module `\top'.
-<suppressed ~291 debug messages>
-Removed a total of 97 cells.
+<suppressed ~297 debug messages>
+Removed a total of 99 cells.
 
 13.33.3. Executing OPT_DFF pass (perform DFF optimizations).
 
 13.33.4. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \top..
-Removed 75 unused cells and 372 unused wires.
-<suppressed ~99 debug messages>
+Removed 74 unused cells and 380 unused wires.
+<suppressed ~106 debug messages>
 
 13.33.5. Finished fast OPT passes.
 
@@ -1723,7 +1730,7 @@ Optimized $__ICE40_CARRY_WRAPPER cell back to logic (without SB_CARRY) top.$auto
 Optimized $__ICE40_CARRY_WRAPPER cell back to logic (without SB_CARRY) top.$auto$alumacc.cc:485:replace_alu$976.slice[0].carry: CO=\jstk_i.SPI_Int.bitCount [0]
 Optimized $__ICE40_CARRY_WRAPPER cell back to logic (without SB_CARRY) top.$auto$alumacc.cc:485:replace_alu$979.slice[0].carry: CO=\jstk_i.SerialClock.count_r [0]
 Optimized $__ICE40_CARRY_WRAPPER cell back to logic (without SB_CARRY) top.$auto$alumacc.cc:485:replace_alu$982.slice[0].carry: CO=\jstk_i.genSndRec.count_r [0]
-Optimized $__ICE40_CARRY_WRAPPER cell back to logic (without SB_CARRY) top.$auto$maccmap.cc:240:synth$1199.slice[0].carry: CO=1'0
+Optimized $__ICE40_CARRY_WRAPPER cell back to logic (without SB_CARRY) top.$auto$maccmap.cc:240:synth$1201.slice[0].carry: CO=1'0
 
 13.34.2. Executing OPT_EXPR pass (perform const folding).
 Optimizing module top.
@@ -1735,10 +1742,10 @@ Finding identical cells in module `\top'.
 Removed a total of 2 cells.
 
 13.34.4. Executing OPT_DFF pass (perform DFF optimizations).
-Adding SRST signal on $auto$ff.cc:266:slice$1352 ($_SDFF_NP0_) from module top (D = $flatten\jstk_i.\SPI_Ctrl.$procmux$587.Y_B [2], Q = \jstk_i.SPI_Ctrl.pState [2], rval = 1'0).
-Adding SRST signal on $auto$ff.cc:266:slice$1351 ($_SDFF_NP0_) from module top (D = $flatten\jstk_i.\SPI_Ctrl.$procmux$587.Y_B [1], Q = \jstk_i.SPI_Ctrl.pState [1], rval = 1'0).
-Adding SRST signal on $auto$ff.cc:266:slice$1350 ($_SDFF_NP0_) from module top (D = $flatten\jstk_i.\SPI_Ctrl.$procmux$587.Y_B [0], Q = \jstk_i.SPI_Ctrl.pState [0], rval = 1'0).
-Adding SRST signal on $auto$ff.cc:266:slice$1334 ($_SDFF_NP0_) from module top (D = $flatten\jstk_i.\SPI_Int.$procmux$671.Y_B [1], Q = \jstk_i.SPI_Int.pState [1], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$1346 ($_SDFF_NP0_) from module top (D = $flatten\jstk_i.\SPI_Ctrl.$procmux$580.Y_B [2], Q = \jstk_i.SPI_Ctrl.pState [2], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$1345 ($_SDFF_NP0_) from module top (D = $flatten\jstk_i.\SPI_Ctrl.$procmux$580.Y_B [1], Q = \jstk_i.SPI_Ctrl.pState [1], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$1344 ($_SDFF_NP0_) from module top (D = $flatten\jstk_i.\SPI_Ctrl.$procmux$580.Y_B [0], Q = \jstk_i.SPI_Ctrl.pState [0], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$1328 ($_SDFF_NP0_) from module top (D = $flatten\jstk_i.\SPI_Int.$procmux$664.Y_B [1], Q = \jstk_i.SPI_Int.pState [1], rval = 1'0).
 
 13.34.5. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \top..
@@ -1819,7 +1826,7 @@ Using template \$_SDFF_PP0_ for cells of type $_SDFF_PP0_.
 Using template \$_SDFF_NP0_ for cells of type $_SDFF_NP0_.
 Using template \$_DFF_N_ for cells of type $_DFF_N_.
 No more expansions possible.
-<suppressed ~264 debug messages>
+<suppressed ~265 debug messages>
 
 13.37. Executing OPT_EXPR pass (perform const folding).
 Optimizing module top.
@@ -1831,7 +1838,7 @@ Mapping top.$auto$alumacc.cc:485:replace_alu$973.slice[0].carry ($lut).
 Mapping top.$auto$alumacc.cc:485:replace_alu$976.slice[0].carry ($lut).
 Mapping top.$auto$alumacc.cc:485:replace_alu$979.slice[0].carry ($lut).
 Mapping top.$auto$alumacc.cc:485:replace_alu$982.slice[0].carry ($lut).
-Mapping top.$auto$maccmap.cc:240:synth$1199.slice[0].carry ($lut).
+Mapping top.$auto$maccmap.cc:240:synth$1201.slice[0].carry ($lut).
 
 13.39. Executing ICE40_OPT pass (performing simple optimizations).
 
@@ -1843,14 +1850,14 @@ Optimizing module top.
 
 13.39.3. Executing OPT_MERGE pass (detect identical cells).
 Finding identical cells in module `\top'.
-<suppressed ~366 debug messages>
-Removed a total of 122 cells.
+<suppressed ~369 debug messages>
+Removed a total of 123 cells.
 
 13.39.4. Executing OPT_DFF pass (perform DFF optimizations).
 
 13.39.5. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \top..
-Removed 1 unused cells and 1348 unused wires.
+Removed 1 unused cells and 1431 unused wires.
 <suppressed ~2 debug messages>
 
 13.39.6. Rerunning OPT passes. (Removed registers in this run.)
@@ -1886,7 +1893,7 @@ No more expansions possible.
 13.41. Executing ABC pass (technology mapping using ABC).
 
 13.41.1. Extracting gate netlist of module `\top' to `<abc-temp-dir>/input.blif'..
-Extracted 581 gates and 833 wires to a netlist network with 251 inputs and 151 outputs.
+Extracted 584 gates and 837 wires to a netlist network with 252 inputs and 151 outputs.
 
 13.41.1.1. Executing ABC.
 Running ABC command: "<yosys-exe-dir>/yosys-abc" -s -f <abc-temp-dir>/abc.script 2>&1
@@ -1913,14 +1920,14 @@ ABC: Participating nodes from both networks       =     502.
 ABC: Participating nodes from the first network   =     243. (  91.70 % of nodes)
 ABC: Participating nodes from the second network  =     259. (  97.74 % of nodes)
 ABC: Node pairs (any polarity)                    =     243. (  91.70 % of names can be moved)
-ABC: Node pairs (same polarity)                   =     202. (  76.23 % of names can be moved)
+ABC: Node pairs (same polarity)                   =     203. (  76.60 % of names can be moved)
 ABC: Total runtime =     0.03 sec
 ABC: + write_blif <abc-temp-dir>/output.blif 
 
 13.41.1.2. Re-integrating ABC results.
 ABC RESULTS:              $lut cells:      264
-ABC RESULTS:        internal signals:      431
-ABC RESULTS:           input signals:      251
+ABC RESULTS:        internal signals:      434
+ABC RESULTS:           input signals:      252
 ABC RESULTS:          output signals:      151
 Removing temp directory.
 
@@ -1955,39 +1962,39 @@ Successfully finished Verilog frontend.
 13.43.2. Continuing TECHMAP pass.
 No more expansions possible.
 <suppressed ~22 debug messages>
-Removed 46 unused cells and 512 unused wires.
+Removed 46 unused cells and 515 unused wires.
 
 13.44. Executing OPT_LUT pass (optimize LUTs).
 Discovering LUTs.
-Number of LUTs:      323
+Number of LUTs:      324
   1-LUT               35
-  2-LUT               67
-  3-LUT              172
-  4-LUT               49
-  with \SB_CARRY    (#0)   55
-  with \SB_CARRY    (#1)   55
+  2-LUT               68
+  3-LUT              175
+  4-LUT               46
+  with \SB_CARRY    (#0)   56
+  with \SB_CARRY    (#1)   56
 
 Eliminating LUTs.
-Number of LUTs:      323
+Number of LUTs:      324
   1-LUT               35
-  2-LUT               67
-  3-LUT              172
-  4-LUT               49
-  with \SB_CARRY    (#0)   55
-  with \SB_CARRY    (#1)   55
+  2-LUT               68
+  3-LUT              175
+  4-LUT               46
+  with \SB_CARRY    (#0)   56
+  with \SB_CARRY    (#1)   56
 
 Combining LUTs.
 Number of LUTs:      323
   1-LUT               35
   2-LUT               67
-  3-LUT              172
-  4-LUT               49
-  with \SB_CARRY    (#0)   55
-  with \SB_CARRY    (#1)   55
+  3-LUT              174
+  4-LUT               47
+  with \SB_CARRY    (#0)   56
+  with \SB_CARRY    (#1)   56
 
 Eliminated 0 LUTs.
-Combined 0 LUTs.
-<suppressed ~1104 debug messages>
+Combined 1 LUTs.
+<suppressed ~1107 debug messages>
 
 13.45. Executing TECHMAP pass (map to technology primitives).
 
@@ -1997,59 +2004,59 @@ Generating RTLIL representation for module `\$lut'.
 Successfully finished Verilog frontend.
 
 13.45.2. Continuing TECHMAP pass.
-Using template $paramod$fd904e9e35cfd343a9df248824bd3f1408724879\$lut for cells of type $lut.
-Using template $paramod$6d6beead1425af15cf78b27fd9b11b41b5d4bce8\$lut for cells of type $lut.
-Using template $paramod$272652f6c6fbe9a75eff76e45cc7e2788835518b\$lut for cells of type $lut.
-Using template $paramod$658b9ed803f0d3d335616d3858b53e0a2522f1e8\$lut for cells of type $lut.
-Using template $paramod$571404c0889eaf57f492cb5e37f8acb5df5852f9\$lut for cells of type $lut.
-Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'1110 for cells of type $lut.
-Using template $paramod$eb198fdd2a364fc5fc99493bddad777e7186425f\$lut for cells of type $lut.
-Using template $paramod$fccccf8bb2add7667329c686feec7546eb9a3ae3\$lut for cells of type $lut.
-Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'10111111 for cells of type $lut.
-Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'0100 for cells of type $lut.
-Using template $paramod$fd1e68d43235621014e35437b4508a97628b7e8f\$lut for cells of type $lut.
-Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000001\LUT=2'01 for cells of type $lut.
 Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00010111 for cells of type $lut.
 Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'10010110 for cells of type $lut.
 Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'01101001 for cells of type $lut.
 Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00101011 for cells of type $lut.
 Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'10110010 for cells of type $lut.
-Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'11010100 for cells of type $lut.
+Using template $paramod$fd904e9e35cfd343a9df248824bd3f1408724879\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'1000 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000001\LUT=2'01 for cells of type $lut.
+Using template $paramod$6d6beead1425af15cf78b27fd9b11b41b5d4bce8\$lut for cells of type $lut.
+Using template $paramod$571404c0889eaf57f492cb5e37f8acb5df5852f9\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'10000000 for cells of type $lut.
+Using template $paramod$272652f6c6fbe9a75eff76e45cc7e2788835518b\$lut for cells of type $lut.
+Using template $paramod$eb198fdd2a364fc5fc99493bddad777e7186425f\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'1110 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'1011 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'10111111 for cells of type $lut.
+Using template $paramod$f3e1547c4b47e64c590e75cf09078b2507c8cc75\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'0100 for cells of type $lut.
+Using template $paramod$fccccf8bb2add7667329c686feec7546eb9a3ae3\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00000001 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'01000000 for cells of type $lut.
+Using template $paramod$973818279bc95792902f3c09371fd2407d04a2a5\$lut for cells of type $lut.
+Using template $paramod$658b9ed803f0d3d335616d3858b53e0a2522f1e8\$lut for cells of type $lut.
 Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'01110001 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'11010100 for cells of type $lut.
+Using template $paramod$69f20e0703606f2ffd2ee27cd26f815bd5eeb6e9\$lut for cells of type $lut.
+Using template $paramod$4282def8dbd6df3d1248ad282c629bee684502c2\$lut for cells of type $lut.
+Using template $paramod$acf49cb7bd2805dee4b4ebb218aa5924b1be7704\$lut for cells of type $lut.
+Using template $paramod$994e00791e39a2079936855a34c5ee3e0e21f1dc\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'11110100 for cells of type $lut.
 Using template $paramod$6f625205336ac6ce7b8747324becdbce1049bc9c\$lut for cells of type $lut.
 Using template $paramod$765dca61dbfa835dacf2a260c8a4c5a36939a046\$lut for cells of type $lut.
 Using template $paramod$868427562418b5dc988caeac6a54689ec9c9025e\$lut for cells of type $lut.
-Using template $paramod$69f20e0703606f2ffd2ee27cd26f815bd5eeb6e9\$lut for cells of type $lut.
-Using template $paramod$acf49cb7bd2805dee4b4ebb218aa5924b1be7704\$lut for cells of type $lut.
-Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'1000 for cells of type $lut.
-Using template $paramod$4282def8dbd6df3d1248ad282c629bee684502c2\$lut for cells of type $lut.
-Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'10000000 for cells of type $lut.
 Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'01100000 for cells of type $lut.
-Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'01000000 for cells of type $lut.
-Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'11101111 for cells of type $lut.
-Using template $paramod$994e00791e39a2079936855a34c5ee3e0e21f1dc\$lut for cells of type $lut.
-Using template $paramod$f3e1547c4b47e64c590e75cf09078b2507c8cc75\$lut for cells of type $lut.
-Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00010000 for cells of type $lut.
-Using template $paramod$2902eb8ec3ca272968b5d8a7010e48f85069ed0f\$lut for cells of type $lut.
-Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'11110100 for cells of type $lut.
-Using template $paramod$6e238df02989b317f10820a22773676e71120644\$lut for cells of type $lut.
-Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'11111000 for cells of type $lut.
-Using template $paramod$12e9049d8709286a770fe60b59ec4d94c39ce3c9\$lut for cells of type $lut.
-Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00000001 for cells of type $lut.
-Using template $paramod$d4fae2c0d9ad2966369cd4e39b81c71bcd1327c9\$lut for cells of type $lut.
-Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'1011 for cells of type $lut.
-Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'0110 for cells of type $lut.
-Using template $paramod$8c24dc0cdd336b7fb88bbf7eed45cec5cbae862b\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'0001 for cells of type $lut.
 Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'11001010 for cells of type $lut.
-Using template $paramod$973818279bc95792902f3c09371fd2407d04a2a5\$lut for cells of type $lut.
 Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'10110000 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'11111000 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'0110 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'11101111 for cells of type $lut.
+Using template $paramod$d4fae2c0d9ad2966369cd4e39b81c71bcd1327c9\$lut for cells of type $lut.
+Using template $paramod$8c24dc0cdd336b7fb88bbf7eed45cec5cbae862b\$lut for cells of type $lut.
+Using template $paramod$12e9049d8709286a770fe60b59ec4d94c39ce3c9\$lut for cells of type $lut.
+Using template $paramod$c471af5667a682bd131a5b479e58e470d1b2b7cd\$lut for cells of type $lut.
+Using template $paramod$6e238df02989b317f10820a22773676e71120644\$lut for cells of type $lut.
+Using template $paramod$97f21fc6caedb01e3e413e66042b2fa0473d00e4\$lut for cells of type $lut.
 No more expansions possible.
 <suppressed ~924 debug messages>
 Removed 0 unused cells and 708 unused wires.
 
 13.46. Executing AUTONAME pass.
-Renamed 6868 objects in module top (36 iterations).
-<suppressed ~820 debug messages>
+Renamed 6989 objects in module top (36 iterations).
+<suppressed ~822 debug messages>
 
 13.47. Executing HIERARCHY pass (managing design hierarchy).
 
@@ -2064,22 +2071,22 @@ Removed 0 unused modules.
 
 === top ===
 
-   Number of wires:                405
-   Number of wire bits:           1571
-   Number of public wires:         405
-   Number of public wire bits:    1571
+   Number of wires:                397
+   Number of wire bits:           1566
+   Number of public wires:         397
+   Number of public wire bits:    1566
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                660
-     SB_CARRY                       95
-     SB_DFF                         81
+   Number of cells:                662
+     SB_CARRY                       96
+     SB_DFF                          2
      SB_DFFESR                       8
      SB_DFFESS                       2
-     SB_DFFN                        14
+     SB_DFFN                        16
      SB_DFFNESR                     78
-     SB_DFFNSR                      12
-     SB_DFFSR                       47
+     SB_DFFNSR                      89
+     SB_DFFSR                       48
      SB_LUT4                       323
 
 13.49. Executing CHECK pass (checking for obvious problems).
@@ -2089,6 +2096,6 @@ Found and reported 0 problems.
 13.50. Executing JSON backend.
 
 Warnings: 1 unique messages, 1 total
-End of script. Logfile hash: d6a4b9a6fe, CPU: user 0.83s system 0.33s, MEM: 28.44 MB peak
+End of script. Logfile hash: 6f9cfb16d9, CPU: user 0.61s system 0.29s, MEM: 28.48 MB peak
 Yosys 0.25+1 (git sha1 d3216593d, clang 10.0.0-4ubuntu1 -fPIC -Os)
-Time spent: 27% 35x read_verilog (0 sec), 14% 1x abc (0 sec), ...
+Time spent: 25% 35x read_verilog (0 sec), 22% 1x abc (0 sec), ...

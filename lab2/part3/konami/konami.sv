@@ -39,19 +39,56 @@ module konami
    // Your code here: 
    wire [6:0] inputs;
    logic [10:0] reg_o [6:0];
+   //logic [10:0] shift0, shift1, shift2, shift3, shift4, shift5, shift6; 
    logic match_l;
    logic [11:0] sum_o;
    enum logic [1:0] {Init = 2'b01, check = 2'b10} state, next_state;
+   logic reg_enable;
    
-   
+   assign reg_enable = |inputs | reset_i;
    assign inputs = {up_i, down_i, left_i, right_i, b_i, a_i, start_i};
    
    for(genvar i = 0; i < 7; i++) begin
        shift
        #(11)
        inputreg
-       (.clk_i(clk_i), .reset_i(1'b0), .data_i(inputs[i]), .data_o(reg_o[i]));
+       (.clk_i(clk_i&reg_enable), .reset_i(reset_i), .data_i(inputs[i]), .data_o(reg_o[i]));
    end
+   
+   /*shift
+       #(11)
+       inputreg0
+       (.clk_i(clk_i), .reset_i(reset_i), .data_i(inputs[0]), .data_o(shift0));
+       
+       shift
+       #(11)
+       inputreg1
+       (.clk_i(clk_i), .reset_i(reset_i), .data_i(inputs[1]), .data_o(shift1));
+       
+       shift
+       #(11)
+       inputreg2
+       (.clk_i(clk_i), .reset_i(reset_i), .data_i(inputs[2]), .data_o(shift2));
+       
+       shift
+       #(11)
+       inputreg3
+       (.clk_i(clk_i), .reset_i(reset_i), .data_i(inputs[3]), .data_o(shift3));
+       
+       shift
+       #(11)
+       inputreg4
+       (.clk_i(clk_i), .reset_i(reset_i), .data_i(inputs[4]), .data_o(shift4));
+       
+       shift
+       #(11)
+       inputreg5
+       (.clk_i(clk_i), .reset_i(reset_i), .data_i(inputs[5]), .data_o(shift5));
+       
+       shift
+       #(11)
+       inputreg6
+       (.clk_i(clk_i), .reset_i(reset_i), .data_i(inputs[6]), .data_o(shift6));*/
    
    always_comb begin
       match_l = 1'b0;
@@ -66,6 +103,7 @@ module konami
                   end
            check : begin
                        sum_o = reg_o[6] + reg_o[5] + reg_o[4] + reg_o[3] + reg_o[2] + reg_o[1] + reg_o[0];
+                       //sum_o = shift6 + shift5 + shift4 + shift3 + shift2 + shift1 + shift0;
                        if(~sum_o[11] & &sum_o[10:0]) begin
                            match_l = 1'b1;
                            next_state = Init;

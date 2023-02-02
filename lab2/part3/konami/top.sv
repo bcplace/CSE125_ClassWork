@@ -134,7 +134,7 @@ module top
 
    // Your code goes here
    
-   logic [20:0] counter_o;
+   logic [21:0] counter_o;
    wire cheat_code_w;
    logic slow_clk;
    logic Up_unsafe, Down_unsafe, Left_unsafe, Right_unsafe;
@@ -182,16 +182,16 @@ module top
    .debounced_o(Right));
    
    counter
-   #(21)
+   #(22)
    debouncer
    (.clk_i(clk_12mhz_i), .reset_i(slow_clk), .up_i(1'b1), .down_i(1'b0), .counter_o(counter_o));
    
    konami
    #()
-   statemachine (.clk_i(clk_12mhz_i), .reset_i(reset_r), .up_i(Up), .down_i(Down), .left_i(Left), .right_i(Right), .b_i(btnB), .a_i(btnA), .start_i(btnstart), .cheat_code_unlocked_o(cheat_code_w));
+   statemachine (.clk_i(slow_clk), .reset_i(reset_r), .up_i(Up), .down_i(Down), .left_i(Left), .right_i(Right), .b_i(btnB), .a_i(btnA), .start_i(btnstart), .cheat_code_unlocked_o(cheat_code_w));
    
    always_comb begin
-       if(counter_o == 21'b100100100111110000000) begin
+       if(counter_o == 22'b1011011100011011000000) begin
            slow_clk = 1'b1;
        end else begin
            slow_clk = 1'b0;
