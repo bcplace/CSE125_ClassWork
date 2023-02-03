@@ -50,5 +50,15 @@ module top
      ,.q_o(reset_r));
        
   // Your code goes here
+  wire [21:0] count_o;
+  
+  counter
+  #(22)
+  count (.clk_i(clk_12mhz_i), .reset_i(reset_r), .up_i(1'b0), .down_i(1'b1), .counter_o(count_o));
+  
+  lfsr
+  shiftreg
+  (.clk_i(count_o[21]), .reset_i(reset_r), .data_o(led_o[5:1]));
+
 
 endmodule

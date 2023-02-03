@@ -2,6 +2,7 @@
 TOP_MODULE = konami
 SYNTH_SOURCES += $(TOP_MODULE).sv
 SYNTH_SOURCES += debouncer.sv
+SYNTH_SOURCES += edgedetector.sv
 SYNTH_SOURCES += ../../part2/shift/shift.sv
 SYNTH_SOURCES += ../../part2/counter/counter.sv
 SYNTH_SOURCES += ../../provided_modules/inv.sv

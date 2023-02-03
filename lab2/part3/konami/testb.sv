@@ -16,10 +16,15 @@ nonsynth_clock_gen
       
    logic up, down, left, right, b, a, start, clk_i, reset_i;
    wire cheat_code;
+   wire up_debounce;
    
    konami
    #()
    dut (.clk_i(clk_i), .reset_i(reset_i), .up_i(up), .down_i(down), .left_i(left), .right_i(right), .b_i(b), .a_i(a), .start_i(start), .cheat_code_unlocked_o(cheat_code));
+   
+   debouncer
+   test
+   (.clk_i(clk_i), .btn_i(up), .debounced_o(up_debounce));
    
    initial
    begin
@@ -34,11 +39,7 @@ nonsynth_clock_gen
    initial
    begin
    #120
-   start = 1'b1;
-   #10
-   start = 1'b0;
-   #20
-   /*up = 1'b0;
+   up = 1'b0;
    down = 1'b0;
    left = 1'b0;
    right = 1'b0;
@@ -76,7 +77,7 @@ nonsynth_clock_gen
    start = 1'b1;
    #10
    start = 1'b0;
-   #20*/
+   #20
    $finish();
    end
    

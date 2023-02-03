@@ -16,5 +16,7 @@ module top
   // btn_async_unsafe_i, drive an output wire in led_o.
   //
   // Your code goes here
-
+xor2
+top
+(.a_i(button_async_unsafe_i[1]), .b_i(button_async_unsafe_i[2]), .c_o(led_o[1]));
 endmodule

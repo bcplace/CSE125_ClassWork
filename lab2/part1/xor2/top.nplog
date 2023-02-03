@@ -1,0 +1,150 @@
+Info: constraining clock net 'clk_12mhz_i' to 12.00 MHz
+Info: constrained 'clk_12mhz_i' to bel 'X12/Y31/io1'
+Info: constrained 'reset_n_async_unsafe_i' to bel 'X16/Y0/io0'
+Info: constrained 'button_async_unsafe_i[1]' to bel 'X19/Y0/io1'
+Info: constrained 'button_async_unsafe_i[2]' to bel 'X21/Y0/io1'
+Info: constrained 'button_async_unsafe_i[3]' to bel 'X22/Y0/io1'
+Info: constrained 'led_o[1]' to bel 'X18/Y31/io0'
+Info: constrained 'led_o[2]' to bel 'X18/Y31/io1'
+Info: constrained 'led_o[3]' to bel 'X19/Y31/io1'
+Info: constrained 'led_o[4]' to bel 'X19/Y31/io0'
+Info: constrained 'led_o[5]' to bel 'X18/Y0/io1'
+
+Info: Packing constants..
+Info: Packing IOs..
+Info: Packing LUT-FFs..
+Info:        1 LCs used as LUT4 only
+Info:        0 LCs used as LUT4 and DFF
+Info: Packing non-LUT FFs..
+Info:        0 LCs used as DFF only
+Info: Packing carries..
+Info:        0 LCs used as CARRY only
+Info: Packing indirect carry+LUT pairs...
+Info:        0 LUTs merged into carry LCs
+Info: Packing RAMs..
+Info: Placing PLLs..
+Info: Packing special functions..
+Info: Packing PLLs..
+Info: Promoting globals..
+Info: Constraining chains...
+Info:        0 LCs used to legalise carry chains.
+Info: Checksum: 0x5a3578eb
+
+Info: Annotating ports with timing budgets for target frequency 12.00 MHz
+Info: Checksum: 0xe5196026
+
+Info: Device utilisation:
+Info: 	         ICESTORM_LC:     3/ 5280     0%
+Info: 	        ICESTORM_RAM:     0/   30     0%
+Info: 	               SB_IO:    10/   96    10%
+Info: 	               SB_GB:     0/    8     0%
+Info: 	        ICESTORM_PLL:     0/    1     0%
+Info: 	         SB_WARMBOOT:     0/    1     0%
+Info: 	        ICESTORM_DSP:     0/    8     0%
+Info: 	      ICESTORM_HFOSC:     0/    1     0%
+Info: 	      ICESTORM_LFOSC:     0/    1     0%
+Info: 	              SB_I2C:     0/    2     0%
+Info: 	              SB_SPI:     0/    2     0%
+Info: 	              IO_I3C:     0/    2     0%
+Info: 	         SB_LEDDA_IP:     0/    1     0%
+Info: 	         SB_RGBA_DRV:     0/    1     0%
+Info: 	      ICESTORM_SPRAM:     0/    4     0%
+
+Info: Placed 10 cells based on constraints.
+Info: Creating initial analytic placement for 1 cells, random placement wirelen = 79.
+Info:     at initial placer iter 0, wirelen = 34
+Info:     at initial placer iter 1, wirelen = 34
+Info:     at initial placer iter 2, wirelen = 34
+Info:     at initial placer iter 3, wirelen = 34
+Info: Running main analytical placer, max placement attempts per cell = 10000.
+Info:     at iteration #1, type ICESTORM_LC: wirelen solved = 34, spread = 34, legal = 36; time = 0.00s
+Info: HeAP Placer Time: 0.00s
+Info:   of which solving equations: 0.00s
+Info:   of which spreading cells: 0.00s
+Info:   of which strict legalisation: 0.00s
+
+Info: Running simulated annealing placer for refinement.
+Info:   at iteration #1: temp = 0.000000, timing cost = 0, wirelen = 36
+Info:   at iteration #2: temp = 0.000000, timing cost = 0, wirelen = 36 
+Info: SA placement time 0.00s
+
+Info: Max delay <async> -> <async>: 10.09 ns
+
+Info: Slack histogram:
+Info:  legend: * represents 1 endpoint(s)
+Info:          + represents [1,1) endpoint(s)
+Info: [ 73244,  73245) |* 
+Info: [ 73245,  73246) | 
+Info: [ 73246,  73247) | 
+Info: [ 73247,  73248) | 
+Info: [ 73248,  73249) | 
+Info: [ 73249,  73250) | 
+Info: [ 73250,  73251) | 
+Info: [ 73251,  73252) | 
+Info: [ 73252,  73253) | 
+Info: [ 73253,  73254) | 
+Info: [ 73254,  73255) | 
+Info: [ 73255,  73256) | 
+Info: [ 73256,  73257) | 
+Info: [ 73257,  73258) | 
+Info: [ 73258,  73259) | 
+Info: [ 73259,  73260) | 
+Info: [ 73260,  73261) | 
+Info: [ 73261,  73262) | 
+Info: [ 73262,  73263) | 
+Info: [ 73263,  73264) | 
+Info: Checksum: 0xd1e7d20d
+
+Info: Routing..
+Info: Setting up routing queue.
+Info: Routing 3 arcs.
+Info:            |   (re-)routed arcs  |   delta    | remaining|       time spent     |
+Info:    IterCnt |  w/ripup   wo/ripup |  w/r  wo/r |      arcs| batch(sec) total(sec)|
+Info:          3 |        0          3 |    0     3 |         0|       0.00       0.00|
+Info: Routing complete.
+Info: Router1 time 0.00s
+Info: Checksum: 0x4e049580
+
+Info: Critical path report for cross-domain path '<async>' -> '<async>':
+Info: curr total
+Info:  0.0  0.0  Source button_async_unsafe_i[2]$sb_io.D_IN_0
+Info:  3.0  3.0    Net button_async_unsafe_i[2]$SB_IO_IN budget 41.063999 ns (21,0) -> (18,1)
+Info:                Sink top.c_SB_LUT4_O_LC.I3
+Info:                Defined in:
+Info:                  top.sv:20.1-21.81
+Info:                  xor2.sv:3.16-3.19
+Info:  0.9  3.8  Source top.c_SB_LUT4_O_LC.O
+Info:  5.5  9.3    Net led_o[1]$SB_IO_OUT budget 41.063999 ns (18,1) -> (18,31)
+Info:                Sink led_o[1]$sb_io.D_OUT_0
+Info:                Defined in:
+Info:                  top.sv:20.1-21.81
+Info:                  xor2.sv:4.17-4.20
+Info: 0.9 ns logic, 8.4 ns routing
+
+Info: Max delay <async> -> <async>: 9.28 ns
+
+Info: Slack histogram:
+Info:  legend: * represents 1 endpoint(s)
+Info:          + represents [1,1) endpoint(s)
+Info: [ 74053,  74054) |* 
+Info: [ 74054,  74055) | 
+Info: [ 74055,  74056) | 
+Info: [ 74056,  74057) | 
+Info: [ 74057,  74058) | 
+Info: [ 74058,  74059) | 
+Info: [ 74059,  74060) | 
+Info: [ 74060,  74061) | 
+Info: [ 74061,  74062) | 
+Info: [ 74062,  74063) | 
+Info: [ 74063,  74064) | 
+Info: [ 74064,  74065) | 
+Info: [ 74065,  74066) | 
+Info: [ 74066,  74067) | 
+Info: [ 74067,  74068) | 
+Info: [ 74068,  74069) | 
+Info: [ 74069,  74070) | 
+Info: [ 74070,  74071) | 
+Info: [ 74071,  74072) | 
+Info: [ 74072,  74073) | 
+
+Info: Program finished normally.

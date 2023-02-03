@@ -58,6 +58,12 @@ module top
    wire [0:0] reset_sync_r;
    wire [0:0] reset_r; // Use this as your reset_signal
    wire btnA, btnB, btnstart, Up, Down, Left, Right;
+   wire A, B, start;
+   logic [21:0] counter_o;
+   wire cheat_code_w;
+   logic slow_clk;
+   logic Up_unsafe, Down_unsafe, Left_unsafe, Right_unsafe, Up_sync, Down_sync, Left_sync, Right_sync;
+   wire cheat_code_sync;
 
    dff
      #()
@@ -124,101 +130,111 @@ module top
    // Blue
    assign color_rgb[7:0] = 8'h00;
 
-   assign led_o[4] = position_x < 384;
-   assign led_o[5] = position_x > 640;
-   assign led_o[3] = position_y < 384;
-   assign led_o[2] = position_y > 640;
 
    // Trigger Button
    //assign led_o[1] = data_o[1];
 
    // Your code goes here
+   /*initial 
+   begin
+   $display(" ");
+   $display("%b cheatcode", cheat_code_w);
+   $display(" ");
+   end*/
    
-   logic [21:0] counter_o;
-   wire cheat_code_w;
-   logic slow_clk;
-   logic Up_unsafe, Down_unsafe, Left_unsafe, Right_unsafe;
    
    debouncer
    btnA_debounce
-   (.clk_i(slow_clk),
+   (.clk_i(counter_o[18]),
    .btn_i(button_async_unsafe_i[1]),
    .debounced_o(btnA));
    
    debouncer
    btnStart_debounce
-   (.clk_i(slow_clk),
+   (.clk_i(counter_o[18]),
    .btn_i(button_async_unsafe_i[2]),
    .debounced_o(btnstart));
    
    debouncer
    btnB_debounce
-   (.clk_i(slow_clk),
+   (.clk_i(counter_o[18]),
    .btn_i(button_async_unsafe_i[3]),
    .debounced_o(btnB));
    
    debouncer
    Upsafe_debounce
-   (.clk_i(slow_clk),
-   .btn_i(Up_unsafe),
+   (.clk_i(counter_o[18]),
+   .btn_i(position_y > 640),
    .debounced_o(Up));
    
    debouncer
    Downsafe_deboucne
-   (.clk_i(slow_clk),
-   .btn_i(Down_unsafe),
+   (.clk_i(counter_o[18]),
+   .btn_i(position_y < 384),
    .debounced_o(Down));
    
    debouncer
    Leftsafe_debounce
-   (.clk_i(slow_clk),
-   .btn_i(Left_unsafe),
+   (.clk_i(counter_o[18]),
+   .btn_i(position_x > 640),
    .debounced_o(Left));
    
    debouncer
    Rightsafe_debounce
-   (.clk_i(slow_clk),
-   .btn_i(Right_unsafe),
+   (.clk_i(counter_o[18]),
+   .btn_i(position_x < 384),
    .debounced_o(Right));
+   
+   assign led_o[4] = Right;
+   assign led_o[5] = Left;
+   assign led_o[3] = Down;
+   assign led_o[2] = Up;
+   
+   edgedetector
+   btna
+   (.clk_i(clk_12mhz_i), .btn_i(btnA), .edge_o(A));
+   
+   edgedetector
+   btnb
+   (.clk_i(clk_12mhz_i), .btn_i(btnB), .edge_o(B));
+   
+   edgedetector
+   btnStart
+   (.clk_i(clk_12mhz_i), .btn_i(btnstart), .edge_o(start));
+   
+   edgedetector
+   jstkup
+   (.clk_i(clk_12mhz_i), .btn_i(Up), .edge_o(Up_sync));
+   
+   edgedetector
+   jstkdown
+   (.clk_i(clk_12mhz_i), .btn_i(Down), .edge_o(Down_sync));
+   
+   edgedetector
+   jstkleft
+   (.clk_i(clk_12mhz_i), .btn_i(Left), .edge_o(Left_sync));
+   
+   edgedetector
+   jstkright
+   (.clk_i(clk_12mhz_i), .btn_i(Right), .edge_o(Right_sync));
    
    counter
    #(22)
    debouncer
-   (.clk_i(clk_12mhz_i), .reset_i(slow_clk), .up_i(1'b1), .down_i(1'b0), .counter_o(counter_o));
+   (.clk_i(clk_12mhz_i), .reset_i(reset_r), .up_i(1'b1), .down_i(1'b0), .counter_o(counter_o));
    
    konami
    #()
-   statemachine (.clk_i(slow_clk), .reset_i(reset_r), .up_i(Up), .down_i(Down), .left_i(Left), .right_i(Right), .b_i(btnB), .a_i(btnA), .start_i(btnstart), .cheat_code_unlocked_o(cheat_code_w));
+   statemachine (.clk_i(clk_12mhz_i), .reset_i(reset_r), .up_i(Up_sync), .down_i(Down_sync), .left_i(Left_sync), .right_i(Right_sync), .b_i(B), .a_i(A), .start_i(start), .cheat_code_unlocked_o(cheat_code_w));
    
-   always_comb begin
-       if(counter_o == 22'b1011011100011011000000) begin
-           slow_clk = 1'b1;
-       end else begin
-           slow_clk = 1'b0;
-       end
-       if(position_x > 640) begin
-           Right_unsafe = 1'b1;
-       end else begin
-           Right_unsafe = 1'b0;
-       end
-       if(position_x < 384) begin
-           Left_unsafe = 1'b1;
-       end else begin
-           Left_unsafe = 1'b0;
-       end
-       if(position_y > 640) begin
-           Up_unsafe = 1'b1;
-       end else begin
-           Up_unsafe = 1'b0;
-       end
-       if(position_y < 384) begin
-           Down_unsafe = 1'b1;
-       end else begin
-           Down_unsafe = 1'b0;
-       end
-   end
-   
-   
-assign led_o[1] = cheat_code_w;
+   /*dff
+     #()
+   sync_cheat
+     (.clk_i(clk_12mhz_i)
+     ,.reset_i(1'b0)
+     ,.d_i(cheat_code_w)
+     ,.q_o(cheat_code_sync));*/
+     
+assign led_o[1] = cheat_code_sync;
 
 endmodule
