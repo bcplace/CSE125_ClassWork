@@ -38,8 +38,7 @@ module konami
    // 
    // Your code here: 
    wire [6:0] inputs;
-   logic [10:0] reg_o [6:0];
-   //logic [10:0] shift0, shift1, shift2, shift3, shift4, shift5, shift6; 
+   logic [10:0] reg_o [6:0]; 
    logic match_l;
    logic sum_o;
    enum logic [1:0] {Init = 2'b01, check = 2'b10} state, next_state;

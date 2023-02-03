@@ -135,12 +135,6 @@ module top
    //assign led_o[1] = data_o[1];
 
    // Your code goes here
-   /*initial 
-   begin
-   $display(" ");
-   $display("%b cheatcode", cheat_code_w);
-   $display(" ");
-   end*/
    
    
    debouncer
@@ -190,7 +184,7 @@ module top
    assign led_o[3] = Down;
    assign led_o[2] = Up;
    
-   edgedetector
+  /* edgedetector
    btna
    (.clk_i(clk_12mhz_i), .btn_i(btnA), .edge_o(A));
    
@@ -216,7 +210,7 @@ module top
    
    edgedetector
    jstkright
-   (.clk_i(clk_12mhz_i), .btn_i(Right), .edge_o(Right_sync));
+   (.clk_i(clk_12mhz_i), .btn_i(Right), .edge_o(Right_sync));*/
    
    counter
    #(22)
@@ -225,16 +219,8 @@ module top
    
    konami
    #()
-   statemachine (.clk_i(clk_12mhz_i), .reset_i(reset_r), .up_i(Up_sync), .down_i(Down_sync), .left_i(Left_sync), .right_i(Right_sync), .b_i(B), .a_i(A), .start_i(start), .cheat_code_unlocked_o(cheat_code_w));
-   
-   /*dff
-     #()
-   sync_cheat
-     (.clk_i(clk_12mhz_i)
-     ,.reset_i(1'b0)
-     ,.d_i(cheat_code_w)
-     ,.q_o(cheat_code_sync));*/
+   statemachine (.clk_i(counter_o[18]), .reset_i(reset_r), .up_i(Up), .down_i(Down), .left_i(Left), .right_i(Right), .b_i(btnB), .a_i(btnA), .start_i(btnstart), .cheat_code_unlocked_o(cheat_code_w));
      
-assign led_o[1] = cheat_code_sync;
+assign led_o[1] = cheat_code_w;
 
 endmodule
