@@ -23,7 +23,9 @@ module testbench();
    logic [width_p-1:0] test_data_o;
    logic               test_data_check;
  
-   logic error;
+   logic               error;
+   logic               yumi_n;
+   logic               yumi_i;
 
    int   test_data_rd_ptr;
    int   test_data_wr_ptr;
@@ -55,7 +57,7 @@ module testbench();
      ,.ready_o(test_ready_o)
      ,.valid_o(test_valid_o)
      ,.data_o(test_data_o)
-     ,.yumi_i(test_ready_i & test_valid_o)  // Hmm
+     ,.yumi_i(yumi_i)
      );
 
    initial begin
@@ -64,6 +66,7 @@ module testbench();
       test_data_rd_ptr = 0;
       test_data_wr_ptr = 0;
       test_reset_i = 1;
+      yumi_n = 0;
 
 `ifdef VERILATOR
       $dumpfile("verilator.fst");
@@ -105,7 +108,8 @@ module testbench();
          rand_rw_val = $random();
          test_valid_i = ((rand_rw_val % 2) == 0);
          test_ready_i = ((rand_rw_val % 8) == 0);
-         $display("On Cycle %d (RV: %x) -- valid_i: %d, data_i: %d, yumi_i: %d", cycle, rand_rw_val, test_valid_i, test_data_i, test_ready_i & test_valid_o);
+         yumi_n = test_ready_i & test_valid_o & ~yumi_i;
+         $display("On Cycle %d (RV: %x) -- valid_i: %d, yumi_n: %d", cycle, rand_rw_val, test_valid_i, yumi_n);
          test_data_i = test_valid_i ? test_data[test_data_wr_ptr] : '0;
 
          @(negedge clk_i);
@@ -123,7 +127,8 @@ module testbench();
          rand_rw_val = $random();
          test_valid_i = ((rand_rw_val % 8) == 0);
          test_ready_i = ((rand_rw_val % 4) == 0);
-         $display("On Cycle %d (RV: %x) -- valid_i: %d, data_i: %d, yumi_i: %d", cycle, rand_rw_val, test_valid_i, test_data_i, test_ready_i & test_valid_o);
+         yumi_n = test_ready_i & test_valid_o & ~yumi_i;
+         $display("On Cycle %d (RV: %x) -- valid_i: %d, yumi_n: %d", cycle, rand_rw_val, test_valid_i, yumi_n);
          test_data_i = test_valid_i ? test_data[test_data_wr_ptr] : '0;
 
          @(negedge clk_i);
@@ -135,7 +140,8 @@ module testbench();
          rand_rw_val = $random();
          test_valid_i = '0;
          test_ready_i = 1;
-         $display("On Cycle %d (RV: %x) -- valid_i: %d, data_i: %d, yumi_i: %d", cycle, rand_rw_val, test_valid_i, test_data_i, test_ready_i & test_valid_o);
+         yumi_n = test_ready_i & test_valid_o & ~yumi_i;
+         $display("On Cycle %d (RV: %x) -- valid_i: %d, yumi_n: %d", cycle, rand_rw_val, test_valid_i, yumi_n);
          test_data_i = test_valid_i ? test_data[test_data_wr_ptr] : '0;
 
          @(negedge clk_i);
@@ -148,7 +154,8 @@ module testbench();
          rand_rw_val = $random();
          test_valid_i = ((rand_rw_val % 2) == 0);
          test_ready_i = ((rand_rw_val % 2) == 0);
-         $display("On Cycle %d (RV: %x) -- valid_i: %d, data_i: %d, yumi_i: %d", cycle, rand_rw_val, test_valid_i, test_data_i, test_ready_i & test_valid_o);
+         yumi_n = test_ready_i & test_valid_o & ~yumi_i;
+         $display("On Cycle %d (RV: %x) -- valid_i: %d, yumi_n: %d", cycle, rand_rw_val, test_valid_i, yumi_n);
          test_data_i = test_valid_i ? test_data[test_data_wr_ptr] : '0;
 
          @(negedge clk_i);
@@ -161,7 +168,8 @@ module testbench();
          rand_rw_val = $random();
          test_valid_i = ((rand_rw_val % 8) == 0);
          test_ready_i = ((rand_rw_val % 4) == 0);
-         $display("On Cycle %d (RV: %x) -- valid_i: %d, data_i: %d, yumi_i: %d", cycle, rand_rw_val, test_valid_i, test_data_i, test_ready_i & test_valid_o);
+         yumi_n = test_ready_i & test_valid_o & ~yumi_i;
+         $display("On Cycle %d (RV: %x) -- valid_i: %d, yumi_n: %d", cycle, rand_rw_val, test_valid_i, yumi_n);
          test_data_i = test_valid_i ? test_data[test_data_wr_ptr] : '0;
 
          @(negedge clk_i);
@@ -174,7 +182,8 @@ module testbench();
          rand_rw_val = $random();
          test_valid_i = ((rand_rw_val % 2) == 0);
          test_ready_i = ((rand_rw_val % 8) == 0);
-         $display("On Cycle %d (RV: %x) -- valid_i: %d, data_i: %d, yumi_i: %d", cycle, rand_rw_val, test_valid_i, test_data_i, test_ready_i & test_valid_o);
+         yumi_n = test_ready_i & test_valid_o & ~yumi_i;
+         $display("On Cycle %d (RV: %x) -- valid_i: %d, yumi_n: %d", cycle, rand_rw_val, test_valid_i, yumi_n);
          test_data_i = test_valid_i ? test_data[test_data_wr_ptr] : '0;
 
          @(negedge clk_i);
@@ -187,7 +196,8 @@ module testbench();
          rand_rw_val = $random();
          test_valid_i = ((rand_rw_val % 8) == 0);
          test_ready_i = ((rand_rw_val % 4) == 0);
-         $display("On Cycle %d (RV: %x) -- valid_i: %d, data_i: %d, yumi_i: %d", cycle, rand_rw_val, test_valid_i, test_data_i, test_ready_i & test_valid_o);
+         yumi_n = test_ready_i & test_valid_o & ~yumi_i;
+         $display("On Cycle %d (RV: %x) -- valid_i: %d, yumi_n: %d", cycle, rand_rw_val, test_valid_i, yumi_n);
          test_data_i = test_valid_i ? test_data[test_data_wr_ptr] : '0;
 
          @(negedge clk_i);
@@ -199,7 +209,8 @@ module testbench();
          rand_rw_val = $random();
          test_valid_i = '0;
          test_ready_i = 1;
-         $display("On Cycle %d (RV: %x) -- valid_i: %d, data_i: %d, yumi_i: %d", cycle, rand_rw_val, test_valid_i, test_data_i, test_ready_i & test_valid_o);
+         yumi_n = test_ready_i & test_valid_o & ~yumi_i;
+         $display("On Cycle %d (RV: %x) -- valid_i: %d, yumi_n: %d", cycle, rand_rw_val, test_valid_i, yumi_n);
          test_data_i = test_valid_i ? test_data[test_data_wr_ptr] : '0;
 
          @(negedge clk_i);
@@ -209,24 +220,20 @@ module testbench();
    end
 
    always_ff @(posedge clk_i) begin
+      yumi_i <= yumi_n;
       if(!test_reset_i && (test_valid_i & test_ready_o)) begin
          test_data_wr_ptr ++;
       end
    end
 
    always_ff @(posedge clk_i) begin
-      if(!test_reset_i && (test_valid_o & test_ready_i)) begin
-         test_data_rd_ptr ++;
-      end
-   end
-
-   always_ff @(negedge clk_i) begin
-      if(!test_reset_i && (test_valid_o & test_ready_i)) begin
+      if(!test_reset_i && (yumi_i)) begin
          if(test_data_o !== test_data[test_data_rd_ptr]) begin
   	    $error("\033[0;31mError!\033[0m: On output iteration %d -- data_o should be %h, got %h\n", test_data_rd_ptr, test_data[test_data_rd_ptr], test_data_o);
             error = 1;
             $finish();
          end
+         test_data_rd_ptr <= test_data_rd_ptr + 1;
       end
    end
 
@@ -244,6 +251,7 @@ module testbench();
          $display();
          $display("Simulation Failed");
       end else begin
+            $display("%d data transmitted", test_data_rd_ptr);
          $display("\033[0;32m    ____  ___   __________\033[0m");
          $display("\033[0;32m   / __ \\/   | / ___/ ___/\033[0m");
          $display("\033[0;32m  / /_/ / /| | \\__ \\\__ \ \033[0m");

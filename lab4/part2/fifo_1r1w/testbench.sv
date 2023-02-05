@@ -66,6 +66,7 @@ module testbench();
      );
 
    initial begin
+      error = 0;
       reset_button = 0;      
       test_data_rd_ptr = 0;
       test_data_wr_ptr = 0;
@@ -112,7 +113,7 @@ module testbench();
          rand_rw_val = $random();
          test_valid_i = ((rand_rw_val % 2) == 0);
          test_ready_i = ((rand_rw_val % 8) == 0);
-         yumi_n = test_ready_i & test_valid_o;
+         yumi_n = test_ready_i & test_valid_o & ~yumi_i;
          $display("On Cycle %d (RV: %x) -- valid_i: %d, yumi_n: %d", cycle, rand_rw_val, test_valid_i, yumi_n);
          test_data_i = test_valid_i ? test_data[test_data_wr_ptr] : '0;
 
@@ -131,7 +132,7 @@ module testbench();
          rand_rw_val = $random();
          test_valid_i = ((rand_rw_val % 8) == 0);
          test_ready_i = ((rand_rw_val % 4) == 0);
-         yumi_n = test_ready_i & test_valid_o;
+         yumi_n = test_ready_i & test_valid_o & ~yumi_i;
          $display("On Cycle %d (RV: %x) -- valid_i: %d, yumi_n: %d", cycle, rand_rw_val, test_valid_i, yumi_n);
          test_data_i = test_valid_i ? test_data[test_data_wr_ptr] : '0;
 
@@ -144,7 +145,7 @@ module testbench();
          rand_rw_val = $random();
          test_valid_i = '0;
          test_ready_i = 1;
-         yumi_n = test_ready_i & test_valid_o;
+         yumi_n = test_ready_i & test_valid_o & ~yumi_i;
          $display("On Cycle %d (RV: %x) -- valid_i: %d, yumi_n: %d", cycle, rand_rw_val, test_valid_i, yumi_n);
          test_data_i = test_valid_i ? test_data[test_data_wr_ptr] : '0;
 
@@ -158,7 +159,7 @@ module testbench();
          rand_rw_val = $random();
          test_valid_i = ((rand_rw_val % 2) == 0);
          test_ready_i = ((rand_rw_val % 2) == 0);
-         yumi_n = test_ready_i & test_valid_o;
+         yumi_n = test_ready_i & test_valid_o & ~yumi_i;
          $display("On Cycle %d (RV: %x) -- valid_i: %d, yumi_n: %d", cycle, rand_rw_val, test_valid_i, yumi_n);
          test_data_i = test_valid_i ? test_data[test_data_wr_ptr] : '0;
 
@@ -172,7 +173,7 @@ module testbench();
          rand_rw_val = $random();
          test_valid_i = ((rand_rw_val % 8) == 0);
          test_ready_i = ((rand_rw_val % 4) == 0);
-         yumi_n = test_ready_i & test_valid_o;
+         yumi_n = test_ready_i & test_valid_o & ~yumi_i;
          $display("On Cycle %d (RV: %x) -- valid_i: %d, yumi_n: %d", cycle, rand_rw_val, test_valid_i, yumi_n);
          test_data_i = test_valid_i ? test_data[test_data_wr_ptr] : '0;
 
@@ -186,7 +187,7 @@ module testbench();
          rand_rw_val = $random();
          test_valid_i = ((rand_rw_val % 2) == 0);
          test_ready_i = ((rand_rw_val % 8) == 0);
-         yumi_n = test_ready_i & test_valid_o;
+         yumi_n = test_ready_i & test_valid_o & ~yumi_i;
          $display("On Cycle %d (RV: %x) -- valid_i: %d, yumi_n: %d", cycle, rand_rw_val, test_valid_i, yumi_n);
          test_data_i = test_valid_i ? test_data[test_data_wr_ptr] : '0;
 
@@ -200,7 +201,7 @@ module testbench();
          rand_rw_val = $random();
          test_valid_i = ((rand_rw_val % 8) == 0);
          test_ready_i = ((rand_rw_val % 4) == 0);
-         yumi_n = test_ready_i & test_valid_o;
+         yumi_n = test_ready_i & test_valid_o & ~yumi_i;
          $display("On Cycle %d (RV: %x) -- valid_i: %d, yumi_n: %d", cycle, rand_rw_val, test_valid_i, yumi_n);
          test_data_i = test_valid_i ? test_data[test_data_wr_ptr] : '0;
 
@@ -213,7 +214,7 @@ module testbench();
          rand_rw_val = $random();
          test_valid_i = '0;
          test_ready_i = 1;
-         yumi_n = test_ready_i & test_valid_o;
+         yumi_n = test_ready_i & test_valid_o & ~yumi_i;
          $display("On Cycle %d (RV: %x) -- valid_i: %d, yumi_n: %d", cycle, rand_rw_val, test_valid_i, yumi_n);
          test_data_i = test_valid_i ? test_data[test_data_wr_ptr] : '0;
 
@@ -255,6 +256,7 @@ module testbench();
          $display();
          $display("Simulation Failed");
       end else begin
+            $display("%d data transmitted", test_data_rd_ptr);
          $display("\033[0;32m    ____  ___   __________\033[0m");
          $display("\033[0;32m   / __ \\/   | / ___/ ___/\033[0m");
          $display("\033[0;32m  / /_/ / /| | \\__ \\\__ \ \033[0m");
