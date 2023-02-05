@@ -220,12 +220,17 @@ module testbench();
 
    always_ff @(posedge clk_i) begin
       if(!test_reset_i && (test_valid_o & test_ready_i)) begin
+         test_data_rd_ptr ++;
+      end
+   end
+
+   always_ff @(negedge clk_i) begin
+      if(!test_reset_i && (test_valid_o & test_ready_i)) begin
          if(test_data_o !== test_data[test_data_rd_ptr]) begin
   	    $error("\033[0;31mError!\033[0m: On output iteration %d -- data_o should be %h, got %h\n", test_data_rd_ptr, test_data[test_data_rd_ptr], test_data_o);
             error = 1;
             $finish();
          end
-         test_data_rd_ptr ++;
       end
    end
 
