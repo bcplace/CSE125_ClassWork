@@ -7,5 +7,15 @@ module xor2
    // 
    // Your code here:
 
+   LUT6 
+   #(.INIT(64'h0000000000000006))
+   lut
+   (.O(c_o),
+   .I0(a_i),
+   .I1(b_i),
+   .I2(1'b0),
+   .I3(1'b0),
+   .I4(1'b0),
+   .I5(1'b0));
 
 endmodule
