@@ -16,10 +16,26 @@ module ram_1w1r_async
    // Implement a parameterized, write-priority/write-first asynchronous RAM.
    // 
    // Your code here:
+   logic [width_p - 1:0] mem [depth_p - 1:0];
+   
+   assign rd_data_o = (rd_addr_i == wr_addr_i) ? wr_data_i : mem[rd_addr_i];
+   
+   always_ff @(posedge clk_i) begin
+       if (wr_valid_i) begin
+           mem[wr_addr_i] <= wr_data_i;
+       end
+   end
+   
+   always_ff @(posedge clk_i) begin
+       if(reset_i) begin
+           $readmemh("memory_init_file.hex", mem);
+       end
+   end
 
-   initial begin
+   /*initial begin
       // Display depth and width (You will need to match these in your init file
       $display("%m: depth_p is %d, width_p is %d", depth_p, width_p);
-   end
+      $readmemh("memory_init_file.hex", mem);
+   end*/
        
 endmodule
