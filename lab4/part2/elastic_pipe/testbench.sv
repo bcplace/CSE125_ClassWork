@@ -226,7 +226,7 @@ module testbench();
       end
    end
 
-   always_ff @(posedge clk_i) begin
+   always_ff @(negedge clk_i) begin
       if(!test_reset_i && (yumi_i)) begin
          if(test_data_o !== test_data[test_data_rd_ptr]) begin
   	    $error("\033[0;31mError!\033[0m: On output iteration %d -- data_o should be %h, got %h\n", test_data_rd_ptr, test_data[test_data_rd_ptr], test_data_o);

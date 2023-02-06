@@ -59,6 +59,7 @@ module testbench();
      );
 
    initial begin
+      error = 0;
       reset_button = 0;      
       test_data_rd_ptr = 0;
       test_data_wr_ptr = 0;
