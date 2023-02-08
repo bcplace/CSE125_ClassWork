@@ -1,4 +1,6 @@
 TOP.testbench.cg with cycle_time_p          10
+TOP.testbench.ram1: depth_p is         16, width_p is          8
+%Warning: memory_init_file.hex:0: $readmem file not found
 mem_file handle was NULL
 - testbench.sv:171: Verilog $finish
 
