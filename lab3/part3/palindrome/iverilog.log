@@ -1,0 +1,163 @@
+testbench.cg with cycle_time_p          10
+WARNING: ../../part2/ram_1w1r_async/ram_1w1r_async.sv:30: $readmemh: Standard inconsistency, following 1364-2005.
+WARNING: ../../part2/ram_1w1r_async/ram_1w1r_async.sv:30: $readmemh(Init.hex): Not enough words in the file for the requested range [0:19].
+VCD info: dumpfile iverilog.vcd opened for output.
+VCD warning: $dumpvars: Unsupported argument type (vpiPackage)
+
+  ______          __  __                    __       ____        ___           __                        
+ /_  __/__  _____/ /_/ /_  ___  ____  _____/ /_     / __ \____ _/ (_)___  ____/ /________  ____ ___  ___ 
+  / / / _ \/ ___/ __/ __ \/ _ \/ __ \/ ___/ __ \   / /_/ / __ `/ / / __ \/ __  / ___/ __ \/ __ `__ \/ _ \
+ / / /  __(__  ) /_/ /_/ /  __/ / / / /__/ / / /  / ____/ /_/ / / / / / / /_/ / /  / /_/ / / / / / /  __/
+/_/  \___/____/\__/_.___/\___/_/ /_/\___/_/ /_/  /_/    \__,_/_/_/_/ /_/\__,_/_/   \____/_/ /_/ /_/\___/ 
+
+Begin Test:
+WARNING: testbench.sv:71: $readmemh: Standard inconsistency, following 1364-2005.
+__________ ___________  _______________________________
+\______   \\_   _____/ /   _____/\_   _____/\__    ___/
+ |       _/ |    __)_  \_____  \  |    __)_   |    |   
+ |    |   \ |        \ /        \ |        \  |    |  0->1 time =         10
+ |____|_  //_______  //_______  //_______  /  |____|   
+ ASYNC  \/         \/         \/         \/            
+__________ ___________  _______________________________
+\______   \\_   _____/ /   _____/\_   _____/\__    ___/
+ |       _/ |    __)_  \_____  \  |    __)_   |    |   
+ |    |   \ |        \ /        \ |        \  |    |  1->0 time =        110
+ |____|_  //_______  //_______  //_______  /  |____|   
+ ASYNC  \/         \/         \/         \/            
+At Posedge           0: symbol_i: 0 valid_i: 0 reset_i = 0 0 
+At Posedge           1: symbol_i: 0 valid_i: 0 reset_i = 0 0 
+At Posedge           2: symbol_i: 0 valid_i: 0 reset_i = 0 0 
+At Posedge           3: symbol_i: 0 valid_i: 0 reset_i = 0 0 
+At Posedge           4: symbol_i: 0 valid_i: 0 reset_i = 0 0 
+At Posedge           5: symbol_i: a valid_i: 1 reset_i = 0 0 
+At Posedge           6: symbol_i: a valid_i: 0 reset_i = 0 0 
+At Posedge           7: symbol_i: 0 valid_i: 0 reset_i = 0 0 
+At Posedge           8: symbol_i: 0 valid_i: 0 reset_i = 0 0 
+At Posedge           9: symbol_i: 0 valid_i: 0 reset_i = 0 0 
+At Posedge          10: symbol_i: 0 valid_i: 0 reset_i = 0 0 
+At Posedge          11: symbol_i: a valid_i: 1 reset_i = 0 0 
+At Posedge          12: symbol_i: a valid_i: 1 reset_i = 0 0 
+At Posedge          13: symbol_i: 0 valid_i: 0 reset_i = 0 1 
+At Posedge          14: symbol_i: 0 valid_i: 0 reset_i = 0 1 
+At Posedge          15: symbol_i: 0 valid_i: 0 reset_i = 0 1 
+At Posedge          16: symbol_i: a valid_i: 1 reset_i = 0 1 
+At Posedge          17: symbol_i: 0 valid_i: 0 reset_i = 0 0 
+At Posedge          18: symbol_i: 0 valid_i: 0 reset_i = 0 0 
+At Posedge          19: symbol_i: 0 valid_i: 0 reset_i = 0 0 
+At Posedge          20: symbol_i: 0 valid_i: 0 reset_i = 0 0 
+At Posedge          21: symbol_i: 0 valid_i: 0 reset_i = 0 0 
+At Posedge          22: symbol_i: a valid_i: 1 reset_i = 0 0 
+At Posedge          23: symbol_i: 0 valid_i: 0 reset_i = 0 0 
+At Posedge          24: symbol_i: b valid_i: 1 reset_i = 0 0 
+At Posedge          25: symbol_i: b valid_i: 1 reset_i = 0 0 
+At Posedge          26: symbol_i: a valid_i: 0 reset_i = 0 0 
+At Posedge          27: symbol_i: a valid_i: 1 reset_i = 0 0 
+At Posedge          28: symbol_i: b valid_i: 0 reset_i = 0 1 
+At Posedge          29: symbol_i: 0 valid_i: 0 reset_i = 0 1 
+At Posedge          30: symbol_i: 0 valid_i: 0 reset_i = 0 1 
+At Posedge          31: symbol_i: 0 valid_i: 0 reset_i = 0 1 
+At Posedge          32: symbol_i: a valid_i: 1 reset_i = 0 0 
+At Posedge          33: symbol_i: 0 valid_i: 0 reset_i = 0 0 
+At Posedge          34: symbol_i: b valid_i: 1 reset_i = 0 0 
+At Posedge          35: symbol_i: 1 valid_i: 1 reset_i = 0 0 
+At Posedge          36: symbol_i: 4 valid_i: 1 reset_i = 0 0 
+At Posedge          37: symbol_i: 0 valid_i: 0 reset_i = 0 0 
+At Posedge          38: symbol_i: 0 valid_i: 0 reset_i = 0 0 
+At Posedge          39: symbol_i: 0 valid_i: 0 reset_i = 0 0 
+At Posedge          40: symbol_i: b valid_i: 0 reset_i = 0 0 
+At Posedge          41: symbol_i: b valid_i: 0 reset_i = 0 0 
+At Posedge          42: symbol_i: 4 valid_i: 1 reset_i = 0 0 
+At Posedge          43: symbol_i: 1 valid_i: 1 reset_i = 0 0 
+At Posedge          44: symbol_i: 4 valid_i: 0 reset_i = 0 0 
+At Posedge          45: symbol_i: b valid_i: 0 reset_i = 0 0 
+At Posedge          46: symbol_i: a valid_i: 0 reset_i = 0 0 
+At Posedge          47: symbol_i: b valid_i: 1 reset_i = 0 0 
+At Posedge          48: symbol_i: a valid_i: 1 reset_i = 0 0 
+At Posedge          49: symbol_i: 0 valid_i: 0 reset_i = 0 1 
+At Posedge          50: symbol_i: 0 valid_i: 0 reset_i = 0 1 
+At Posedge          51: symbol_i: 0 valid_i: 0 reset_i = 0 0 
+At Posedge          52: symbol_i: d valid_i: 1 reset_i = 0 0 
+At Posedge          53: symbol_i: 0 valid_i: 0 reset_i = 0 0 
+At Posedge          54: symbol_i: e valid_i: 1 reset_i = 0 0 
+At Posedge          55: symbol_i: 0 valid_i: 0 reset_i = 0 0 
+At Posedge          56: symbol_i: a valid_i: 1 reset_i = 0 0 
+At Posedge          57: symbol_i: 0 valid_i: 0 reset_i = 0 0 
+At Posedge          58: symbol_i: d valid_i: 1 reset_i = 0 0 
+At Posedge          59: symbol_i: 0 valid_i: 0 reset_i = 0 0 
+At Posedge          60: symbol_i: b valid_i: 1 reset_i = 0 0 
+At Posedge          61: symbol_i: 0 valid_i: 0 reset_i = 0 0 
+At Posedge          62: symbol_i: e valid_i: 1 reset_i = 0 0 
+At Posedge          63: symbol_i: 0 valid_i: 0 reset_i = 0 0 
+At Posedge          64: symbol_i: e valid_i: 1 reset_i = 0 0 
+At Posedge          65: symbol_i: c valid_i: 0 reset_i = 0 0 
+At Posedge          66: symbol_i: f valid_i: 1 reset_i = 0 0 
+At Posedge          67: symbol_i: a valid_i: 0 reset_i = 0 0 
+At Posedge          68: symbol_i: 0 valid_i: 1 reset_i = 0 0 
+At Posedge          69: symbol_i: f valid_i: 0 reset_i = 0 0 
+At Posedge          70: symbol_i: 1 valid_i: 1 reset_i = 0 0 
+At Posedge          71: symbol_i: e valid_i: 0 reset_i = 0 0 
+At Posedge          72: symbol_i: 1 valid_i: 1 reset_i = 0 0 
+At Posedge          73: symbol_i: c valid_i: 0 reset_i = 0 0 
+At Posedge          74: symbol_i: 0 valid_i: 1 reset_i = 0 0 
+At Posedge          75: symbol_i: 0 valid_i: 0 reset_i = 0 0 
+At Posedge          76: symbol_i: f valid_i: 1 reset_i = 0 0 
+At Posedge          77: symbol_i: f valid_i: 0 reset_i = 0 0 
+At Posedge          78: symbol_i: e valid_i: 1 reset_i = 0 0 
+At Posedge          79: symbol_i: f valid_i: 0 reset_i = 0 0 
+At Posedge          80: symbol_i: e valid_i: 1 reset_i = 0 0 
+At Posedge          81: symbol_i: e valid_i: 0 reset_i = 0 0 
+At Posedge          82: symbol_i: b valid_i: 1 reset_i = 0 0 
+At Posedge          83: symbol_i: e valid_i: 0 reset_i = 0 0 
+At Posedge          84: symbol_i: d valid_i: 1 reset_i = 0 0 
+At Posedge          85: symbol_i: 1 valid_i: 0 reset_i = 0 0 
+At Posedge          86: symbol_i: a valid_i: 1 reset_i = 0 0 
+At Posedge          87: symbol_i: 3 valid_i: 0 reset_i = 0 0 
+At Posedge          88: symbol_i: e valid_i: 1 reset_i = 0 0 
+At Posedge          89: symbol_i: 3 valid_i: 0 reset_i = 0 0 
+At Posedge          90: symbol_i: d valid_i: 1 reset_i = 0 0 
+At Posedge          91: symbol_i: 7 valid_i: 0 reset_i = 0 1 
+At Posedge          92: symbol_i: 0 valid_i: 0 reset_i = 0 1 
+At Posedge          93: symbol_i: 0 valid_i: 0 reset_i = 0 0 
+At Posedge          94: symbol_i: 0 valid_i: 0 reset_i = 0 0 
+At Posedge          95: symbol_i: 0 valid_i: 0 reset_i = 0 0 
+At Posedge          96: symbol_i: 0 valid_i: 0 reset_i = 0 0 
+At Posedge          97: symbol_i: 0 valid_i: 0 reset_i = 0 0 
+At Posedge          98: symbol_i: 0 valid_i: 0 reset_i = 0 0 
+At Posedge          99: symbol_i: 0 valid_i: 0 reset_i = 0 0 
+At Posedge         100: symbol_i: b valid_i: 1 reset_i = 0 0 
+At Posedge         101: symbol_i: c valid_i: 1 reset_i = 0 0 
+At Posedge         102: symbol_i: b valid_i: 1 reset_i = 0 0 
+At Posedge         103: symbol_i: 0 valid_i: 0 reset_i = 0 0 
+At Posedge         104: symbol_i: d valid_i: 1 reset_i = 0 0 
+At Posedge         105: symbol_i: d valid_i: 1 reset_i = 0 0 
+At Posedge         106: symbol_i: 0 valid_i: 0 reset_i = 0 0 
+At Posedge         107: symbol_i: 0 valid_i: 0 reset_i = 0 0 
+At Posedge         108: symbol_i: b valid_i: 1 reset_i = 0 0 
+At Posedge         109: symbol_i: c valid_i: 1 reset_i = 0 0 
+At Posedge         110: symbol_i: b valid_i: 1 reset_i = 0 0 
+At Posedge         111: symbol_i: 0 valid_i: 0 reset_i = 0 1 
+At Posedge         112: symbol_i: 0 valid_i: 0 reset_i = 0 1 
+At Posedge         113: symbol_i: 0 valid_i: 0 reset_i = 0 0 
+At Posedge         114: symbol_i: 0 valid_i: 0 reset_i = 0 0 
+At Posedge         115: symbol_i: 0 valid_i: 0 reset_i = 0 0 
+At Posedge         116: symbol_i: 0 valid_i: 0 reset_i = 0 0 
+At Posedge         117: symbol_i: e valid_i: 1 reset_i = 0 0 
+At Posedge         118: symbol_i: 1 valid_i: 1 reset_i = 0 0 
+At Posedge         119: symbol_i: d valid_i: 1 reset_i = 0 0 
+At Posedge         120: symbol_i: 0 valid_i: 0 reset_i = 0 0 
+At Posedge         121: symbol_i: b valid_i: 1 reset_i = 0 0 
+At Posedge         122: symbol_i: b valid_i: 1 reset_i = 0 0 
+At Posedge         123: symbol_i: b valid_i: 0 reset_i = 0 1 
+At Posedge         124: symbol_i: 0 valid_i: 0 reset_i = 0 1 
+At Posedge         125: symbol_i: 0 valid_i: 0 reset_i = 0 1 
+At Posedge         126: symbol_i: 0 valid_i: 0 reset_i = 0 0 
+At Posedge         127: symbol_i: 0 valid_i: 0 reset_i = 0 0 
+Simulation time is              1390000
+[0;32m    ____  ___   __________[0m
+[0;32m   / __ \/   | / ___/ ___/[0m
+[0;32m  / /_/ / /| | \__ \__  [0m
+[0;32m / ____/ ___ |___/ /__/ / [0m
+[0;32m/_/   /_/  |_/____/____/  [0m
+
+Simulation Succeeded!
+Current System Time is: 04:52:35 PM--02/09/2023
