@@ -1,0 +1,15 @@
+[options]
+mode bmc
+depth 10
+expect fail
+
+[engines]
+smtbmc yices
+
+[script]
+read -formal cse_x25_nonsynth_axilite_mem.sv
+prep -top cse_x25_nonsynth_axilite_mem
+
+[files]
+cse_x25_nonsynth_axilite_mem.sv
+cse_x25_axi_pkg.sv
