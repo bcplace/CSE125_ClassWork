@@ -18,7 +18,7 @@ module testbench();
    dut_good
      (.a_i(a_i)
      ,.b_i(b_i)
-     ,.c_i(b_i)
+     ,.c_i(c_i)
      ,.sum_o(sum_o));
 `else 
    adder_synth
@@ -26,7 +26,7 @@ module testbench();
    dut_bad
      (.a_i(a_i)
      ,.b_i(b_i)
-     ,.c_i(b_i)
+     ,.c_i(c_i)
      ,.sum_o(sum_o));
 `endif
 
