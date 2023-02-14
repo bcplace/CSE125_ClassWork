@@ -1,6 +1,6 @@
 `timescale 1ns/1ps
 module testbench();
-   localparam width_lp = 32;
+   localparam width_lp = 8;
    logic [width_lp-1:0] a_i;
    logic [width_lp-1:0] b_i;
    wire  [$clog2(width_lp):0] count_o;
