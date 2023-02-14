@@ -18,35 +18,32 @@ module elastic_pipe
    logic data_en;
    
    
-   assign ready_l = ~valid_o_l | yumi_i;
    logic [width_p - 1 : 0] data_l;
    logic [width_p - 1 : 0] q_l;
+   
    always_ff @(posedge clk_i) begin
        if(reset_i) begin
           q_l <= '0;
-       end else if(ready_l & valid_i) begin
+       end else if(data_en) begin
           q_l <= data_i;
        end
    end 
    
-  /* always_ff @(posedge clk_i) begin
-       if(valid_o_l)
-           data_l = q_l;
-       else
-           data_l = 'X;
-   end*/
-  
-   
-   assign data_o = q_l;
-   assign ready_o = ready_l;
+  always_comb begin 
+      ready_l = ~valid_o_l | yumi_i;
+      data_en = ready_l & valid_i;
+  end
    
    always_ff @(posedge clk_i) begin
        if(reset_i) begin
            valid_o_l <= 1'b0;
        end else begin
-           valid_o_l <= ~yumi_i & valid_i & ready_l;
+           valid_o_l <= ready_l & valid_i | ~yumi_i & ~ready_l;
        end
    end
+   
+   assign data_o = q_l;
+   assign ready_o = ready_l;
    assign valid_o = valid_o_l;
    
 endmodule
