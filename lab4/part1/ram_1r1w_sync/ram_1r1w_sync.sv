@@ -12,5 +12,22 @@ module ram_1r1w_sync
     ,input [$clog2(depth_p) - 1 : 0] rd_addr_i
     ,output [width_p-1:0] rd_data_o
     );
+logic [width_p - 1 : 0] mem [depth_p - 1 : 0];
+logic [$clog2(depth_p) - 1 : 0] read_addr_l;
+
+initial begin
+    $readmemh(filename_p, mem, 0);
+end
+
+always_ff @(posedge clk_i) begin
+    read_addr_l <= rd_addr_i;
+end
+assign rd_data_o = mem[read_addr_l];
+
+always_ff @(posedge clk_i) begin
+    if(wr_valid_i) begin
+        mem[wr_addr_i] <= wr_data_i;
+    end
+end
 
 endmodule
