@@ -1,14 +1,5 @@
 `define CSE_X25_MAX(x,y) (((x)>(y)) ? (x) : (y))
 
-`ifdef XCELIUM // Bare default parameters are incompatible as of 20.09.012
-               // = "inv" causes type inference mismatch as of 20.09.012
-`define CSE_X25_INV_PARAM(param) param = -1
-`elsif YOSYS // Bare default parameters are incompatible as of 0.9
-`define CSE_X25_INV_PARAM(param) param = "inv"
-`else // VIVADO, DC, VERILATOR, GENUS
-`define CSE_X25_INV_PARAM(param) param
-`endif
-
 `define CSE_X25_SAFE_CLOG2(x) ( ((x)==1) ? 1 : $clog2((x)))
 
 module cse_x25_nonsynth_axilite_mem
@@ -26,7 +17,6 @@ module cse_x25_nonsynth_axilite_mem
   ,output axi_awready_o
 
   ,input [axi_data_width_p-1:0] axi_wdata_i
-  ,input axi_wlast_i
   ,input axi_wvalid_i
   ,output axi_wready_o
 
@@ -40,7 +30,6 @@ module cse_x25_nonsynth_axilite_mem
   
   ,output [axi_data_width_p-1:0] axi_rdata_o
   ,output [1:0] axi_rresp_o
-  ,output axi_rlast_o
   ,output axi_rvalid_o
   ,input axi_rready_i
   );
@@ -94,7 +83,7 @@ module cse_x25_nonsynth_axilite_mem
 
      ,.axi_wdata_i                      (axi_wdata_i[axi_data_width_p-1:0])
      ,.axi_wstrb_i                      (4'b1111)
-     ,.axi_wlast_i                      (axi_wlast_i)
+     ,.axi_wlast_i                      (1'b1)
      ,.axi_wvalid_i                     (axi_wvalid_i)
      ,.axi_wready_o                     (axi_wready_o)
 
@@ -113,7 +102,7 @@ module cse_x25_nonsynth_axilite_mem
      ,.axi_rid_o                        ()
      ,.axi_rdata_o                      (axi_rdata_o[axi_data_width_p-1:0])
      ,.axi_rresp_o                      (axi_rresp_o[1:0])
-     ,.axi_rlast_o                      (axi_rlast_o)
+     ,.axi_rlast_o                      ()
      ,.axi_rvalid_o                     (axi_rvalid_o)
      ,.axi_rready_i                     (axi_rready_i)
      );

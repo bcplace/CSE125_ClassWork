@@ -31,7 +31,6 @@ module testbench();
    wire                         axi_awready_o;
 
    logic [axi_data_width_p-1:0] axi_wdata_i;
-   logic                        axi_wlast_i;
    logic                        axi_wvalid_i;
    wire                         axi_wready_o;
 
@@ -45,7 +44,6 @@ module testbench();
    
    wire [axi_data_width_p-1:0]  axi_rdata_o;
    wire [1:0]                   axi_rresp_o;
-   wire                         axi_rlast_o;
    wire                         axi_rvalid_o;
    logic                        axi_rready_i;
 
@@ -65,7 +63,6 @@ module testbench();
      ,.axi_awready_o                    (axi_awready_o)
 
      ,.axi_wdata_i                      (axi_wdata_i)
-     ,.axi_wlast_i                      (axi_wlast_i)
      ,.axi_wvalid_i                     (axi_wvalid_i)
      ,.axi_wready_o                     (axi_wready_o)
 
@@ -79,7 +76,6 @@ module testbench();
 
      ,.axi_rdata_o                      (axi_rdata_o)
      ,.axi_rresp_o                      (axi_rresp_o)
-     ,.axi_rlast_o                      (axi_rlast_o)
      ,.axi_rvalid_o                     (axi_rvalid_o)
      ,.axi_rready_i                     (axi_rready_i)
      );
