@@ -17,6 +17,12 @@ logic [$clog2(depth_p) - 1 : 0] read_addr_l;
 
 initial begin
     $readmemh(filename_p, mem, 0);
+    `ifdef VERILATOR
+           $dumpfile("verilator.vcd");
+    `else
+           $dumpfile("iverilog.vcd");
+    `endif
+    for(int i = 0; i < depth_p; i++) $dumpvars(0, mem[i]);
 end
 
 always_ff @(posedge clk_i) begin

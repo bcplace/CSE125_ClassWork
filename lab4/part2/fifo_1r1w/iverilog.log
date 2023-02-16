@@ -1,6 +1,25 @@
 testbench.cg with cycle_time_p          10
 WARNING: ../../part1/ram_1r1w_sync/ram_1r1w_sync.sv:19: $readmemh: Standard inconsistency, following 1364-2005.
 VCD info: dumpfile iverilog.vcd opened for output.
+VCD warning: array word testbench.dut.FIFO.mem[0] will conflict with an escaped identifier.
+VCD warning: array word testbench.dut.FIFO.mem[1] will conflict with an escaped identifier.
+VCD warning: array word testbench.dut.FIFO.mem[2] will conflict with an escaped identifier.
+VCD warning: array word testbench.dut.FIFO.mem[3] will conflict with an escaped identifier.
+VCD warning: array word testbench.dut.FIFO.mem[4] will conflict with an escaped identifier.
+VCD warning: array word testbench.dut.FIFO.mem[5] will conflict with an escaped identifier.
+VCD warning: array word testbench.dut.FIFO.mem[6] will conflict with an escaped identifier.
+VCD warning: array word testbench.dut.FIFO.mem[7] will conflict with an escaped identifier.
+VCD warning: array word testbench.dut.FIFO.mem[8] will conflict with an escaped identifier.
+VCD warning: array word testbench.dut.FIFO.mem[9] will conflict with an escaped identifier.
+VCD warning: array word testbench.dut.FIFO.mem[10] will conflict with an escaped identifier.
+VCD warning: array word testbench.dut.FIFO.mem[11] will conflict with an escaped identifier.
+VCD warning: array word testbench.dut.FIFO.mem[12] will conflict with an escaped identifier.
+VCD warning: array word testbench.dut.FIFO.mem[13] will conflict with an escaped identifier.
+VCD warning: array word testbench.dut.FIFO.mem[14] will conflict with an escaped identifier.
+VCD warning: array word testbench.dut.FIFO.mem[15] will conflict with an escaped identifier.
+VCD warning: array word testbench.dut.FIFO.mem[16] will conflict with an escaped identifier.
+VCD warning: testbench.sv:79: $dumpfile called after $dumpvars started,
+                              using existing file (iverilog.vcd).
 VCD warning: $dumpvars: Unsupported argument type (vpiPackage)
 
   ______          __  __                    __       _____ ____          ___    ___        
@@ -56,4 +75,4 @@ Simulation time is               350000
 [0;31m/_____/_/  /_/   \____/_/     [0m
 
 Simulation Failed
-Current System Time is: 03:57:17 PM--02/15/2023
+Current System Time is: 05:48:07 PM--02/15/2023
