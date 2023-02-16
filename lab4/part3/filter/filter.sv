@@ -13,29 +13,32 @@ module filter
   );
 
 wire [23:0]shift_o[6:0];
-logic [23:0] data;
-
-initial begin
-#130
-data = 24'd10;
-#10
-data = 24'hB;
-#10
-data = 24'hC;
-#10
-data = 24'hD;
-#10
-data = 24'hE;
-#10
-data = 24'hF;
-#10
-data = 24'h9;
-end
+logic [width_p - 1:0] data;
+logic valid_o_l;
 
 
 shift_24
 #()
 shifter
-(.clk_i(clk_i), .reset_i(reset_i), .en(1'b1), .data_i(data), .data_o());
+(.clk_i(clk_i), .reset_i(reset_i), .en(valid_i & ready_o), .data_i(data_i), .data_o(shift_o));
+
+assign ready_o = ~valid_o | ready_i;
+
+always_comb begin
+    data = (shift_o[0] >> 3) + (shift_o[1] >> 2) + (shift_o[2] >> 1) + 
+    (shift_o[3] << 1) + (shift_o[4] >> 1) + (shift_o[5] >> 2) + (shift_o[6] >> 3);
+end
+
+
+always_ff @(posedge clk_i) begin
+    if(reset_i) begin
+        valid_o_l = '0;
+    end else if(ready_o) begin
+        valid_o_l = ready_o & valid_i;
+    end
+end
+assign valid_o = valid_o_l;
+assign data_o = data;
+
 endmodule
 
