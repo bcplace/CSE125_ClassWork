@@ -1,0 +1,59 @@
+testbench.cg with cycle_time_p          10
+WARNING: ../../part1/ram_1r1w_sync/ram_1r1w_sync.sv:19: $readmemh: Standard inconsistency, following 1364-2005.
+VCD info: dumpfile iverilog.vcd opened for output.
+VCD warning: $dumpvars: Unsupported argument type (vpiPackage)
+
+  ______          __  __                    __       _____ ____          ___    ___        
+ /_  __/__  _____/ /_/ /_  ___  ____  _____/ /_     / __(_) __/___      <  /___<  /      __
+  / / / _ \/ ___/ __/ __ \/ _ \/ __ \/ ___/ __ \   / /_/ / /_/ __ \     / / ___/ / | /| / /
+ / / /  __(__  ) /_/ /_/ /  __/ / / / /__/ / / /  / __/ / __/ /_/ /    / / /  / /| |/ |/ / 
+/_/  \___/____/\__/_.___/\___/_/ /_/\___/_/ /_/  /_/ /_/_/  \____/____/_/_/  /_/ |__/|__/  
+                                                                /_____/                    
+__________ ___________  _______________________________
+\______   \\_   _____/ /   _____/\_   _____/\__    ___/
+ |       _/ |    __)_  \_____  \  |    __)_   |    |   
+ |    |   \ |        \ /        \ |        \  |    |  0->1 time =         10
+ |____|_  //_______  //_______  //_______  /  |____|   
+ ASYNC  \/         \/         \/         \/            
+__________ ___________  _______________________________
+\______   \\_   _____/ /   _____/\_   _____/\__    ___/
+ |       _/ |    __)_  \_____  \  |    __)_   |    |   
+ |    |   \ |        \ /        \ |        \  |    |  1->0 time =        110
+ |____|_  //_______  //_______  //_______  /  |____|   
+ ASYNC  \/         \/         \/         \/            
+
+Begin Test:
+On Cycle           1 (RV: 8e37901c) -- valid_i: 1, yumi_n: 0
+On Cycle           2 (RV: 43356786) -- valid_i: 1, yumi_n: 0
+On Cycle           3 (RV: ed3408da) -- valid_i: 1, yumi_n: 0
+On Cycle           4 (RV: 9eb7c63d) -- valid_i: 0, yumi_n: 0
+On Cycle           5 (RV: 334ea766) -- valid_i: 1, yumi_n: 0
+On Cycle           6 (RV: b855c470) -- valid_i: 1, yumi_n: 1
+On Cycle           7 (RV: b9f50473) -- valid_i: 0, yumi_n: 0
+On Cycle           8 (RV: 5d7199ba) -- valid_i: 1, yumi_n: 0
+On Cycle           9 (RV: 2f3ab35e) -- valid_i: 1, yumi_n: 0
+On Cycle          10 (RV: 7d4779fa) -- valid_i: 1, yumi_n: 0
+On Cycle          11 (RV: 6a8e05d5) -- valid_i: 0, yumi_n: 0
+On Cycle          12 (RV: 8d24f61a) -- valid_i: 1, yumi_n: 0
+On Cycle          13 (RV: dcf000b9) -- valid_i: 0, yumi_n: 0
+On Cycle          14 (RV: 1b876137) -- valid_i: 0, yumi_n: 0
+On Cycle          15 (RV: 4b273796) -- valid_i: 1, yumi_n: 0
+On Cycle          16 (RV: 603921c0) -- valid_i: 1, yumi_n: 1
+On Cycle          17 (RV: 13259f26) -- valid_i: 1, yumi_n: 0
+On Cycle          18 (RV: db461ab6) -- valid_i: 1, yumi_n: 0
+On Cycle          19 (RV: 3e99837d) -- valid_i: 0, yumi_n: 0
+On Cycle          20 (RV: 6e5f0fdc) -- valid_i: 1, yumi_n: 0
+On Cycle          21 (RV: 43615786) -- valid_i: 1, yumi_n: 0
+On Cycle          22 (RV: 3c03ff78) -- valid_i: 1, yumi_n: 1
+ERROR: testbench.sv:237: [0;31mError![0m: On output iteration           2 -- data_o should be 09, got 63
+
+       Time: 350000 Scope: testbench
+Simulation time is               350000
+[0;31m    ______                    [0m
+[0;31m   / ____/_____________  _____[0m
+[0;31m  / __/ / ___/ ___/ __ \/ ___/[0m
+[0;31m / /___/ /  / /  / /_/ / /    [0m
+[0;31m/_____/_/  /_/   \____/_/     [0m
+
+Simulation Failed
+Current System Time is: 03:57:17 PM--02/15/2023

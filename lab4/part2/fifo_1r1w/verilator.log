@@ -1,0 +1,51 @@
+TOP.testbench.cg with cycle_time_p          10
+
+  ______          __  __                    __       _____ ____          ___    ___        
+ /_  __/__  _____/ /_/ /_  ___  ____  _____/ /_     / __(_) __/___      <  /___<  /      __
+  / / / _ \/ ___/ __/ __ \/ _ \/ __ \/ ___/ __ \   / /_/ / /_/ __ \     / / ___/ / | /| / /
+ / / /  __(__  ) /_/ /_/ /  __/ / / / /__/ / / /  / __/ / __/ /_/ /    / / /  / /| |/ |/ / 
+/_/  \___/____/\__/_.___/\___/_/ /_/\___/_/ /_/  /_/ /_/_/  \____/____/_/_/  /_/ |__/|__/  
+                                                                /_____/                    
+__________ ___________  _______________________________
+\______   \\_   _____/ /   _____/\_   _____/\__    ___/
+ |       _/ |    __)_  \_____  \  |    __)_   |    |   
+ |    |   \ |        \ /        \ |        \  |    |  0->1 time =         10
+ |____|_  //_______  //_______  //_______  /  |____|   
+ ASYNC  \/         \/         \/         \/            
+__________ ___________  _______________________________
+\______   \\_   _____/ /   _____/\_   _____/\__    ___/
+ |       _/ |    __)_  \_____  \  |    __)_   |    |   
+ |    |   \ |        \ /        \ |        \  |    |  1->0 time =        110
+ |____|_  //_______  //_______  //_______  /  |____|   
+ ASYNC  \/         \/         \/         \/            
+
+Begin Test:
+On Cycle           1 (RV: d73bab80) -- valid_i: 1, yumi_n: 0
+On Cycle           2 (RV: 3a187961) -- valid_i: 0, yumi_n: 0
+On Cycle           3 (RV: 2e53ff61) -- valid_i: 0, yumi_n: 0
+On Cycle           4 (RV: e2e4c257) -- valid_i: 0, yumi_n: 0
+On Cycle           5 (RV: 774c90d2) -- valid_i: 1, yumi_n: 0
+On Cycle           6 (RV: 67f06afc) -- valid_i: 1, yumi_n: 0
+On Cycle           7 (RV: 160b76bc) -- valid_i: 1, yumi_n: 0
+On Cycle           8 (RV: f1d3b67b) -- valid_i: 0, yumi_n: 0
+On Cycle           9 (RV: d2751b31) -- valid_i: 0, yumi_n: 0
+On Cycle          10 (RV: 9bb61b7e) -- valid_i: 1, yumi_n: 0
+On Cycle          11 (RV: 4f715aed) -- valid_i: 0, yumi_n: 0
+On Cycle          12 (RV: be69f964) -- valid_i: 1, yumi_n: 0
+On Cycle          13 (RV: 408a63d4) -- valid_i: 1, yumi_n: 0
+On Cycle          14 (RV: aae955bd) -- valid_i: 0, yumi_n: 0
+On Cycle          15 (RV: 165ac114) -- valid_i: 1, yumi_n: 0
+On Cycle          16 (RV: ad6cd8cb) -- valid_i: 0, yumi_n: 0
+On Cycle          17 (RV: 35100acb) -- valid_i: 0, yumi_n: 0
+On Cycle          18 (RV: 525a32db) -- valid_i: 0, yumi_n: 0
+On Cycle          19 (RV: deb733e9) -- valid_i: 0, yumi_n: 0
+On Cycle          20 (RV: 1219054e) -- valid_i: 1, yumi_n: 0
+On Cycle          21 (RV: fc047624) -- valid_i: 1, yumi_n: 0
+On Cycle          22 (RV: 876f7742) -- valid_i: 1, yumi_n: 0
+On Cycle          23 (RV: ae252c07) -- valid_i: 0, yumi_n: 0
+On Cycle          24 (RV: d80a7500) -- valid_i: 1, yumi_n: 1
+On Cycle          25 (RV: d5d331d6) -- valid_i: 1, yumi_n: 0
+[370000] %Error: testbench.sv:237: Assertion failed in TOP.testbench: [0;31mError![0m: On output iteration           0 -- data_o should be c4, got 00
+
+%Error: testbench.sv:237: Verilog $stop
+Aborting...

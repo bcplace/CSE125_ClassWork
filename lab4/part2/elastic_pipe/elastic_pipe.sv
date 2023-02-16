@@ -37,8 +37,8 @@ module elastic_pipe
    always_ff @(posedge clk_i) begin
        if(reset_i) begin
            valid_o_l <= 1'b0;
-       end else begin
-           valid_o_l <= ready_l & valid_i | ~yumi_i & ~ready_l;
+       end else if(ready_l) begin
+           valid_o_l <= ready_l & valid_i;// | ~yumi_i & ~ready_l;
        end
    end
    
