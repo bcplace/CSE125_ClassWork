@@ -58,16 +58,10 @@ On Cycle          13 (RV: dcf000b9) -- valid_i: 0, yumi_n: 0
 On Cycle          14 (RV: 1b876137) -- valid_i: 0, yumi_n: 0
 On Cycle          15 (RV: 4b273796) -- valid_i: 1, yumi_n: 0
 On Cycle          16 (RV: 603921c0) -- valid_i: 1, yumi_n: 1
-On Cycle          17 (RV: 13259f26) -- valid_i: 1, yumi_n: 0
-On Cycle          18 (RV: db461ab6) -- valid_i: 1, yumi_n: 0
-On Cycle          19 (RV: 3e99837d) -- valid_i: 0, yumi_n: 0
-On Cycle          20 (RV: 6e5f0fdc) -- valid_i: 1, yumi_n: 0
-On Cycle          21 (RV: 43615786) -- valid_i: 1, yumi_n: 0
-On Cycle          22 (RV: 3c03ff78) -- valid_i: 1, yumi_n: 1
-ERROR: testbench.sv:237: [0;31mError![0m: On output iteration           2 -- data_o should be 09, got 63
+ERROR: testbench.sv:237: [0;31mError![0m: On output iteration           1 -- data_o should be 81, got 24
 
-       Time: 350000 Scope: testbench
-Simulation time is               350000
+       Time: 290000 Scope: testbench
+Simulation time is               290000
 [0;31m    ______                    [0m
 [0;31m   / ____/_____________  _____[0m
 [0;31m  / __/ / ___/ ___/ __ \/ ___/[0m
@@ -75,4 +69,4 @@ Simulation time is               350000
 [0;31m/_____/_/  /_/   \____/_/     [0m
 
 Simulation Failed
-Current System Time is: 05:48:07 PM--02/15/2023
+Current System Time is: 08:45:47 PM--02/15/2023

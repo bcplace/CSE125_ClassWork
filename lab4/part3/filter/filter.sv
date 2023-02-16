@@ -12,5 +12,30 @@ module filter
   ,input [0:0] ready_i
   );
 
+wire [23:0]shift_o[6:0];
+logic [23:0] data;
+
+initial begin
+#130
+data = 24'd10;
+#10
+data = 24'hB;
+#10
+data = 24'hC;
+#10
+data = 24'hD;
+#10
+data = 24'hE;
+#10
+data = 24'hF;
+#10
+data = 24'h9;
+end
+
+
+shift_24
+#()
+shifter
+(.clk_i(clk_i), .reset_i(reset_i), .en(1'b1), .data_i(data), .data_o());
 endmodule
 
