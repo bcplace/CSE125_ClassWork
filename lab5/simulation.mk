@@ -60,7 +60,7 @@ ISIM_EXE := iverilog-tb
 ISIM_LOG := iverilog.log
 ISIM_WAV := iverilog.vcd
 $(ISIM_EXE): testbench.sv $(NONSYNTH_SOURCES) $(SYNTH_SOURCES)
-	$(IVERILOG) -g2005-sv -o $(ISIM_EXE) testbench.sv $(NONSYNTH_SOURCES) $(SYNTH_SOURCES)
+	$(IVERILOG) -g2005-sv -o $(ISIM_EXE) $(NONSYNTH_SOURCES:%=-l %) $(SYNTH_SOURCES:%=-l %) testbench.sv
 
 $(ISIM_LOG): $(ISIM_EXE)
 	./$(ISIM_EXE) | tee iverilog.log
