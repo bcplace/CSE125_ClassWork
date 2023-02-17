@@ -32,9 +32,9 @@ end
 
 always_ff @(posedge clk_i) begin
     if(reset_i) begin
-        valid_o_l = '0;
+        valid_o_l <= '0;
     end else if(ready_o) begin
-        valid_o_l = ready_o & valid_i;
+        valid_o_l <= ready_o & valid_i;
     end
 end
 assign valid_o = valid_o_l;

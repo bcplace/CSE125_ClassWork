@@ -70,6 +70,7 @@ module top
    wire        axis_rx_ready;
    wire        axis_rx_last;
    wire        clk_o;
+   wire axis_clk;
 
   // This is a PLL! You'll learn about these later...
   SB_PLL40_PAD 
@@ -100,10 +101,10 @@ module top
      ,.tx_axis_c_ready(axis_tx_ready)
      ,.tx_axis_c_last(axis_tx_last)
      
-     ,.rx_axis_p_data(axis_tx_data)
-     ,.rx_axis_p_valid(axis_tx_valid)
-     ,.rx_axis_p_ready(axis_tx_ready)
-     ,.rx_axis_p_last(axis_tx_last)
+     ,.rx_axis_p_data(axis_rx_data)
+     ,.rx_axis_p_valid(axis_rx_valid)
+     ,.rx_axis_p_ready(axis_rx_ready)
+     ,.rx_axis_p_last(axis_rx_last)
      
      ,.tx_mclk(tx_main_clk_o)
      ,.tx_lrck(tx_lr_clk_o)
@@ -116,5 +117,47 @@ module top
      );
 
      // Your code goes here
+     
+     logic [23:0] Right_data;
+     logic [23:0] Left_data;
+     
+     always_ff @(posedge axis_clk) begin
+        if(axis_rx_last) begin
+            Right_data <= axis_rx_data;
+            Left_data <= Left_data;
+        end else begin
+            Right_data <= Right_data;
+            Left_data <= axis_rx_data;
+        end
+     end
+     
+     wire [23:0] tx_data;
+     wire [23:0] left_filtered;
+     wire [23:0] right_filtered;
+     
+     filter
+     #()
+     HPF_RIGHT
+     (.clk_i(axis_clk),
+     .reset_i(reset_r),
+     .data_i(Right_data),
+     .valid_i(axis_rx_valid),
+     .ready_o(axis_rx_ready),
+     .valid_o(axis_tx_valid),
+     .data_o(axis_tx_data),
+     .ready_i(axis_tx_ready));
+     
+     filter
+     #()
+     HPF_LEFT
+     (.clk_i(axis_clk),
+     .reset_i(reset_r),
+     .data_i(Left_data),
+     .valid_i(axis_rx_valid),
+     .ready_o(axis_rx_ready),
+     .valid_o(axis_tx_valid),
+     .data_o(axis_tx_data),
+     .ready_i(axis_tx_ready));
+     
 
 endmodule

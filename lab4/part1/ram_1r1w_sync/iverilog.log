@@ -1,5 +1,5 @@
 testbench.cg with cycle_time_p          10
-WARNING: ram_1r1w_sync.sv:19: $readmemh: Standard inconsistency, following 1364-2005.
+WARNING: ram_1r1w_sync.sv:20: $readmemh: Standard inconsistency, following 1364-2005.
 VCD info: dumpfile iverilog.vcd opened for output.
 VCD warning: $dumpvars: Unsupported argument type (vpiPackage)
 
@@ -31,4 +31,4 @@ Simulation time is                  615
 [0;32m/_/   /_/  |_/____/____/  [0m
 
 Simulation Succeeded!
-Current System Time is: 03:39:12 PM--02/13/2023
+Current System Time is: 05:53:00 PM--02/16/2023

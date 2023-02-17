@@ -1,4 +1,5 @@
 module ram_1r1w_sync
+/* verilator lint_off UNUSEDSIGNAL */
   #(parameter [31:0] width_p = 8
     ,parameter [31:0] depth_p = 128
     ,parameter  filename_p = "memory_init_file.hex")
@@ -35,5 +36,5 @@ always_ff @(posedge clk_i) begin
         mem[wr_addr_i] <= wr_data_i;
     end
 end
-
+/* verilator lint_on UNUSEDSIGNAL */
 endmodule

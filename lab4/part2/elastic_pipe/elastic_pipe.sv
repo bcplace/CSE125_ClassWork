@@ -18,7 +18,6 @@ module elastic_pipe
    logic data_en;
    
    
-   logic [width_p - 1 : 0] data_l;
    logic [width_p - 1 : 0] q_l;
    
    always_ff @(posedge clk_i) begin

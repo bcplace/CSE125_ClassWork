@@ -70,6 +70,7 @@ module top
    wire        axis_rx_ready;
    wire        axis_rx_last;
    wire        clk_o;
+   wire axis_clk;
 
   // This is a PLL! You'll learn about these later...
   SB_PLL40_PAD 
@@ -117,8 +118,9 @@ module top
 
      // Your code goes here
      fifo_1r1w
-     #(.width(25))
-     (.clk_i(clk_i),
+     #(.width_p(25))
+     FIFO
+     (.clk_i(axis_clk),
      .reset_i(reset_r),
      .data_i({axis_rx_last, axis_rx_data}),
      .valid_i(axis_rx_valid),
