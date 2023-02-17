@@ -1,8 +1,7 @@
 `timescale 1ns/1ps
 module testbench();
    localparam width_lp = 8;
-   logic [width_lp-1:0] a_i;
-   logic [width_lp-1:0] b_i;
+   logic [width_lp-1:0] binary_i;
    wire  [$clog2(width_lp):0] count_o;
 
    logic [0:0] error;
@@ -15,13 +14,13 @@ module testbench();
    countones
      #(.width_p(width_lp))
    dut_good
-     (.binary_i(a_i)
+     (.binary_i(binary_i)
      ,.count_o(count_o));
 `else 
-   countones
+   countones_synth
      #(.width_p(width_lp))
-   dut_good
-     (.binary_i(a_i)
+   dut_bad
+     (.binary_i(binary_i)
      ,.count_o(count_o));
 `endif
 
