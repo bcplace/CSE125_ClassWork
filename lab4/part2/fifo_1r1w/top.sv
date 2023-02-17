@@ -100,10 +100,10 @@ module top
      ,.tx_axis_c_ready(axis_tx_ready)
      ,.tx_axis_c_last(axis_tx_last)
      
-     ,.rx_axis_p_data(axis_tx_data)
-     ,.rx_axis_p_valid(axis_tx_valid)
-     ,.rx_axis_p_ready(axis_tx_ready)
-     ,.rx_axis_p_last(axis_tx_last)
+     ,.rx_axis_p_data(axis_rx_data)
+     ,.rx_axis_p_valid(axis_rx_valid)
+     ,.rx_axis_p_ready(axis_rx_ready)
+     ,.rx_axis_p_last(axis_rx_last)
      
      ,.tx_mclk(tx_main_clk_o)
      ,.tx_lrck(tx_lr_clk_o)
@@ -116,5 +116,15 @@ module top
      );
 
      // Your code goes here
+     fifo_1r1w
+     #(.width(25))
+     (.clk_i(clk_i),
+     .reset_i(reset_r),
+     .data_i({axis_rx_last, axis_rx_data}),
+     .valid_i(axis_rx_valid),
+     .ready_o(axis_rx_ready),
+     .valid_o(axis_tx_valid),
+     .data_o({axis_tx_last, axis_tx_data}),
+     .yumi_i(axis_tx_ready));
 
 endmodule

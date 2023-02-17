@@ -14,58 +14,67 @@ module fifo_1r1w
   ,input [0:0] yumi_i
   );
   
-  logic [$clog2(depth_p) - 1 : 0] wr_ptr = '0;
-  logic [$clog2(depth_p) - 1 : 0] rd_ptr = '0;
   
   logic ready_o_l;
   logic valid_o_l;
-  logic [width_p - 1:0] data_o_l;
-  logic [width_p - 1:0] data_i_l;
-  logic Full_FIFO;
-  logic [$clog2(depth_p) - 1 : 0] next_wr_ptr = '0;
-  logic [$clog2(depth_p) - 1 : 0] next_rd_ptr = '0;
+  logic [$clog2(depth_p) - 1:0] wr_ptr;
+  logic [$clog2(depth_p) - 1:0] rd_ptr;
+  wire [31:0] wr_ptr_comp;
+  wire [31:0] rd_ptr_comp;
+  
+  assign wr_ptr_comp[$clog2(depth_p) - 1:0] = wr_ptr;
+  assign wr_ptr_comp[31:$clog2(depth_p)] = '0;
+  assign rd_ptr_comp[$clog2(depth_p) - 1:0] = rd_ptr;
+  assign rd_ptr_comp[31:$clog2(depth_p)] = '0;
   
   always_ff @(posedge clk_i) begin
-      if(valid_i & ready_o_l) begin
-          data_i_l <= data_i;
-          next_wr_ptr <= wr_ptr + 1;
+      if(reset_i) begin
+          ready_o_l <= '0;
+          valid_o_l <= '0;
+          wr_ptr <= '0;
+          rd_ptr <= '0;
       end
-      wr_ptr <= next_wr_ptr;
-  end
-  
-  always_ff @(posedge clk_i) begin
-      if(rd_ptr != wr_ptr) begin
-          valid_o_l <= 1'b1;
+      if(yumi_i & valid_o) begin // Producer Yumi-Valid Handshake
+         valid_o_l <= 1'b0;
+         if(rd_ptr_comp >= depth_p - 1)
+           rd_ptr <= '0; //at terminal count loop back
+         else
+           rd_ptr <= rd_ptr + 1;
       end else begin
-          valid_o_l <= 1'b0;
-      end 
-  end
-  
-  always_ff @(posedge clk_i) begin
-      if(rd_ptr - wr_ptr == 1) begin 
-          Full_FIFO <= 1'b1;
+         if(rd_ptr != wr_ptr) begin //If not empty
+             valid_o_l <= 1'b1;
+         end
+      end
+      
+      if(ready_o_l & valid_i) begin //Consumer Ready-Valid Handshake
+         ready_o_l <= 1'b0; //We won't be ready for more until next clock cycle
+         if(wr_ptr_comp == depth_p - 1) begin
+           wr_ptr <= '0; //at terminal count loop back
+         end else begin
+           wr_ptr <= wr_ptr + 1;
+         end
       end else begin
-          Full_FIFO <= 1'b0;
+          if((rd_ptr != wr_ptr + 1) || ((wr_ptr_comp == depth_p - 1) && (rd_ptr == 0))) begin //if the FIFO isn't full
+             ready_o_l <= 1'b1;
+          end
       end
   end
   
-  always_comb begin
-     if(yumi_i) begin
-       
-  end
-     
-  
-  assign ready_o_l = ~Full_FIFO;
-  assign data_o = data_o_l;
   assign valid_o = valid_o_l;
   assign ready_o = ready_o_l;
   
-  ram_1r1w_sync
-  #(.width_p(width_p), .depth_p(depth_p))
-  FIFO
-  (.clk_i(clk_i), .reset_i(reset_i), 
-  .wr_valid_i(valid_i&ready_o_l), .wr_data_i(data_i_l), .wr_addr_i(wr_ptr),
-  .rd_addr_i(next_rd_ptr), .rd_data_o(data_o_l));
+ram_1r1w_sync #(.width_p(width_p), .depth_p(depth_p))
+  ram_1r1w_sync_inst
+   (.clk_i(clk_i)
+    ,.reset_i(reset_i)
+
+    ,.wr_valid_i(valid_i & ready_o)
+    ,.wr_data_i(data_i)
+    ,.wr_addr_i(wr_ptr)
+
+    ,.rd_addr_i(rd_ptr)
+    ,.rd_data_o(data_o)
+    );
 
 endmodule
 
