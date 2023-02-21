@@ -5,11 +5,18 @@ module testbench();
    wire  [$clog2(width_lp):0] count_o;
 
    logic [0:0] error;
+   logic [$clog2(width_lp):0] correct_count_o;
+   logic [width_lp:0] binary_test_i;
+   
+   assign error = (count_o !== correct_count_o);
+   
    
    // Your testbench should PASS with the good DUT, and FAIL with the
    // "bad" DUT. Use `define GOOD to switch between the two.
    //
    // Write your assertions inside of the DUT modules themselves.
+   
+   `define GOOD;
 `ifdef GOOD
    countones
      #(.width_p(width_lp))
@@ -35,7 +42,11 @@ module testbench();
 
       // Put your testbench code here. Print all of the test cases and
       // their correctness.
-
+      for(binary_test_i = '0; binary_test_i < (1 << width_lp); binary_test_i++) begin
+           binary_i = binary_test_i[width_lp - 1:0];
+           case(binary_i[2:0])
+               3'o
+      end
       $finish();
    end
 
