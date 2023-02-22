@@ -3,7 +3,7 @@
 (* hdlname = "\\graycounter" *)
 (* dynports =  1  *)
 (* top =  1  *)
-(* src = "graycounter.sv:1.1-31.10" *)
+(* src = "graycounter.soln.sv:1.1-37.10" *)
 module graycounter(clk_i, reset_i, up_i, gray_o);
   wire _00_;
   wire _01_;
@@ -12,54 +12,60 @@ module graycounter(clk_i, reset_i, up_i, gray_o);
   wire _04_;
   wire _05_;
   wire _06_;
-  wire _07_;
-  (* src = "graycounter.sv:12.24-12.32" *)
+  (* src = "graycounter.soln.sv:12.24-12.32" *)
   (* unused_bits = "0 1 2" *)
   wire [3:0] binary_l;
-  (* src = "graycounter.sv:3.17-3.22" *)
+  (* src = "graycounter.soln.sv:3.17-3.22" *)
   input clk_i;
   wire clk_i;
-  (* src = "graycounter.sv:13.24-13.33" *)
+  (* src = "graycounter.soln.sv:14.24-14.33" *)
   wire [3:0] counter_n;
-  (* src = "graycounter.sv:6.26-6.32" *)
+  (* src = "graycounter.soln.sv:6.26-6.32" *)
   output [3:0] gray_o;
   wire [3:0] gray_o;
-  (* src = "graycounter.sv:8.24-8.30" *)
-  reg [3:0] gray_r = 0;
-  (* src = "graycounter.sv:4.17-4.24" *)
+  (* src = "graycounter.soln.sv:8.24-8.30" *)
+  reg [3:0] gray_r;
+  (* src = "graycounter.soln.sv:4.17-4.24" *)
   input reset_i;
   wire reset_i;
-  (* src = "graycounter.sv:5.17-5.21" *)
+  (* src = "graycounter.soln.sv:13.24-13.30" *)
+  (* unused_bits = "0 1" *)
+  wire [3:0] temp_n;
+  (* src = "graycounter.soln.sv:5.17-5.21" *)
   input up_i;
   wire up_i;
-  assign _00_ = ~(gray_r[1] ^ gray_r[2]);
-  assign _01_ = ~(gray_r[0] ^ gray_r[1]);
-  assign _02_ = up_i & ~(_01_);
-  assign _03_ = _02_ & ~(_00_);
-  assign counter_n[3] = _03_ ? gray_r[2] : gray_r[3];
-  assign _04_ = ~(gray_r[2] ^ gray_r[3]);
-  assign _05_ = _03_ ^ _04_;
-  assign counter_n[2] = ~(_05_ ^ counter_n[3]);
-  assign _06_ = _01_ ^ up_i;
-  assign _07_ = _02_ ^ _00_;
-  assign counter_n[0] = _07_ ^ _06_;
-  assign counter_n[1] = _07_ ^ _05_;
+  assign _06_ = gray_r[3] ^ gray_r[2];
+  assign _00_ = gray_r[2] ^ gray_r[1];
+  assign _01_ = _00_ ^ gray_r[3];
+  assign _02_ = ~(gray_r[0] ^ gray_r[1]);
+  assign _03_ = _02_ ^ _06_;
+  assign _04_ = _01_ & ~(_03_);
+  assign temp_n[2] = _04_ ^ _06_;
+  assign counter_n[0] = temp_n[2] ^ _03_;
+  assign temp_n[3] = _04_ ? gray_r[2] : gray_r[3];
+  assign _05_ = ~(_03_ ^ _01_);
+  assign counter_n[1] = _05_ ^ temp_n[3];
   (* \always_ff  = 32'd1 *)
-  (* src = "graycounter.sv:27.4-29.7" *)
+  (* src = "graycounter.soln.sv:29.4-35.7" *)
   always @(posedge clk_i)
-    gray_r[0] <= counter_n[0];
+    if (reset_i) gray_r[0] <= 1'h0;
+    else if (up_i) gray_r[0] <= counter_n[0];
   (* \always_ff  = 32'd1 *)
-  (* src = "graycounter.sv:27.4-29.7" *)
+  (* src = "graycounter.soln.sv:29.4-35.7" *)
   always @(posedge clk_i)
-    gray_r[1] <= counter_n[1];
+    if (reset_i) gray_r[1] <= 1'h0;
+    else if (up_i) gray_r[1] <= counter_n[1];
   (* \always_ff  = 32'd1 *)
-  (* src = "graycounter.sv:27.4-29.7" *)
+  (* src = "graycounter.soln.sv:29.4-35.7" *)
   always @(posedge clk_i)
-    gray_r[2] <= counter_n[2];
+    if (reset_i) gray_r[2] <= 1'h0;
+    else if (up_i) gray_r[2] <= temp_n[2];
   (* \always_ff  = 32'd1 *)
-  (* src = "graycounter.sv:27.4-29.7" *)
+  (* src = "graycounter.soln.sv:29.4-35.7" *)
   always @(posedge clk_i)
-    gray_r[3] <= counter_n[3];
+    if (reset_i) gray_r[3] <= 1'h0;
+    else if (up_i) gray_r[3] <= temp_n[3];
   assign binary_l[3] = gray_r[3];
+  assign counter_n[3:2] = temp_n[3:2];
   assign gray_o = gray_r;
 endmodule
