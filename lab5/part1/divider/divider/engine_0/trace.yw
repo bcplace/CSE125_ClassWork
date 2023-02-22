@@ -1,0 +1,12 @@
+{
+  "format": "Yosys Witness Trace",
+  "generator": "smtbmc",
+  "clocks": [],
+  "signals": [
+    {"path": ["\\a_i"], "width": 4, "offset": 0, "init_only": false},
+    {"path": ["\\b_i"], "width": 4, "offset": 0, "init_only": false}
+  ],
+  "steps": [
+    {"bits": "10001000"}
+  ]
+}

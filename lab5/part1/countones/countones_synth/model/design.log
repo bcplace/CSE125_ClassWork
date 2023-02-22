@@ -1,0 +1,295 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.25+1 (git sha1 d3216593d, clang 10.0.0-4ubuntu1 -fPIC -Os)
+
+
+-- Executing script file `../model/design.ys' --
+
+1. Executing Verilog-2005 frontend: countones.sv
+Parsing formal SystemVerilog input from `countones.sv' to AST representation.
+Storing AST representation for module `$abstract\countones'.
+Storing AST representation for module `$abstract\countones_synth'.
+Storing AST representation for module `$abstract\yosys_countones'.
+Successfully finished Verilog frontend.
+
+2. Executing PREP pass.
+
+2.1. Executing HIERARCHY pass (managing design hierarchy).
+
+2.2. Executing AST frontend in derive mode using pre-parsed AST for module `\countones_synth'.
+Generating RTLIL representation for module `\countones_synth'.
+
+2.2.1. Analyzing design hierarchy..
+Top module:  \countones_synth
+
+2.2.2. Executing AST frontend in derive mode using pre-parsed AST for module `\yosys_countones'.
+Generating RTLIL representation for module `\yosys_countones'.
+
+2.2.3. Analyzing design hierarchy..
+Top module:  \countones_synth
+Used module:     \yosys_countones
+
+2.2.4. Analyzing design hierarchy..
+Top module:  \countones_synth
+Used module:     \yosys_countones
+Removing unused module `$abstract\yosys_countones'.
+Removing unused module `$abstract\countones_synth'.
+Removing unused module `$abstract\countones'.
+Removed 3 unused modules.
+Module countones_synth directly or indirectly contains formal properties -> setting "keep" attribute.
+
+2.3. Executing PROC pass (convert processes to netlists).
+
+2.3.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+2.3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+2.3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 0 assignments to connections.
+
+2.3.4. Executing PROC_INIT pass (extract init attributes).
+
+2.3.5. Executing PROC_ARST pass (detect async resets in processes).
+
+2.3.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+2.3.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+
+2.3.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+2.3.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+2.3.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+2.3.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+2.3.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module countones_synth.
+<suppressed ~16 debug messages>
+Optimizing module yosys_countones.
+<suppressed ~3 debug messages>
+
+2.4. Executing OPT_EXPR pass (perform const folding).
+Optimizing module countones_synth.
+Optimizing module yosys_countones.
+
+2.5. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \countones_synth..
+Finding unused cells or wires in module \yosys_countones..
+Removed 0 unused cells and 48 unused wires.
+<suppressed ~2 debug messages>
+
+2.6. Executing CHECK pass (checking for obvious problems).
+Checking module countones_synth...
+Checking module yosys_countones...
+Found and reported 0 problems.
+
+2.7. Executing OPT pass (performing simple optimizations).
+
+2.7.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module countones_synth.
+Optimizing module yosys_countones.
+
+2.7.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\countones_synth'.
+Finding identical cells in module `\yosys_countones'.
+Removed a total of 0 cells.
+
+2.7.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \countones_synth..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \yosys_countones..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+2.7.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \countones_synth.
+  Optimizing cells in module \yosys_countones.
+Performed a total of 0 changes.
+
+2.7.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\countones_synth'.
+Finding identical cells in module `\yosys_countones'.
+Removed a total of 0 cells.
+
+2.7.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \countones_synth..
+Finding unused cells or wires in module \yosys_countones..
+
+2.7.7. Executing OPT_EXPR pass (perform const folding).
+Optimizing module countones_synth.
+Optimizing module yosys_countones.
+
+2.7.8. Finished OPT passes. (There is nothing left to do.)
+
+2.8. Executing WREDUCE pass (reducing word size of cells).
+Removed top 31 bits (of 32) from port A of cell countones_synth.$add$countones.sv:0$6 ($add).
+Removed top 31 bits (of 32) from port B of cell countones_synth.$add$countones.sv:0$6 ($add).
+Removed top 30 bits (of 32) from port Y of cell countones_synth.$add$countones.sv:0$6 ($add).
+Removed top 30 bits (of 32) from port A of cell countones_synth.$add$countones.sv:0$10 ($add).
+Removed top 31 bits (of 32) from port B of cell countones_synth.$add$countones.sv:0$10 ($add).
+Removed top 29 bits (of 32) from port Y of cell countones_synth.$add$countones.sv:0$10 ($add).
+Removed top 29 bits (of 32) from port A of cell countones_synth.$add$countones.sv:0$14 ($add).
+Removed top 31 bits (of 32) from port B of cell countones_synth.$add$countones.sv:0$14 ($add).
+Removed top 28 bits (of 32) from port Y of cell countones_synth.$add$countones.sv:0$14 ($add).
+Removed top 28 bits (of 32) from port A of cell countones_synth.$add$countones.sv:0$18 ($add).
+Removed top 31 bits (of 32) from port B of cell countones_synth.$add$countones.sv:0$18 ($add).
+Removed top 27 bits (of 32) from port Y of cell countones_synth.$add$countones.sv:0$18 ($add).
+Removed top 27 bits (of 32) from port A of cell countones_synth.$add$countones.sv:0$22 ($add).
+Removed top 31 bits (of 32) from port B of cell countones_synth.$add$countones.sv:0$22 ($add).
+Removed top 26 bits (of 32) from port Y of cell countones_synth.$add$countones.sv:0$22 ($add).
+Removed top 26 bits (of 32) from port A of cell countones_synth.$add$countones.sv:0$26 ($add).
+Removed top 31 bits (of 32) from port B of cell countones_synth.$add$countones.sv:0$26 ($add).
+Removed top 25 bits (of 32) from port Y of cell countones_synth.$add$countones.sv:0$26 ($add).
+Removed top 25 bits (of 32) from port A of cell countones_synth.$add$countones.sv:0$30 ($add).
+Removed top 31 bits (of 32) from port B of cell countones_synth.$add$countones.sv:0$30 ($add).
+Removed top 24 bits (of 32) from port Y of cell countones_synth.$add$countones.sv:0$30 ($add).
+Removed top 24 bits (of 32) from port A of cell countones_synth.$add$countones.sv:73$34 ($add).
+Removed top 31 bits (of 32) from port B of cell countones_synth.$add$countones.sv:73$34 ($add).
+Removed top 23 bits (of 32) from port Y of cell countones_synth.$add$countones.sv:73$34 ($add).
+Removed top 28 bits (of 32) from port A of cell countones_synth.$sub$countones.sv:73$35 ($sub).
+Removed top 23 bits (of 32) from port B of cell countones_synth.$sub$countones.sv:73$35 ($sub).
+Removed top 22 bits (of 32) from port Y of cell countones_synth.$sub$countones.sv:73$35 ($sub).
+Removed top 29 bits (of 32) from wire countones_synth.$add$countones.sv:0$10_Y.
+Removed top 28 bits (of 32) from wire countones_synth.$add$countones.sv:0$14_Y.
+Removed top 27 bits (of 32) from wire countones_synth.$add$countones.sv:0$18_Y.
+Removed top 26 bits (of 32) from wire countones_synth.$add$countones.sv:0$22_Y.
+Removed top 25 bits (of 32) from wire countones_synth.$add$countones.sv:0$26_Y.
+Removed top 24 bits (of 32) from wire countones_synth.$add$countones.sv:0$30_Y.
+Removed top 30 bits (of 32) from wire countones_synth.$add$countones.sv:0$6_Y.
+Removed top 23 bits (of 32) from wire countones_synth.$add$countones.sv:73$34_Y.
+Removed top 31 bits (of 32) from wire countones_synth.$eqx$countones.sv:0$5_Y.
+
+2.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \countones_synth..
+Finding unused cells or wires in module \yosys_countones..
+Removed 0 unused cells and 9 unused wires.
+<suppressed ~1 debug messages>
+
+2.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+2.11. Executing OPT pass (performing simple optimizations).
+
+2.11.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module countones_synth.
+Optimizing module yosys_countones.
+
+2.11.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\countones_synth'.
+Finding identical cells in module `\yosys_countones'.
+Removed a total of 0 cells.
+
+2.11.3. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \countones_synth..
+Finding unused cells or wires in module \yosys_countones..
+
+2.11.4. Finished fast OPT passes.
+
+2.12. Printing statistics.
+
+=== countones_synth ===
+
+   Number of wires:                 20
+   Number of wire bits:            345
+   Number of public wires:           2
+   Number of public wire bits:      12
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 20
+     $add                            8
+     $assert                         1
+     $eq                             1
+     $eqx                            8
+     $sub                            1
+     yosys_countones                 1
+
+=== yosys_countones ===
+
+   Number of wires:                 40
+   Number of wire bits:             53
+   Number of public wires:          28
+   Number of public wire bits:      41
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 41
+     $and                            9
+     $not                           15
+     $or                             6
+     $xor                           11
+
+=== design hierarchy ===
+
+   countones_synth                   1
+     yosys_countones                 1
+
+   Number of wires:                 60
+   Number of wire bits:            398
+   Number of public wires:          30
+   Number of public wire bits:      53
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 60
+     $add                            8
+     $and                            9
+     $assert                         1
+     $eq                             1
+     $eqx                            8
+     $not                           15
+     $or                             6
+     $sub                            1
+     $xor                           11
+
+2.13. Executing CHECK pass (checking for obvious problems).
+Checking module countones_synth...
+Checking module yosys_countones...
+Found and reported 0 problems.
+
+3. Executing HIERARCHY pass (managing design hierarchy).
+
+3.1. Analyzing design hierarchy..
+Top module:  \countones_synth
+Used module:     \yosys_countones
+
+3.2. Analyzing design hierarchy..
+Top module:  \countones_synth
+Used module:     \yosys_countones
+Removed 0 unused modules.
+Module countones_synth directly or indirectly contains formal properties -> setting "keep" attribute.
+
+4. Executing jny backend.
+
+5. Executing RTLIL backend.
+Output filename: ../model/design.il
+
+End of script. Logfile hash: 170f442779, CPU: user 0.04s system 0.01s, MEM: 11.90 MB peak
+Yosys 0.25+1 (git sha1 d3216593d, clang 10.0.0-4ubuntu1 -fPIC -Os)
+Time spent: 28% 5x opt_expr (0 sec), 18% 3x opt_merge (0 sec), ...

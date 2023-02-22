@@ -1,0 +1,27 @@
+SBY 17:02:46 [adder_synth] Removing directory '/home/vboxuser/Desktop/CSE125/cse-x25-wi23/lab5/part1/adder/adder_synth'.
+SBY 17:02:46 [adder_synth] Copy '/home/vboxuser/Desktop/CSE125/cse-x25-wi23/lab5/part1/adder/adder.sv' to '/home/vboxuser/Desktop/CSE125/cse-x25-wi23/lab5/part1/adder/adder_synth/src/adder.sv'.
+SBY 17:02:46 [adder_synth] engine_0: smtbmc yices
+SBY 17:02:46 [adder_synth] base: starting process "cd adder_synth/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY 17:02:46 [adder_synth] base: finished (returncode=0)
+SBY 17:02:46 [adder_synth] prep: starting process "cd adder_synth/model; yosys -ql design_prep.log design_prep.ys"
+SBY 17:02:46 [adder_synth] prep: finished (returncode=0)
+SBY 17:02:46 [adder_synth] smt2: starting process "cd adder_synth/model; yosys -ql design_smt2.log design_smt2.ys"
+SBY 17:02:47 [adder_synth] smt2: finished (returncode=0)
+SBY 17:02:47 [adder_synth] engine_0: starting process "cd adder_synth; yosys-smtbmc -s yices --presat --unroll --noprogress -t 10  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2"
+SBY 17:02:47 [adder_synth] engine_0: ##   0:00:00  Solver: yices
+SBY 17:02:47 [adder_synth] engine_0: ##   0:00:00  Checking assumptions in step 0..
+SBY 17:02:47 [adder_synth] engine_0: ##   0:00:00  Checking assertions in step 0..
+SBY 17:02:47 [adder_synth] engine_0: ##   0:00:00  BMC failed!
+SBY 17:02:47 [adder_synth] engine_0: ##   0:00:00  Assert failed in adder_synth: adder.sv:57.53-58.50 ($assert$adder.sv:57$8)
+SBY 17:02:47 [adder_synth] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace.vcd
+SBY 17:02:47 [adder_synth] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace_tb.v
+SBY 17:02:47 [adder_synth] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace.smtc
+SBY 17:02:47 [adder_synth] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace.yw
+SBY 17:02:47 [adder_synth] engine_0: ##   0:00:00  Status: failed
+SBY 17:02:47 [adder_synth] engine_0: finished (returncode=1)
+SBY 17:02:47 [adder_synth] engine_0: Status returned by engine: FAIL
+SBY 17:02:47 [adder_synth] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 17:02:47 [adder_synth] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 17:02:47 [adder_synth] summary: engine_0 (smtbmc yices) returned FAIL
+SBY 17:02:47 [adder_synth] summary: counterexample trace: adder_synth/engine_0/trace.vcd
+SBY 17:02:47 [adder_synth] DONE (FAIL, rc=0)

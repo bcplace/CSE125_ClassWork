@@ -1,0 +1,111 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.25+1 (git sha1 d3216593d, clang 10.0.0-4ubuntu1 -fPIC -Os)
+
+
+-- Executing script file `design_smt2.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: design_prep.il
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1. Analyzing design hierarchy..
+Top module:  \countones_synth
+Used module:     \yosys_countones
+
+2.2. Analyzing design hierarchy..
+Top module:  \countones_synth
+Used module:     \yosys_countones
+Removed 0 unused modules.
+Module countones_synth directly or indirectly contains formal properties -> setting "keep" attribute.
+
+3. Executing DFFUNMAP pass (unmap clock enable and synchronous reset from FFs).
+
+4. Printing statistics.
+
+=== yosys_countones ===
+
+   Number of wires:                 40
+   Number of wire bits:             53
+   Number of public wires:          28
+   Number of public wire bits:      41
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 41
+     $and                            9
+     $not                           15
+     $or                             6
+     $xor                           11
+
+=== countones_synth ===
+
+   Number of wires:                 19
+   Number of wire bits:            313
+   Number of public wires:           2
+   Number of public wire bits:      12
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 19
+     $add                            7
+     $assert                         1
+     $eq                             1
+     $eqx                            8
+     $sub                            1
+     yosys_countones                 1
+
+=== design hierarchy ===
+
+   countones_synth                   1
+     yosys_countones                 1
+
+   Number of wires:                 59
+   Number of wire bits:            366
+   Number of public wires:          30
+   Number of public wire bits:      53
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 59
+     $add                            7
+     $and                            9
+     $assert                         1
+     $eq                             1
+     $eqx                            8
+     $not                           15
+     $or                             6
+     $sub                            1
+     $xor                           11
+
+5. Executing SMT2 backend.
+
+5.1. Executing BMUXMAP pass.
+
+5.2. Executing DEMUXMAP pass.
+Creating SMT-LIBv2 representation of module yosys_countones.
+Creating SMT-LIBv2 representation of module countones_synth.
+
+End of script. Logfile hash: 17f2e83a67, CPU: user 0.01s system 0.00s, MEM: 11.38 MB peak
+Yosys 0.25+1 (git sha1 d3216593d, clang 10.0.0-4ubuntu1 -fPIC -Os)
+Time spent: 58% 2x write_smt2 (0 sec), 31% 2x read_ilang (0 sec), ...

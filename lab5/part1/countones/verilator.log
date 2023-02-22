@@ -1,0 +1,451 @@
+binary_i = 00000000
+[0;31mError![0m: count_o should be 0000, got 1000 (binary_i is 00000000)
+binary_i = 00000001
+[0;31mError![0m: count_o should be 0001, got 0111 (binary_i is 00000001)
+binary_i = 00000010
+[0;31mError![0m: count_o should be 0001, got 0111 (binary_i is 00000010)
+binary_i = 00000011
+[0;31mError![0m: count_o should be 0010, got 0110 (binary_i is 00000011)
+binary_i = 00000100
+[0;31mError![0m: count_o should be 0001, got 0111 (binary_i is 00000100)
+binary_i = 00000101
+[0;31mError![0m: count_o should be 0010, got 0110 (binary_i is 00000101)
+binary_i = 00000110
+[0;31mError![0m: count_o should be 0010, got 0110 (binary_i is 00000110)
+binary_i = 00000111
+[0;31mError![0m: count_o should be 0011, got 0101 (binary_i is 00000111)
+binary_i = 00001000
+[0;31mError![0m: count_o should be 0001, got 0111 (binary_i is 00001000)
+binary_i = 00001001
+[0;31mError![0m: count_o should be 0010, got 0110 (binary_i is 00001001)
+binary_i = 00001010
+[0;31mError![0m: count_o should be 0010, got 0110 (binary_i is 00001010)
+binary_i = 00001011
+[0;31mError![0m: count_o should be 0011, got 0101 (binary_i is 00001011)
+binary_i = 00001100
+[0;31mError![0m: count_o should be 0010, got 0110 (binary_i is 00001100)
+binary_i = 00001101
+[0;31mError![0m: count_o should be 0011, got 0101 (binary_i is 00001101)
+binary_i = 00001110
+[0;31mError![0m: count_o should be 0011, got 0101 (binary_i is 00001110)
+binary_i = 00001111
+binary_i = 00010000
+[0;31mError![0m: count_o should be 0001, got 0111 (binary_i is 00010000)
+binary_i = 00010001
+[0;31mError![0m: count_o should be 0010, got 0110 (binary_i is 00010001)
+binary_i = 00010010
+[0;31mError![0m: count_o should be 0010, got 0110 (binary_i is 00010010)
+binary_i = 00010011
+[0;31mError![0m: count_o should be 0011, got 0101 (binary_i is 00010011)
+binary_i = 00010100
+[0;31mError![0m: count_o should be 0010, got 0110 (binary_i is 00010100)
+binary_i = 00010101
+[0;31mError![0m: count_o should be 0011, got 0101 (binary_i is 00010101)
+binary_i = 00010110
+[0;31mError![0m: count_o should be 0011, got 0101 (binary_i is 00010110)
+binary_i = 00010111
+binary_i = 00011000
+[0;31mError![0m: count_o should be 0010, got 0110 (binary_i is 00011000)
+binary_i = 00011001
+[0;31mError![0m: count_o should be 0011, got 0101 (binary_i is 00011001)
+binary_i = 00011010
+[0;31mError![0m: count_o should be 0011, got 0101 (binary_i is 00011010)
+binary_i = 00011011
+binary_i = 00011100
+[0;31mError![0m: count_o should be 0011, got 0101 (binary_i is 00011100)
+binary_i = 00011101
+binary_i = 00011110
+binary_i = 00011111
+[0;31mError![0m: count_o should be 0101, got 0011 (binary_i is 00011111)
+binary_i = 00100000
+[0;31mError![0m: count_o should be 0001, got 0111 (binary_i is 00100000)
+binary_i = 00100001
+[0;31mError![0m: count_o should be 0010, got 0110 (binary_i is 00100001)
+binary_i = 00100010
+[0;31mError![0m: count_o should be 0010, got 0110 (binary_i is 00100010)
+binary_i = 00100011
+[0;31mError![0m: count_o should be 0011, got 0101 (binary_i is 00100011)
+binary_i = 00100100
+[0;31mError![0m: count_o should be 0010, got 0110 (binary_i is 00100100)
+binary_i = 00100101
+[0;31mError![0m: count_o should be 0011, got 0101 (binary_i is 00100101)
+binary_i = 00100110
+[0;31mError![0m: count_o should be 0011, got 0101 (binary_i is 00100110)
+binary_i = 00100111
+binary_i = 00101000
+[0;31mError![0m: count_o should be 0010, got 0110 (binary_i is 00101000)
+binary_i = 00101001
+[0;31mError![0m: count_o should be 0011, got 0101 (binary_i is 00101001)
+binary_i = 00101010
+[0;31mError![0m: count_o should be 0011, got 0101 (binary_i is 00101010)
+binary_i = 00101011
+binary_i = 00101100
+[0;31mError![0m: count_o should be 0011, got 0101 (binary_i is 00101100)
+binary_i = 00101101
+binary_i = 00101110
+binary_i = 00101111
+[0;31mError![0m: count_o should be 0101, got 0011 (binary_i is 00101111)
+binary_i = 00110000
+[0;31mError![0m: count_o should be 0010, got 0110 (binary_i is 00110000)
+binary_i = 00110001
+[0;31mError![0m: count_o should be 0011, got 0101 (binary_i is 00110001)
+binary_i = 00110010
+[0;31mError![0m: count_o should be 0011, got 0101 (binary_i is 00110010)
+binary_i = 00110011
+binary_i = 00110100
+[0;31mError![0m: count_o should be 0011, got 0101 (binary_i is 00110100)
+binary_i = 00110101
+binary_i = 00110110
+binary_i = 00110111
+[0;31mError![0m: count_o should be 0101, got 0011 (binary_i is 00110111)
+binary_i = 00111000
+[0;31mError![0m: count_o should be 0011, got 0101 (binary_i is 00111000)
+binary_i = 00111001
+binary_i = 00111010
+binary_i = 00111011
+[0;31mError![0m: count_o should be 0101, got 0011 (binary_i is 00111011)
+binary_i = 00111100
+binary_i = 00111101
+[0;31mError![0m: count_o should be 0101, got 0011 (binary_i is 00111101)
+binary_i = 00111110
+[0;31mError![0m: count_o should be 0101, got 0011 (binary_i is 00111110)
+binary_i = 00111111
+[0;31mError![0m: count_o should be 0110, got 0010 (binary_i is 00111111)
+binary_i = 01000000
+[0;31mError![0m: count_o should be 0001, got 0111 (binary_i is 01000000)
+binary_i = 01000001
+[0;31mError![0m: count_o should be 0010, got 0110 (binary_i is 01000001)
+binary_i = 01000010
+[0;31mError![0m: count_o should be 0010, got 0110 (binary_i is 01000010)
+binary_i = 01000011
+[0;31mError![0m: count_o should be 0011, got 0101 (binary_i is 01000011)
+binary_i = 01000100
+[0;31mError![0m: count_o should be 0010, got 0110 (binary_i is 01000100)
+binary_i = 01000101
+[0;31mError![0m: count_o should be 0011, got 0101 (binary_i is 01000101)
+binary_i = 01000110
+[0;31mError![0m: count_o should be 0011, got 0101 (binary_i is 01000110)
+binary_i = 01000111
+binary_i = 01001000
+[0;31mError![0m: count_o should be 0010, got 0110 (binary_i is 01001000)
+binary_i = 01001001
+[0;31mError![0m: count_o should be 0011, got 0101 (binary_i is 01001001)
+binary_i = 01001010
+[0;31mError![0m: count_o should be 0011, got 0101 (binary_i is 01001010)
+binary_i = 01001011
+binary_i = 01001100
+[0;31mError![0m: count_o should be 0011, got 0101 (binary_i is 01001100)
+binary_i = 01001101
+binary_i = 01001110
+binary_i = 01001111
+[0;31mError![0m: count_o should be 0101, got 0011 (binary_i is 01001111)
+binary_i = 01010000
+[0;31mError![0m: count_o should be 0010, got 0110 (binary_i is 01010000)
+binary_i = 01010001
+[0;31mError![0m: count_o should be 0011, got 0101 (binary_i is 01010001)
+binary_i = 01010010
+[0;31mError![0m: count_o should be 0011, got 0101 (binary_i is 01010010)
+binary_i = 01010011
+binary_i = 01010100
+[0;31mError![0m: count_o should be 0011, got 0101 (binary_i is 01010100)
+binary_i = 01010101
+binary_i = 01010110
+binary_i = 01010111
+[0;31mError![0m: count_o should be 0101, got 0011 (binary_i is 01010111)
+binary_i = 01011000
+[0;31mError![0m: count_o should be 0011, got 0101 (binary_i is 01011000)
+binary_i = 01011001
+binary_i = 01011010
+binary_i = 01011011
+[0;31mError![0m: count_o should be 0101, got 0011 (binary_i is 01011011)
+binary_i = 01011100
+binary_i = 01011101
+[0;31mError![0m: count_o should be 0101, got 0011 (binary_i is 01011101)
+binary_i = 01011110
+[0;31mError![0m: count_o should be 0101, got 0011 (binary_i is 01011110)
+binary_i = 01011111
+[0;31mError![0m: count_o should be 0110, got 0010 (binary_i is 01011111)
+binary_i = 01100000
+[0;31mError![0m: count_o should be 0010, got 0110 (binary_i is 01100000)
+binary_i = 01100001
+[0;31mError![0m: count_o should be 0011, got 0101 (binary_i is 01100001)
+binary_i = 01100010
+[0;31mError![0m: count_o should be 0011, got 0101 (binary_i is 01100010)
+binary_i = 01100011
+binary_i = 01100100
+[0;31mError![0m: count_o should be 0011, got 0101 (binary_i is 01100100)
+binary_i = 01100101
+binary_i = 01100110
+binary_i = 01100111
+[0;31mError![0m: count_o should be 0101, got 0011 (binary_i is 01100111)
+binary_i = 01101000
+[0;31mError![0m: count_o should be 0011, got 0101 (binary_i is 01101000)
+binary_i = 01101001
+binary_i = 01101010
+binary_i = 01101011
+[0;31mError![0m: count_o should be 0101, got 0011 (binary_i is 01101011)
+binary_i = 01101100
+binary_i = 01101101
+[0;31mError![0m: count_o should be 0101, got 0011 (binary_i is 01101101)
+binary_i = 01101110
+[0;31mError![0m: count_o should be 0101, got 0011 (binary_i is 01101110)
+binary_i = 01101111
+[0;31mError![0m: count_o should be 0110, got 0010 (binary_i is 01101111)
+binary_i = 01110000
+[0;31mError![0m: count_o should be 0011, got 0101 (binary_i is 01110000)
+binary_i = 01110001
+binary_i = 01110010
+binary_i = 01110011
+[0;31mError![0m: count_o should be 0101, got 0011 (binary_i is 01110011)
+binary_i = 01110100
+binary_i = 01110101
+[0;31mError![0m: count_o should be 0101, got 0011 (binary_i is 01110101)
+binary_i = 01110110
+[0;31mError![0m: count_o should be 0101, got 0011 (binary_i is 01110110)
+binary_i = 01110111
+[0;31mError![0m: count_o should be 0110, got 0010 (binary_i is 01110111)
+binary_i = 01111000
+binary_i = 01111001
+[0;31mError![0m: count_o should be 0101, got 0011 (binary_i is 01111001)
+binary_i = 01111010
+[0;31mError![0m: count_o should be 0101, got 0011 (binary_i is 01111010)
+binary_i = 01111011
+[0;31mError![0m: count_o should be 0110, got 0010 (binary_i is 01111011)
+binary_i = 01111100
+[0;31mError![0m: count_o should be 0101, got 0011 (binary_i is 01111100)
+binary_i = 01111101
+[0;31mError![0m: count_o should be 0110, got 0010 (binary_i is 01111101)
+binary_i = 01111110
+[0;31mError![0m: count_o should be 0110, got 0010 (binary_i is 01111110)
+binary_i = 01111111
+[0;31mError![0m: count_o should be 0111, got 0001 (binary_i is 01111111)
+binary_i = 10000000
+[0;31mError![0m: count_o should be 0001, got 0111 (binary_i is 10000000)
+binary_i = 10000001
+[0;31mError![0m: count_o should be 0010, got 0110 (binary_i is 10000001)
+binary_i = 10000010
+[0;31mError![0m: count_o should be 0010, got 0110 (binary_i is 10000010)
+binary_i = 10000011
+[0;31mError![0m: count_o should be 0011, got 0101 (binary_i is 10000011)
+binary_i = 10000100
+[0;31mError![0m: count_o should be 0010, got 0110 (binary_i is 10000100)
+binary_i = 10000101
+[0;31mError![0m: count_o should be 0011, got 0101 (binary_i is 10000101)
+binary_i = 10000110
+[0;31mError![0m: count_o should be 0011, got 0101 (binary_i is 10000110)
+binary_i = 10000111
+binary_i = 10001000
+[0;31mError![0m: count_o should be 0010, got 0110 (binary_i is 10001000)
+binary_i = 10001001
+[0;31mError![0m: count_o should be 0011, got 0101 (binary_i is 10001001)
+binary_i = 10001010
+[0;31mError![0m: count_o should be 0011, got 0101 (binary_i is 10001010)
+binary_i = 10001011
+binary_i = 10001100
+[0;31mError![0m: count_o should be 0011, got 0101 (binary_i is 10001100)
+binary_i = 10001101
+binary_i = 10001110
+binary_i = 10001111
+[0;31mError![0m: count_o should be 0101, got 0011 (binary_i is 10001111)
+binary_i = 10010000
+[0;31mError![0m: count_o should be 0010, got 0110 (binary_i is 10010000)
+binary_i = 10010001
+[0;31mError![0m: count_o should be 0011, got 0101 (binary_i is 10010001)
+binary_i = 10010010
+[0;31mError![0m: count_o should be 0011, got 0101 (binary_i is 10010010)
+binary_i = 10010011
+binary_i = 10010100
+[0;31mError![0m: count_o should be 0011, got 0101 (binary_i is 10010100)
+binary_i = 10010101
+binary_i = 10010110
+binary_i = 10010111
+[0;31mError![0m: count_o should be 0101, got 0011 (binary_i is 10010111)
+binary_i = 10011000
+[0;31mError![0m: count_o should be 0011, got 0101 (binary_i is 10011000)
+binary_i = 10011001
+binary_i = 10011010
+binary_i = 10011011
+[0;31mError![0m: count_o should be 0101, got 0011 (binary_i is 10011011)
+binary_i = 10011100
+binary_i = 10011101
+[0;31mError![0m: count_o should be 0101, got 0011 (binary_i is 10011101)
+binary_i = 10011110
+[0;31mError![0m: count_o should be 0101, got 0011 (binary_i is 10011110)
+binary_i = 10011111
+[0;31mError![0m: count_o should be 0110, got 0010 (binary_i is 10011111)
+binary_i = 10100000
+[0;31mError![0m: count_o should be 0010, got 0110 (binary_i is 10100000)
+binary_i = 10100001
+[0;31mError![0m: count_o should be 0011, got 0101 (binary_i is 10100001)
+binary_i = 10100010
+[0;31mError![0m: count_o should be 0011, got 0101 (binary_i is 10100010)
+binary_i = 10100011
+binary_i = 10100100
+[0;31mError![0m: count_o should be 0011, got 0101 (binary_i is 10100100)
+binary_i = 10100101
+binary_i = 10100110
+binary_i = 10100111
+[0;31mError![0m: count_o should be 0101, got 0011 (binary_i is 10100111)
+binary_i = 10101000
+[0;31mError![0m: count_o should be 0011, got 0101 (binary_i is 10101000)
+binary_i = 10101001
+binary_i = 10101010
+binary_i = 10101011
+[0;31mError![0m: count_o should be 0101, got 0011 (binary_i is 10101011)
+binary_i = 10101100
+binary_i = 10101101
+[0;31mError![0m: count_o should be 0101, got 0011 (binary_i is 10101101)
+binary_i = 10101110
+[0;31mError![0m: count_o should be 0101, got 0011 (binary_i is 10101110)
+binary_i = 10101111
+[0;31mError![0m: count_o should be 0110, got 0010 (binary_i is 10101111)
+binary_i = 10110000
+[0;31mError![0m: count_o should be 0011, got 0101 (binary_i is 10110000)
+binary_i = 10110001
+binary_i = 10110010
+binary_i = 10110011
+[0;31mError![0m: count_o should be 0101, got 0011 (binary_i is 10110011)
+binary_i = 10110100
+binary_i = 10110101
+[0;31mError![0m: count_o should be 0101, got 0011 (binary_i is 10110101)
+binary_i = 10110110
+[0;31mError![0m: count_o should be 0101, got 0011 (binary_i is 10110110)
+binary_i = 10110111
+[0;31mError![0m: count_o should be 0110, got 0010 (binary_i is 10110111)
+binary_i = 10111000
+binary_i = 10111001
+[0;31mError![0m: count_o should be 0101, got 0011 (binary_i is 10111001)
+binary_i = 10111010
+[0;31mError![0m: count_o should be 0101, got 0011 (binary_i is 10111010)
+binary_i = 10111011
+[0;31mError![0m: count_o should be 0110, got 0010 (binary_i is 10111011)
+binary_i = 10111100
+[0;31mError![0m: count_o should be 0101, got 0011 (binary_i is 10111100)
+binary_i = 10111101
+[0;31mError![0m: count_o should be 0110, got 0010 (binary_i is 10111101)
+binary_i = 10111110
+[0;31mError![0m: count_o should be 0110, got 0010 (binary_i is 10111110)
+binary_i = 10111111
+[0;31mError![0m: count_o should be 0111, got 0001 (binary_i is 10111111)
+binary_i = 11000000
+[0;31mError![0m: count_o should be 0010, got 0110 (binary_i is 11000000)
+binary_i = 11000001
+[0;31mError![0m: count_o should be 0011, got 0101 (binary_i is 11000001)
+binary_i = 11000010
+[0;31mError![0m: count_o should be 0011, got 0101 (binary_i is 11000010)
+binary_i = 11000011
+binary_i = 11000100
+[0;31mError![0m: count_o should be 0011, got 0101 (binary_i is 11000100)
+binary_i = 11000101
+binary_i = 11000110
+binary_i = 11000111
+[0;31mError![0m: count_o should be 0101, got 0011 (binary_i is 11000111)
+binary_i = 11001000
+[0;31mError![0m: count_o should be 0011, got 0101 (binary_i is 11001000)
+binary_i = 11001001
+binary_i = 11001010
+binary_i = 11001011
+[0;31mError![0m: count_o should be 0101, got 0011 (binary_i is 11001011)
+binary_i = 11001100
+binary_i = 11001101
+[0;31mError![0m: count_o should be 0101, got 0011 (binary_i is 11001101)
+binary_i = 11001110
+[0;31mError![0m: count_o should be 0101, got 0011 (binary_i is 11001110)
+binary_i = 11001111
+[0;31mError![0m: count_o should be 0110, got 0010 (binary_i is 11001111)
+binary_i = 11010000
+[0;31mError![0m: count_o should be 0011, got 0101 (binary_i is 11010000)
+binary_i = 11010001
+binary_i = 11010010
+binary_i = 11010011
+[0;31mError![0m: count_o should be 0101, got 0011 (binary_i is 11010011)
+binary_i = 11010100
+binary_i = 11010101
+[0;31mError![0m: count_o should be 0101, got 0011 (binary_i is 11010101)
+binary_i = 11010110
+[0;31mError![0m: count_o should be 0101, got 0011 (binary_i is 11010110)
+binary_i = 11010111
+[0;31mError![0m: count_o should be 0110, got 0010 (binary_i is 11010111)
+binary_i = 11011000
+binary_i = 11011001
+[0;31mError![0m: count_o should be 0101, got 0011 (binary_i is 11011001)
+binary_i = 11011010
+[0;31mError![0m: count_o should be 0101, got 0011 (binary_i is 11011010)
+binary_i = 11011011
+[0;31mError![0m: count_o should be 0110, got 0010 (binary_i is 11011011)
+binary_i = 11011100
+[0;31mError![0m: count_o should be 0101, got 0011 (binary_i is 11011100)
+binary_i = 11011101
+[0;31mError![0m: count_o should be 0110, got 0010 (binary_i is 11011101)
+binary_i = 11011110
+[0;31mError![0m: count_o should be 0110, got 0010 (binary_i is 11011110)
+binary_i = 11011111
+[0;31mError![0m: count_o should be 0111, got 0001 (binary_i is 11011111)
+binary_i = 11100000
+[0;31mError![0m: count_o should be 0011, got 0101 (binary_i is 11100000)
+binary_i = 11100001
+binary_i = 11100010
+binary_i = 11100011
+[0;31mError![0m: count_o should be 0101, got 0011 (binary_i is 11100011)
+binary_i = 11100100
+binary_i = 11100101
+[0;31mError![0m: count_o should be 0101, got 0011 (binary_i is 11100101)
+binary_i = 11100110
+[0;31mError![0m: count_o should be 0101, got 0011 (binary_i is 11100110)
+binary_i = 11100111
+[0;31mError![0m: count_o should be 0110, got 0010 (binary_i is 11100111)
+binary_i = 11101000
+binary_i = 11101001
+[0;31mError![0m: count_o should be 0101, got 0011 (binary_i is 11101001)
+binary_i = 11101010
+[0;31mError![0m: count_o should be 0101, got 0011 (binary_i is 11101010)
+binary_i = 11101011
+[0;31mError![0m: count_o should be 0110, got 0010 (binary_i is 11101011)
+binary_i = 11101100
+[0;31mError![0m: count_o should be 0101, got 0011 (binary_i is 11101100)
+binary_i = 11101101
+[0;31mError![0m: count_o should be 0110, got 0010 (binary_i is 11101101)
+binary_i = 11101110
+[0;31mError![0m: count_o should be 0110, got 0010 (binary_i is 11101110)
+binary_i = 11101111
+[0;31mError![0m: count_o should be 0111, got 0001 (binary_i is 11101111)
+binary_i = 11110000
+binary_i = 11110001
+[0;31mError![0m: count_o should be 0101, got 0011 (binary_i is 11110001)
+binary_i = 11110010
+[0;31mError![0m: count_o should be 0101, got 0011 (binary_i is 11110010)
+binary_i = 11110011
+[0;31mError![0m: count_o should be 0110, got 0010 (binary_i is 11110011)
+binary_i = 11110100
+[0;31mError![0m: count_o should be 0101, got 0011 (binary_i is 11110100)
+binary_i = 11110101
+[0;31mError![0m: count_o should be 0110, got 0010 (binary_i is 11110101)
+binary_i = 11110110
+[0;31mError![0m: count_o should be 0110, got 0010 (binary_i is 11110110)
+binary_i = 11110111
+[0;31mError![0m: count_o should be 0111, got 0001 (binary_i is 11110111)
+binary_i = 11111000
+[0;31mError![0m: count_o should be 0101, got 0011 (binary_i is 11111000)
+binary_i = 11111001
+[0;31mError![0m: count_o should be 0110, got 0010 (binary_i is 11111001)
+binary_i = 11111010
+[0;31mError![0m: count_o should be 0110, got 0010 (binary_i is 11111010)
+binary_i = 11111011
+[0;31mError![0m: count_o should be 0111, got 0001 (binary_i is 11111011)
+binary_i = 11111100
+[0;31mError![0m: count_o should be 0110, got 0010 (binary_i is 11111100)
+binary_i = 11111101
+[0;31mError![0m: count_o should be 0111, got 0001 (binary_i is 11111101)
+binary_i = 11111110
+[0;31mError![0m: count_o should be 0111, got 0001 (binary_i is 11111110)
+binary_i = 11111111
+[0;31mError![0m: count_o should be 1000, got 0000 (binary_i is 11111111)
+- testbench.sv:55: Verilog $finish
+Simulation time is              2560000
+[0;31m    ______                    [0m
+[0;31m   / ____/_____________  _____[0m
+[0;31m  / __/ / ___/ ___/ __ \/ ___/[0m
+[0;31m / /___/ /  / /  / /_/ / /    [0m
+[0;31m/_____/_/  /_/   \____/_/     [0m
+
+Simulation Failed

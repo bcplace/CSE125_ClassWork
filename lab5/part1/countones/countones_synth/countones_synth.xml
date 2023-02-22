@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+<testsuite timestamp="2023-02-21T16:37:24" hostname="CSE-x25-VBox-VM" package="countones_synth" id="0" name="default" tests="1" errors="0" failures="1" time="0" skipped="0">
+<properties>
+<property name="os" value="Linux"/>
+<property name="expect" value="FAIL"/>
+<property name="status" value="PASS"/>
+</properties>
+<testcase classname="default" name="build execution" time="0">
+<failure type="EXPECT" message="Task returned status PASS. Expected values were: FAIL" />
+</testcase>
+<testcase classname="default" name="Property ASSERT in countones_synth at countones.sv:50.41-73.65" time="0" type="ASSERT" location="countones.sv:50.41-73.65" id="$assert$countones.sv:50$37">
+</testcase>
+<system-out>SBY 16:37:24 [countones_synth] Removing directory '/home/vboxuser/Desktop/CSE125/cse-x25-wi23/lab5/part1/countones/countones_synth'.
+SBY 16:37:24 [countones_synth] Copy '/home/vboxuser/Desktop/CSE125/cse-x25-wi23/lab5/part1/countones/countones.sv' to '/home/vboxuser/Desktop/CSE125/cse-x25-wi23/lab5/part1/countones/countones_synth/src/countones.sv'.
+SBY 16:37:24 [countones_synth] engine_0: smtbmc yices
+SBY 16:37:24 [countones_synth] base: starting process &quot;cd countones_synth/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY 16:37:24 [countones_synth] base: finished (returncode=0)
+SBY 16:37:24 [countones_synth] prep: starting process &quot;cd countones_synth/model; yosys -ql design_prep.log design_prep.ys&quot;
+SBY 16:37:24 [countones_synth] prep: finished (returncode=0)
+SBY 16:37:24 [countones_synth] smt2: starting process &quot;cd countones_synth/model; yosys -ql design_smt2.log design_smt2.ys&quot;
+SBY 16:37:24 [countones_synth] smt2: finished (returncode=0)
+SBY 16:37:24 [countones_synth] engine_0: starting process &quot;cd countones_synth; yosys-smtbmc -s yices --presat --unroll --noprogress -t 10  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2&quot;
+SBY 16:37:24 [countones_synth] engine_0: ##   0:00:00  Solver: yices
+SBY 16:37:24 [countones_synth] engine_0: ##   0:00:00  Checking assumptions in step 0..
+SBY 16:37:24 [countones_synth] engine_0: ##   0:00:00  Checking assertions in step 0..
+SBY 16:37:24 [countones_synth] engine_0: ##   0:00:00  Checking assumptions in step 1..
+SBY 16:37:24 [countones_synth] engine_0: ##   0:00:00  Checking assertions in step 1..
+SBY 16:37:24 [countones_synth] engine_0: ##   0:00:00  Checking assumptions in step 2..
+SBY 16:37:24 [countones_synth] engine_0: ##   0:00:00  Checking assertions in step 2..
+SBY 16:37:24 [countones_synth] engine_0: ##   0:00:00  Checking assumptions in step 3..
+SBY 16:37:24 [countones_synth] engine_0: ##   0:00:00  Checking assertions in step 3..
+SBY 16:37:24 [countones_synth] engine_0: ##   0:00:00  Checking assumptions in step 4..
+SBY 16:37:24 [countones_synth] engine_0: ##   0:00:00  Checking assertions in step 4..
+SBY 16:37:24 [countones_synth] engine_0: ##   0:00:00  Checking assumptions in step 5..
+SBY 16:37:24 [countones_synth] engine_0: ##   0:00:00  Checking assertions in step 5..
+SBY 16:37:24 [countones_synth] engine_0: ##   0:00:00  Checking assumptions in step 6..
+SBY 16:37:24 [countones_synth] engine_0: ##   0:00:00  Checking assertions in step 6..
+SBY 16:37:24 [countones_synth] engine_0: ##   0:00:00  Checking assumptions in step 7..
+SBY 16:37:24 [countones_synth] engine_0: ##   0:00:00  Checking assertions in step 7..
+SBY 16:37:24 [countones_synth] engine_0: ##   0:00:00  Checking assumptions in step 8..
+SBY 16:37:24 [countones_synth] engine_0: ##   0:00:00  Checking assertions in step 8..
+SBY 16:37:24 [countones_synth] engine_0: ##   0:00:00  Checking assumptions in step 9..
+SBY 16:37:24 [countones_synth] engine_0: ##   0:00:00  Checking assertions in step 9..
+SBY 16:37:24 [countones_synth] engine_0: ##   0:00:00  Status: passed
+SBY 16:37:24 [countones_synth] engine_0: finished (returncode=0)
+SBY 16:37:24 [countones_synth] engine_0: Status returned by engine: pass
+SBY 16:37:24 [countones_synth] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 16:37:24 [countones_synth] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 16:37:24 [countones_synth] summary: engine_0 (smtbmc yices) returned pass
+SBY 16:37:24 [countones_synth] DONE (PASS, rc=1)
+</system-out>
+<system-err>
+</system-err>
+</testsuite>
+</testsuites>

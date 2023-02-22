@@ -17,7 +17,7 @@ module testbench();
    // "bad" DUT. Use `define GOOD to switch between the two.
    //
    // Write your assertions inside of the DUT modules themselves.
-   `define GOOD;
+   //`define GOOD;
 `ifdef GOOD
    multiplier
      #(.width_p(8))
@@ -52,9 +52,9 @@ module testbench();
               //$display("  a_i = %b, b_i = %b", a_i, b_i);
 		    #10;
 		    if(error) begin
-		       $error("\033[0;31mError!\033[0m: prod_o should be %b, got %b (a_i is %b, b_i is %b)",
+		       $display("\033[0;31mError!\033[0m: prod_o should be %b, got %b (a_i is %b, b_i is %b)",
 			      correct_prod_o, prod_o, a_i, b_i);
-		       $finish();
+		      // $finish();
 		    end
 	 end
       end

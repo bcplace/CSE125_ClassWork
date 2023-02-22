@@ -64,9 +64,9 @@ module testbench();
 		    $display("  a_i = %b, b_i = %b, c_i = %b", a_i, b_i, c_i);
 		    #10;
 		    if(error) begin
-		       $error("\033[0;31mError!\033[0m: sum_o should be %b, got %b (a_i is %b, b_i is %b)",
-			      correct_sum_o, sum_o, a_i, b_i);
-		       $finish();
+		       $display("\033[0;31mError!\033[0m: sum_o should be %b, got %b (a_i is %b, b_i is %b, c_i is %b)",
+			      correct_sum_o, sum_o, a_i, b_i, c_i);
+		       //$finish();
 		    end
             end
 	 end

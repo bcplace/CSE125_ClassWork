@@ -1,10 +1,72 @@
 VCD info: dumpfile iverilog.vcd opened for output.
 VCD warning: $dumpvars: Unsupported argument type (vpiPackage)
   a_i = 0000, b_i = 0000
+Quot_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be xxxx, got 0000 (a_i is 0000, b_i is 0000)
   a_i = 0000, b_i = 0001
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
   a_i = 0000, b_i = 0010
+Quot_o isn't correct!
+Rem_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
   a_i = 0000, b_i = 0011
   a_i = 0000, b_i = 0100
+Quot_o isn't correct!
+Rem_o isn't correct!
   a_i = 0000, b_i = 0101
   a_i = 0000, b_i = 0110
   a_i = 0000, b_i = 0111
@@ -17,251 +79,2801 @@ VCD warning: $dumpvars: Unsupported argument type (vpiPackage)
   a_i = 0000, b_i = 1110
   a_i = 0000, b_i = 1111
   a_i = 0001, b_i = 0000
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be xxxx, got 0001 (a_i is 0001, b_i is 0000)
   a_i = 0001, b_i = 0001
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Quot_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0001, got 0000 (a_i is 0001, b_i is 0001)
   a_i = 0001, b_i = 0010
+Quot_o isn't correct!
+Quot_o isn't correct!
+Quot_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0001 (a_i is 0001, b_i is 0010)
   a_i = 0001, b_i = 0011
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0001 (a_i is 0001, b_i is 0011)
   a_i = 0001, b_i = 0100
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0001 (a_i is 0001, b_i is 0100)
   a_i = 0001, b_i = 0101
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0001 (a_i is 0001, b_i is 0101)
   a_i = 0001, b_i = 0110
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0001 (a_i is 0001, b_i is 0110)
   a_i = 0001, b_i = 0111
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0001 (a_i is 0001, b_i is 0111)
   a_i = 0001, b_i = 1000
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0001 (a_i is 0001, b_i is 1000)
   a_i = 0001, b_i = 1001
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0001 (a_i is 0001, b_i is 1001)
   a_i = 0001, b_i = 1010
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0001 (a_i is 0001, b_i is 1010)
   a_i = 0001, b_i = 1011
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0001 (a_i is 0001, b_i is 1011)
   a_i = 0001, b_i = 1100
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0001 (a_i is 0001, b_i is 1100)
   a_i = 0001, b_i = 1101
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0001 (a_i is 0001, b_i is 1101)
   a_i = 0001, b_i = 1110
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0001 (a_i is 0001, b_i is 1110)
   a_i = 0001, b_i = 1111
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0001 (a_i is 0001, b_i is 1111)
   a_i = 0010, b_i = 0000
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be xxxx, got 0010 (a_i is 0010, b_i is 0000)
   a_i = 0010, b_i = 0001
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0010, got 0000 (a_i is 0010, b_i is 0001)
   a_i = 0010, b_i = 0010
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0001, got 0000 (a_i is 0010, b_i is 0010)
   a_i = 0010, b_i = 0011
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0010 (a_i is 0010, b_i is 0011)
   a_i = 0010, b_i = 0100
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0010 (a_i is 0010, b_i is 0100)
   a_i = 0010, b_i = 0101
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0010 (a_i is 0010, b_i is 0101)
   a_i = 0010, b_i = 0110
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0010 (a_i is 0010, b_i is 0110)
   a_i = 0010, b_i = 0111
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0010 (a_i is 0010, b_i is 0111)
   a_i = 0010, b_i = 1000
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0010 (a_i is 0010, b_i is 1000)
   a_i = 0010, b_i = 1001
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0010 (a_i is 0010, b_i is 1001)
   a_i = 0010, b_i = 1010
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0010 (a_i is 0010, b_i is 1010)
   a_i = 0010, b_i = 1011
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0010 (a_i is 0010, b_i is 1011)
   a_i = 0010, b_i = 1100
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0010 (a_i is 0010, b_i is 1100)
   a_i = 0010, b_i = 1101
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0010 (a_i is 0010, b_i is 1101)
   a_i = 0010, b_i = 1110
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0010 (a_i is 0010, b_i is 1110)
   a_i = 0010, b_i = 1111
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0010 (a_i is 0010, b_i is 1111)
   a_i = 0011, b_i = 0000
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be xxxx, got 0011 (a_i is 0011, b_i is 0000)
   a_i = 0011, b_i = 0001
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0011, got 0000 (a_i is 0011, b_i is 0001)
   a_i = 0011, b_i = 0010
+Quot_o isn't correct!
+Rem_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
   a_i = 0011, b_i = 0011
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0001, got 0000 (a_i is 0011, b_i is 0011)
   a_i = 0011, b_i = 0100
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0011 (a_i is 0011, b_i is 0100)
   a_i = 0011, b_i = 0101
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0011 (a_i is 0011, b_i is 0101)
   a_i = 0011, b_i = 0110
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0011 (a_i is 0011, b_i is 0110)
   a_i = 0011, b_i = 0111
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0011 (a_i is 0011, b_i is 0111)
   a_i = 0011, b_i = 1000
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0011 (a_i is 0011, b_i is 1000)
   a_i = 0011, b_i = 1001
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0011 (a_i is 0011, b_i is 1001)
   a_i = 0011, b_i = 1010
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0011 (a_i is 0011, b_i is 1010)
   a_i = 0011, b_i = 1011
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0011 (a_i is 0011, b_i is 1011)
   a_i = 0011, b_i = 1100
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0011 (a_i is 0011, b_i is 1100)
   a_i = 0011, b_i = 1101
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0011 (a_i is 0011, b_i is 1101)
   a_i = 0011, b_i = 1110
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0011 (a_i is 0011, b_i is 1110)
   a_i = 0011, b_i = 1111
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0011 (a_i is 0011, b_i is 1111)
   a_i = 0100, b_i = 0000
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be xxxx, got 0100 (a_i is 0100, b_i is 0000)
   a_i = 0100, b_i = 0001
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0100, got 0000 (a_i is 0100, b_i is 0001)
   a_i = 0100, b_i = 0010
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0010, got 0000 (a_i is 0100, b_i is 0010)
   a_i = 0100, b_i = 0011
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Quot_o isn't correct!
   a_i = 0100, b_i = 0100
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0001, got 0000 (a_i is 0100, b_i is 0100)
   a_i = 0100, b_i = 0101
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0100 (a_i is 0100, b_i is 0101)
   a_i = 0100, b_i = 0110
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0100 (a_i is 0100, b_i is 0110)
   a_i = 0100, b_i = 0111
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0100 (a_i is 0100, b_i is 0111)
   a_i = 0100, b_i = 1000
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0100 (a_i is 0100, b_i is 1000)
   a_i = 0100, b_i = 1001
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0100 (a_i is 0100, b_i is 1001)
   a_i = 0100, b_i = 1010
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0100 (a_i is 0100, b_i is 1010)
   a_i = 0100, b_i = 1011
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0100 (a_i is 0100, b_i is 1011)
   a_i = 0100, b_i = 1100
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0100 (a_i is 0100, b_i is 1100)
   a_i = 0100, b_i = 1101
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0100 (a_i is 0100, b_i is 1101)
   a_i = 0100, b_i = 1110
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0100 (a_i is 0100, b_i is 1110)
   a_i = 0100, b_i = 1111
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0100 (a_i is 0100, b_i is 1111)
   a_i = 0101, b_i = 0000
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be xxxx, got 0101 (a_i is 0101, b_i is 0000)
   a_i = 0101, b_i = 0001
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0101, got 0000 (a_i is 0101, b_i is 0001)
   a_i = 0101, b_i = 0010
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0010, got 0001 (a_i is 0101, b_i is 0010)
   a_i = 0101, b_i = 0011
+Quot_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0001, got 0010 (a_i is 0101, b_i is 0011)
   a_i = 0101, b_i = 0100
+Quot_o isn't correct!
+Quot_o isn't correct!
+Quot_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
   a_i = 0101, b_i = 0101
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0001, got 0000 (a_i is 0101, b_i is 0101)
   a_i = 0101, b_i = 0110
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0101 (a_i is 0101, b_i is 0110)
   a_i = 0101, b_i = 0111
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0101 (a_i is 0101, b_i is 0111)
   a_i = 0101, b_i = 1000
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0101 (a_i is 0101, b_i is 1000)
   a_i = 0101, b_i = 1001
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0101 (a_i is 0101, b_i is 1001)
   a_i = 0101, b_i = 1010
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0101 (a_i is 0101, b_i is 1010)
   a_i = 0101, b_i = 1011
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0101 (a_i is 0101, b_i is 1011)
   a_i = 0101, b_i = 1100
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0101 (a_i is 0101, b_i is 1100)
   a_i = 0101, b_i = 1101
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0101 (a_i is 0101, b_i is 1101)
   a_i = 0101, b_i = 1110
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0101 (a_i is 0101, b_i is 1110)
   a_i = 0101, b_i = 1111
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0101 (a_i is 0101, b_i is 1111)
   a_i = 0110, b_i = 0000
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be xxxx, got 0110 (a_i is 0110, b_i is 0000)
   a_i = 0110, b_i = 0001
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0110, got 0000 (a_i is 0110, b_i is 0001)
   a_i = 0110, b_i = 0010
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0011, got 0000 (a_i is 0110, b_i is 0010)
   a_i = 0110, b_i = 0011
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0010, got 0000 (a_i is 0110, b_i is 0011)
   a_i = 0110, b_i = 0100
+Quot_o isn't correct!
+Quot_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0001, got 0010 (a_i is 0110, b_i is 0100)
   a_i = 0110, b_i = 0101
+Quot_o isn't correct!
   a_i = 0110, b_i = 0110
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0001, got 0000 (a_i is 0110, b_i is 0110)
   a_i = 0110, b_i = 0111
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0110 (a_i is 0110, b_i is 0111)
   a_i = 0110, b_i = 1000
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0110 (a_i is 0110, b_i is 1000)
   a_i = 0110, b_i = 1001
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0110 (a_i is 0110, b_i is 1001)
   a_i = 0110, b_i = 1010
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0110 (a_i is 0110, b_i is 1010)
   a_i = 0110, b_i = 1011
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0110 (a_i is 0110, b_i is 1011)
   a_i = 0110, b_i = 1100
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0110 (a_i is 0110, b_i is 1100)
   a_i = 0110, b_i = 1101
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0110 (a_i is 0110, b_i is 1101)
   a_i = 0110, b_i = 1110
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0110 (a_i is 0110, b_i is 1110)
   a_i = 0110, b_i = 1111
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0110 (a_i is 0110, b_i is 1111)
   a_i = 0111, b_i = 0000
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be xxxx, got 0111 (a_i is 0111, b_i is 0000)
   a_i = 0111, b_i = 0001
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0111, got 0000 (a_i is 0111, b_i is 0001)
   a_i = 0111, b_i = 0010
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0011, got 0001 (a_i is 0111, b_i is 0010)
   a_i = 0111, b_i = 0011
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0010, got 0001 (a_i is 0111, b_i is 0011)
   a_i = 0111, b_i = 0100
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0001, got 0011 (a_i is 0111, b_i is 0100)
   a_i = 0111, b_i = 0101
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0001, got 0010 (a_i is 0111, b_i is 0101)
   a_i = 0111, b_i = 0110
+Quot_o isn't correct!
+Quot_o isn't correct!
+Quot_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
   a_i = 0111, b_i = 0111
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0001, got 0000 (a_i is 0111, b_i is 0111)
   a_i = 0111, b_i = 1000
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0111 (a_i is 0111, b_i is 1000)
   a_i = 0111, b_i = 1001
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0111 (a_i is 0111, b_i is 1001)
   a_i = 0111, b_i = 1010
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0111 (a_i is 0111, b_i is 1010)
   a_i = 0111, b_i = 1011
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0111 (a_i is 0111, b_i is 1011)
   a_i = 0111, b_i = 1100
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0111 (a_i is 0111, b_i is 1100)
   a_i = 0111, b_i = 1101
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0111 (a_i is 0111, b_i is 1101)
   a_i = 0111, b_i = 1110
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0111 (a_i is 0111, b_i is 1110)
   a_i = 0111, b_i = 1111
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 0111 (a_i is 0111, b_i is 1111)
   a_i = 1000, b_i = 0000
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be xxxx, got 1000 (a_i is 1000, b_i is 0000)
   a_i = 1000, b_i = 0001
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 1000, got 0000 (a_i is 1000, b_i is 0001)
   a_i = 1000, b_i = 0010
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0100, got 0000 (a_i is 1000, b_i is 0010)
   a_i = 1000, b_i = 0011
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
   a_i = 1000, b_i = 0100
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0010, got 0000 (a_i is 1000, b_i is 0100)
   a_i = 1000, b_i = 0101
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0001, got 0011 (a_i is 1000, b_i is 0101)
   a_i = 1000, b_i = 0110
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0001, got 0010 (a_i is 1000, b_i is 0110)
   a_i = 1000, b_i = 0111
+Quot_o isn't correct!
   a_i = 1000, b_i = 1000
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0001, got 0000 (a_i is 1000, b_i is 1000)
   a_i = 1000, b_i = 1001
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 1000 (a_i is 1000, b_i is 1001)
   a_i = 1000, b_i = 1010
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 1000 (a_i is 1000, b_i is 1010)
   a_i = 1000, b_i = 1011
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 1000 (a_i is 1000, b_i is 1011)
   a_i = 1000, b_i = 1100
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 1000 (a_i is 1000, b_i is 1100)
   a_i = 1000, b_i = 1101
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 1000 (a_i is 1000, b_i is 1101)
   a_i = 1000, b_i = 1110
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 1000 (a_i is 1000, b_i is 1110)
   a_i = 1000, b_i = 1111
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 1000 (a_i is 1000, b_i is 1111)
   a_i = 1001, b_i = 0000
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be xxxx, got 1001 (a_i is 1001, b_i is 0000)
   a_i = 1001, b_i = 0001
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 1001, got 0000 (a_i is 1001, b_i is 0001)
   a_i = 1001, b_i = 0010
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Quot_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0100, got 0001 (a_i is 1001, b_i is 0010)
   a_i = 1001, b_i = 0011
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0011, got 0000 (a_i is 1001, b_i is 0011)
   a_i = 1001, b_i = 0100
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Quot_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0010, got 0001 (a_i is 1001, b_i is 0100)
   a_i = 1001, b_i = 0101
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0001, got 0100 (a_i is 1001, b_i is 0101)
   a_i = 1001, b_i = 0110
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0001, got 0011 (a_i is 1001, b_i is 0110)
   a_i = 1001, b_i = 0111
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0001, got 0010 (a_i is 1001, b_i is 0111)
   a_i = 1001, b_i = 1000
+Quot_o isn't correct!
+Quot_o isn't correct!
+Quot_o isn't correct!
+Quot_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
   a_i = 1001, b_i = 1001
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0001, got 0000 (a_i is 1001, b_i is 1001)
   a_i = 1001, b_i = 1010
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 1001 (a_i is 1001, b_i is 1010)
   a_i = 1001, b_i = 1011
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 1001 (a_i is 1001, b_i is 1011)
   a_i = 1001, b_i = 1100
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 1001 (a_i is 1001, b_i is 1100)
   a_i = 1001, b_i = 1101
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 1001 (a_i is 1001, b_i is 1101)
   a_i = 1001, b_i = 1110
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 1001 (a_i is 1001, b_i is 1110)
   a_i = 1001, b_i = 1111
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 1001 (a_i is 1001, b_i is 1111)
   a_i = 1010, b_i = 0000
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be xxxx, got 1010 (a_i is 1010, b_i is 0000)
   a_i = 1010, b_i = 0001
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 1010, got 0000 (a_i is 1010, b_i is 0001)
   a_i = 1010, b_i = 0010
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0101, got 0000 (a_i is 1010, b_i is 0010)
   a_i = 1010, b_i = 0011
+Quot_o isn't correct!
+Rem_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0011, got 0001 (a_i is 1010, b_i is 0011)
   a_i = 1010, b_i = 0100
+Quot_o isn't correct!
+Rem_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
   a_i = 1010, b_i = 0101
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0010, got 0000 (a_i is 1010, b_i is 0101)
   a_i = 1010, b_i = 0110
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0001, got 0100 (a_i is 1010, b_i is 0110)
   a_i = 1010, b_i = 0111
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0001, got 0011 (a_i is 1010, b_i is 0111)
   a_i = 1010, b_i = 1000
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0001, got 0010 (a_i is 1010, b_i is 1000)
   a_i = 1010, b_i = 1001
+Quot_o isn't correct!
   a_i = 1010, b_i = 1010
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0001, got 0000 (a_i is 1010, b_i is 1010)
   a_i = 1010, b_i = 1011
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 1010 (a_i is 1010, b_i is 1011)
   a_i = 1010, b_i = 1100
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 1010 (a_i is 1010, b_i is 1100)
   a_i = 1010, b_i = 1101
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 1010 (a_i is 1010, b_i is 1101)
   a_i = 1010, b_i = 1110
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 1010 (a_i is 1010, b_i is 1110)
   a_i = 1010, b_i = 1111
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 1010 (a_i is 1010, b_i is 1111)
   a_i = 1011, b_i = 0000
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be xxxx, got 1011 (a_i is 1011, b_i is 0000)
   a_i = 1011, b_i = 0001
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 1011, got 0000 (a_i is 1011, b_i is 0001)
   a_i = 1011, b_i = 0010
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Rem_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0101, got 0001 (a_i is 1011, b_i is 0010)
   a_i = 1011, b_i = 0011
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0011, got 0010 (a_i is 1011, b_i is 0011)
   a_i = 1011, b_i = 0100
+Quot_o isn't correct!
+Quot_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Quot_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0010, got 0011 (a_i is 1011, b_i is 0100)
   a_i = 1011, b_i = 0101
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0010, got 0001 (a_i is 1011, b_i is 0101)
   a_i = 1011, b_i = 0110
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0001, got 0101 (a_i is 1011, b_i is 0110)
   a_i = 1011, b_i = 0111
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0001, got 0100 (a_i is 1011, b_i is 0111)
   a_i = 1011, b_i = 1000
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0001, got 0011 (a_i is 1011, b_i is 1000)
   a_i = 1011, b_i = 1001
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0001, got 0010 (a_i is 1011, b_i is 1001)
   a_i = 1011, b_i = 1010
+Quot_o isn't correct!
+Quot_o isn't correct!
+Quot_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
   a_i = 1011, b_i = 1011
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0001, got 0000 (a_i is 1011, b_i is 1011)
   a_i = 1011, b_i = 1100
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 1011 (a_i is 1011, b_i is 1100)
   a_i = 1011, b_i = 1101
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 1011 (a_i is 1011, b_i is 1101)
   a_i = 1011, b_i = 1110
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 1011 (a_i is 1011, b_i is 1110)
   a_i = 1011, b_i = 1111
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 1011 (a_i is 1011, b_i is 1111)
   a_i = 1100, b_i = 0000
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be xxxx, got 1100 (a_i is 1100, b_i is 0000)
   a_i = 1100, b_i = 0001
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 1100, got 0000 (a_i is 1100, b_i is 0001)
   a_i = 1100, b_i = 0010
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0110, got 0000 (a_i is 1100, b_i is 0010)
   a_i = 1100, b_i = 0011
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0100, got 0000 (a_i is 1100, b_i is 0011)
   a_i = 1100, b_i = 0100
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0011, got 0000 (a_i is 1100, b_i is 0100)
   a_i = 1100, b_i = 0101
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
   a_i = 1100, b_i = 0110
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0010, got 0000 (a_i is 1100, b_i is 0110)
   a_i = 1100, b_i = 0111
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0001, got 0101 (a_i is 1100, b_i is 0111)
   a_i = 1100, b_i = 1000
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0001, got 0100 (a_i is 1100, b_i is 1000)
   a_i = 1100, b_i = 1001
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0001, got 0011 (a_i is 1100, b_i is 1001)
   a_i = 1100, b_i = 1010
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0001, got 0010 (a_i is 1100, b_i is 1010)
   a_i = 1100, b_i = 1011
+Quot_o isn't correct!
   a_i = 1100, b_i = 1100
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0001, got 0000 (a_i is 1100, b_i is 1100)
   a_i = 1100, b_i = 1101
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 1100 (a_i is 1100, b_i is 1101)
   a_i = 1100, b_i = 1110
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 1100 (a_i is 1100, b_i is 1110)
   a_i = 1100, b_i = 1111
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 1100 (a_i is 1100, b_i is 1111)
   a_i = 1101, b_i = 0000
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be xxxx, got 1101 (a_i is 1101, b_i is 0000)
   a_i = 1101, b_i = 0001
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 1101, got 0000 (a_i is 1101, b_i is 0001)
   a_i = 1101, b_i = 0010
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0110, got 0001 (a_i is 1101, b_i is 0010)
   a_i = 1101, b_i = 0011
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0100, got 0001 (a_i is 1101, b_i is 0011)
   a_i = 1101, b_i = 0100
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Quot_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0011, got 0001 (a_i is 1101, b_i is 0100)
   a_i = 1101, b_i = 0101
+Quot_o isn't correct!
+Quot_o isn't correct!
+Quot_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0010, got 0011 (a_i is 1101, b_i is 0101)
   a_i = 1101, b_i = 0110
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0010, got 0001 (a_i is 1101, b_i is 0110)
   a_i = 1101, b_i = 0111
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0001, got 0110 (a_i is 1101, b_i is 0111)
   a_i = 1101, b_i = 1000
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0001, got 0101 (a_i is 1101, b_i is 1000)
   a_i = 1101, b_i = 1001
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0001, got 0100 (a_i is 1101, b_i is 1001)
   a_i = 1101, b_i = 1010
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0001, got 0011 (a_i is 1101, b_i is 1010)
   a_i = 1101, b_i = 1011
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0001, got 0010 (a_i is 1101, b_i is 1011)
   a_i = 1101, b_i = 1100
+Quot_o isn't correct!
+Quot_o isn't correct!
+Quot_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
   a_i = 1101, b_i = 1101
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0001, got 0000 (a_i is 1101, b_i is 1101)
   a_i = 1101, b_i = 1110
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 1101 (a_i is 1101, b_i is 1110)
   a_i = 1101, b_i = 1111
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 1101 (a_i is 1101, b_i is 1111)
   a_i = 1110, b_i = 0000
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be xxxx, got 1110 (a_i is 1110, b_i is 0000)
   a_i = 1110, b_i = 0001
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 1110, got 0000 (a_i is 1110, b_i is 0001)
   a_i = 1110, b_i = 0010
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0111, got 0000 (a_i is 1110, b_i is 0010)
   a_i = 1110, b_i = 0011
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0100, got 0010 (a_i is 1110, b_i is 0011)
   a_i = 1110, b_i = 0100
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0011, got 0010 (a_i is 1110, b_i is 0100)
   a_i = 1110, b_i = 0101
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0010, got 0100 (a_i is 1110, b_i is 0101)
   a_i = 1110, b_i = 0110
+Quot_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
   a_i = 1110, b_i = 0111
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0010, got 0000 (a_i is 1110, b_i is 0111)
   a_i = 1110, b_i = 1000
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0001, got 0110 (a_i is 1110, b_i is 1000)
   a_i = 1110, b_i = 1001
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0001, got 0101 (a_i is 1110, b_i is 1001)
   a_i = 1110, b_i = 1010
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0001, got 0100 (a_i is 1110, b_i is 1010)
   a_i = 1110, b_i = 1011
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0001, got 0011 (a_i is 1110, b_i is 1011)
   a_i = 1110, b_i = 1100
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0001, got 0010 (a_i is 1110, b_i is 1100)
   a_i = 1110, b_i = 1101
+Quot_o isn't correct!
   a_i = 1110, b_i = 1110
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0001, got 0000 (a_i is 1110, b_i is 1110)
   a_i = 1110, b_i = 1111
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0000, got 1110 (a_i is 1110, b_i is 1111)
   a_i = 1111, b_i = 0000
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be xxxx, got 1111 (a_i is 1111, b_i is 0000)
   a_i = 1111, b_i = 0001
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 1111, got 0000 (a_i is 1111, b_i is 0001)
   a_i = 1111, b_i = 0010
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0111, got 0001 (a_i is 1111, b_i is 0010)
   a_i = 1111, b_i = 0011
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0101, got 0000 (a_i is 1111, b_i is 0011)
   a_i = 1111, b_i = 0100
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
   a_i = 1111, b_i = 0101
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0011, got 0000 (a_i is 1111, b_i is 0101)
   a_i = 1111, b_i = 0110
+Quot_o isn't correct!
+Quot_o isn't correct!
+Quot_o isn't correct!
+Quot_o isn't correct!
+Quot_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Quot_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0010, got 0011 (a_i is 1111, b_i is 0110)
   a_i = 1111, b_i = 0111
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0010, got 0001 (a_i is 1111, b_i is 0111)
   a_i = 1111, b_i = 1000
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0001, got 0111 (a_i is 1111, b_i is 1000)
   a_i = 1111, b_i = 1001
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0001, got 0110 (a_i is 1111, b_i is 1001)
   a_i = 1111, b_i = 1010
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0001, got 0101 (a_i is 1111, b_i is 1010)
   a_i = 1111, b_i = 1011
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0001, got 0100 (a_i is 1111, b_i is 1011)
   a_i = 1111, b_i = 1100
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0001, got 0011 (a_i is 1111, b_i is 1100)
   a_i = 1111, b_i = 1101
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0001, got 0010 (a_i is 1111, b_i is 1101)
   a_i = 1111, b_i = 1110
+Quot_o isn't correct!
+Quot_o isn't correct!
+Quot_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+Quot_o isn't correct!
   a_i = 1111, b_i = 1111
+Rem_o isn't correct!
+Quot_o isn't correct!
+Rem_o isn't correct!
+[0;31mError![0m: quot_o should be 0001, got 0000 (a_i is 1111, b_i is 1111)
 Simulation time is              2560000
-[0;32m    ____  ___   __________[0m
-[0;32m   / __ \/   | / ___/ ___/[0m
-[0;32m  / /_/ / /| | \__ \__  [0m
-[0;32m / ____/ ___ |___/ /__/ / [0m
-[0;32m/_/   /_/  |_/____/____/  [0m
+[0;31m    ______                    [0m
+[0;31m   / ____/_____________  _____[0m
+[0;31m  / __/ / ___/ ___/ __ \/ ___/[0m
+[0;31m / /___/ /  / /  / /_/ / /    [0m
+[0;31m/_____/_/  /_/   \____/_/     [0m
 
-Simulation Succeeded!
-Current System Time is: 03:25:21 PM--02/20/2023
+Simulation Failed
+Current System Time is: 04:53:27 PM--02/21/2023

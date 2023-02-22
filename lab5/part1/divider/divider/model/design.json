@@ -1,0 +1,183 @@
+{
+  "$schema": "https://raw.githubusercontent.com/YosysHQ/yosys/master/misc/jny.schema.json",
+  "generator": "Yosys 0.25+1 (git sha1 d3216593d, clang 10.0.0-4ubuntu1 -fPIC -Os)",
+  "version": "0.0.1",
+  "invocation": "write_jny -no-connections ../model/design.json ",
+  "features": ["attributes", "properties"],
+  "modules": [
+      {
+        "name": "divider",
+        "cell_sorts": [
+          {
+            "type": "$mod",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [4, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [4, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [4, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$mod$divider.sv:32$6",
+                  "attributes": {
+                    "src": "divider.sv:32.34-32.41"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000100",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000100",
+                    "Y_WIDTH": "00000000000000000000000000000100"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$div",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [4, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [4, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [4, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$div$divider.sv:31$3",
+                  "attributes": {
+                    "src": "divider.sv:31.35-31.42"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000100",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000100",
+                    "Y_WIDTH": "00000000000000000000000000000100"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$eq",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [4, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [4, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$eq$divider.sv:33$10",
+                  "attributes": {
+                    "src": "divider.sv:33.24-33.43"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000100",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000100",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$eq$divider.sv:34$13",
+                  "attributes": {
+                    "src": "divider.sv:34.24-34.42"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000100",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000100",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$assert",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "EN",
+                  "direction": "io",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$assert$divider.sv:32$11",
+                  "attributes": {
+                    "src": "divider.sv:32.44-33.44"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$assert$divider.sv:33$14",
+                  "attributes": {
+                    "src": "divider.sv:33.45-34.43"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$assert$divider.sv:9$5",
+                  "attributes": {
+                    "src": "divider.sv:9.28-31.44"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "keep": "00000000000000000000000000000001",
+            "hdlname": "\\divider",
+            "dynports": "00000000000000000000000000000001",
+            "top": "00000000000000000000000000000001",
+            "src": "divider.sv:1.1-37.10"
+        }
+      }
+  ]
+}

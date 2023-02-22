@@ -1,0 +1,6 @@
+initial
+
+state 0
+assume (= [a_i] #b0000)
+assume (= [b_i] #b1000)
+assume (= [c_i] #b1111)

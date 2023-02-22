@@ -9,6 +9,7 @@ module testbench();
    logic [width_lp:0] binary_test_i;
    
    assign error = (count_o !== correct_count_o);
+   assign correct_count_o = $countones(binary_i);
    
    
    // Your testbench should PASS with the good DUT, and FAIL with the
@@ -16,7 +17,7 @@ module testbench();
    //
    // Write your assertions inside of the DUT modules themselves.
    
-   `define GOOD;
+   //`define GOOD;
 `ifdef GOOD
    countones
      #(.width_p(width_lp))
@@ -39,13 +40,17 @@ module testbench();
       $dumpfile("iverilog.vcd");
 `endif
       $dumpvars;
-
+      
       // Put your testbench code here. Print all of the test cases and
       // their correctness.
       for(binary_test_i = '0; binary_test_i < (1 << width_lp); binary_test_i++) begin
            binary_i = binary_test_i[width_lp - 1:0];
-           case(binary_i[2:0])
-               3'o
+           $display("binary_i = %b", binary_i);
+           #10;
+	    if(error) begin
+	       $display("\033[0;31mError!\033[0m: count_o should be %b, got %b (binary_i is %b)",
+		      correct_count_o, count_o, binary_i);
+	    end
       end
       $finish();
    end

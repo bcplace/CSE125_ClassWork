@@ -1,0 +1,7 @@
+# running in adder_synth/src/
+read -formal adder.sv
+prep -top adder_synth
+
+hierarchy -smtcheck
+write_jny -no-connections ../model/design.json
+write_rtlil ../model/design.il

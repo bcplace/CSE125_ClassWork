@@ -1,0 +1,109 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.25+1 (git sha1 d3216593d, clang 10.0.0-4ubuntu1 -fPIC -Os)
+
+
+-- Executing script file `design_smt2.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: design_prep.il
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1. Analyzing design hierarchy..
+Top module:  \adder_synth
+Used module:     \yosys_adder
+
+2.2. Analyzing design hierarchy..
+Top module:  \adder_synth
+Used module:     \yosys_adder
+Removed 0 unused modules.
+Module adder_synth directly or indirectly contains formal properties -> setting "keep" attribute.
+
+3. Executing DFFUNMAP pass (unmap clock enable and synchronous reset from FFs).
+
+4. Printing statistics.
+
+=== yosys_adder ===
+
+   Number of wires:                 59
+   Number of wire bits:             72
+   Number of public wires:          40
+   Number of public wire bits:      53
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 60
+     $and                           15
+     $not                           22
+     $or                             8
+     $xor                           15
+
+=== adder_synth ===
+
+   Number of wires:                 10
+   Number of wire bits:             39
+   Number of public wires:           4
+   Number of public wire bits:      17
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  9
+     $add                            3
+     $assert                         2
+     $eq                             2
+     $sub                            1
+     yosys_adder                     1
+
+=== design hierarchy ===
+
+   adder_synth                       1
+     yosys_adder                     1
+
+   Number of wires:                 69
+   Number of wire bits:            111
+   Number of public wires:          44
+   Number of public wire bits:      70
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 68
+     $add                            3
+     $and                           15
+     $assert                         2
+     $eq                             2
+     $not                           22
+     $or                             8
+     $sub                            1
+     $xor                           15
+
+5. Executing SMT2 backend.
+
+5.1. Executing BMUXMAP pass.
+
+5.2. Executing DEMUXMAP pass.
+Creating SMT-LIBv2 representation of module yosys_adder.
+Creating SMT-LIBv2 representation of module adder_synth.
+
+End of script. Logfile hash: 78bb753ad2, CPU: user 0.01s system 0.01s, MEM: 11.37 MB peak
+Yosys 0.25+1 (git sha1 d3216593d, clang 10.0.0-4ubuntu1 -fPIC -Os)
+Time spent: 60% 2x write_smt2 (0 sec), 31% 2x read_ilang (0 sec), ...

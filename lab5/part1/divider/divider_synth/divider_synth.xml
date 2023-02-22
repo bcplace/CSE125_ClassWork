@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+<testsuite timestamp="2023-02-21T17:00:17" hostname="CSE-x25-VBox-VM" package="divider_synth" id="0" name="default" tests="4" errors="0" failures="2" time="0" skipped="2">
+<properties>
+<property name="os" value="Linux"/>
+<property name="expect" value="FAIL"/>
+<property name="status" value="FAIL"/>
+</properties>
+<testcase classname="default" name="build execution" time="0">
+</testcase>
+<testcase classname="default" name="Property ASSERT in divider_synth at divider.sv:44.34-66.42" time="0" type="ASSERT" location="divider.sv:44.34-66.42" id="$assert$divider.sv:44$3" tracefile="engine_0/trace.vcd">
+<failure type="ASSERT" message="Property ASSERT in divider_synth at divider.sv:44.34-66.42 failed. Trace file: engine_0/trace.vcd" />
+</testcase>
+<testcase classname="default" name="Property ASSERT in divider_synth at divider.sv:66.43-67.43" time="0" type="ASSERT" location="divider.sv:66.43-67.43" id="$assert$divider.sv:66$6" tracefile="engine_0/trace.vcd">
+<failure type="ASSERT" message="Property ASSERT in divider_synth at divider.sv:66.43-67.43 failed. Trace file: engine_0/trace.vcd" />
+</testcase>
+<testcase classname="default" name="Property ASSERT in divider_synth at divider.sv:67.44-68.44" time="0" type="ASSERT" location="divider.sv:67.44-68.44" id="$assert$divider.sv:67$9">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in divider_synth at divider.sv:68.45-69.43" time="0" type="ASSERT" location="divider.sv:68.45-69.43" id="$assert$divider.sv:68$12">
+<skipped />
+</testcase>
+<system-out>SBY 17:00:17 [divider_synth] Removing directory '/home/vboxuser/Desktop/CSE125/cse-x25-wi23/lab5/part1/divider/divider_synth'.
+SBY 17:00:17 [divider_synth] Copy '/home/vboxuser/Desktop/CSE125/cse-x25-wi23/lab5/part1/divider/divider.sv' to '/home/vboxuser/Desktop/CSE125/cse-x25-wi23/lab5/part1/divider/divider_synth/src/divider.sv'.
+SBY 17:00:17 [divider_synth] engine_0: smtbmc yices
+SBY 17:00:17 [divider_synth] base: starting process &quot;cd divider_synth/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY 17:00:17 [divider_synth] base: finished (returncode=0)
+SBY 17:00:17 [divider_synth] prep: starting process &quot;cd divider_synth/model; yosys -ql design_prep.log design_prep.ys&quot;
+SBY 17:00:17 [divider_synth] prep: finished (returncode=0)
+SBY 17:00:17 [divider_synth] smt2: starting process &quot;cd divider_synth/model; yosys -ql design_smt2.log design_smt2.ys&quot;
+SBY 17:00:17 [divider_synth] smt2: finished (returncode=0)
+SBY 17:00:17 [divider_synth] engine_0: starting process &quot;cd divider_synth; yosys-smtbmc -s yices --presat --unroll --noprogress -t 10  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2&quot;
+SBY 17:00:17 [divider_synth] engine_0: ##   0:00:00  Solver: yices
+SBY 17:00:17 [divider_synth] engine_0: ##   0:00:00  Checking assumptions in step 0..
+SBY 17:00:17 [divider_synth] engine_0: ##   0:00:00  Checking assertions in step 0..
+SBY 17:00:17 [divider_synth] engine_0: ##   0:00:00  BMC failed!
+SBY 17:00:17 [divider_synth] engine_0: ##   0:00:00  Assert failed in divider_synth: divider.sv:66.43-67.43 ($assert$divider.sv:66$6)
+SBY 17:00:17 [divider_synth] engine_0: ##   0:00:00  Assert failed in divider_synth: divider.sv:44.34-66.42 ($assert$divider.sv:44$3)
+SBY 17:00:17 [divider_synth] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace.vcd
+SBY 17:00:17 [divider_synth] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace_tb.v
+SBY 17:00:17 [divider_synth] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace.smtc
+SBY 17:00:17 [divider_synth] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace.yw
+SBY 17:00:17 [divider_synth] engine_0: ##   0:00:00  Status: failed
+SBY 17:00:17 [divider_synth] engine_0: finished (returncode=1)
+SBY 17:00:17 [divider_synth] engine_0: Status returned by engine: FAIL
+SBY 17:00:17 [divider_synth] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 17:00:17 [divider_synth] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 17:00:17 [divider_synth] summary: engine_0 (smtbmc yices) returned FAIL
+SBY 17:00:17 [divider_synth] summary: counterexample trace: divider_synth/engine_0/trace.vcd
+SBY 17:00:17 [divider_synth] DONE (FAIL, rc=0)
+</system-out>
+<system-err>
+</system-err>
+</testsuite>
+</testsuites>

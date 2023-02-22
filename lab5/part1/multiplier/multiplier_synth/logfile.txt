@@ -1,0 +1,27 @@
+SBY 16:48:43 [multiplier_synth] Removing directory '/home/vboxuser/Desktop/CSE125/cse-x25-wi23/lab5/part1/multiplier/multiplier_synth'.
+SBY 16:48:43 [multiplier_synth] Copy '/home/vboxuser/Desktop/CSE125/cse-x25-wi23/lab5/part1/multiplier/multiplier.sv' to '/home/vboxuser/Desktop/CSE125/cse-x25-wi23/lab5/part1/multiplier/multiplier_synth/src/multiplier.sv'.
+SBY 16:48:43 [multiplier_synth] engine_0: smtbmc yices
+SBY 16:48:43 [multiplier_synth] base: starting process "cd multiplier_synth/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY 16:48:43 [multiplier_synth] base: finished (returncode=0)
+SBY 16:48:43 [multiplier_synth] prep: starting process "cd multiplier_synth/model; yosys -ql design_prep.log design_prep.ys"
+SBY 16:48:43 [multiplier_synth] prep: finished (returncode=0)
+SBY 16:48:43 [multiplier_synth] smt2: starting process "cd multiplier_synth/model; yosys -ql design_smt2.log design_smt2.ys"
+SBY 16:48:43 [multiplier_synth] smt2: finished (returncode=0)
+SBY 16:48:43 [multiplier_synth] engine_0: starting process "cd multiplier_synth; yosys-smtbmc -s yices --presat --unroll --noprogress -t 10  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2"
+SBY 16:48:43 [multiplier_synth] engine_0: ##   0:00:00  Solver: yices
+SBY 16:48:43 [multiplier_synth] engine_0: ##   0:00:00  Checking assumptions in step 0..
+SBY 16:48:43 [multiplier_synth] engine_0: ##   0:00:00  Checking assertions in step 0..
+SBY 16:48:43 [multiplier_synth] engine_0: ##   0:00:00  BMC failed!
+SBY 16:48:43 [multiplier_synth] engine_0: ##   0:00:00  Assert failed in multiplier_synth: multiplier.sv:39.39-61.44 ($assert$multiplier.sv:39$3)
+SBY 16:48:43 [multiplier_synth] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace.vcd
+SBY 16:48:43 [multiplier_synth] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace_tb.v
+SBY 16:48:44 [multiplier_synth] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace.smtc
+SBY 16:48:44 [multiplier_synth] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace.yw
+SBY 16:48:44 [multiplier_synth] engine_0: ##   0:00:00  Status: failed
+SBY 16:48:44 [multiplier_synth] engine_0: finished (returncode=1)
+SBY 16:48:44 [multiplier_synth] engine_0: Status returned by engine: FAIL
+SBY 16:48:44 [multiplier_synth] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 16:48:44 [multiplier_synth] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 16:48:44 [multiplier_synth] summary: engine_0 (smtbmc yices) returned FAIL
+SBY 16:48:44 [multiplier_synth] summary: counterexample trace: multiplier_synth/engine_0/trace.vcd
+SBY 16:48:44 [multiplier_synth] DONE (FAIL, rc=0)

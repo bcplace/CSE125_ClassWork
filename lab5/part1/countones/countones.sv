@@ -20,7 +20,11 @@ module countones
   assign count_o = count_l;
 
   // Write your immediate and concurrent assertions here
-
+  `ifndef FORMAL
+  always_comb begin
+      assert (count_o == $countones(binary_i)) else $display("Count_o not equal to countones!");
+  end
+  `endif
   // The synthesized code below does not implement the correct
   // behavior (but the error is simple).
   // 
@@ -34,7 +38,8 @@ module countones
 
   // Use `ifdef FORMAL to hide your concurrent assertion from iverilog
 `ifdef FORMAL
-
+    assert property (count_o == (width_p - $countones(binary_i)));
+    assert property (count_o == $countones(binary_i));
 `endif
 
 endmodule
@@ -46,7 +51,12 @@ module countones_synth
   ,output [$clog2(width_p) :0] count_o);
 
   // Write your immediate and concurrent assertions here
-
+  
+  `ifndef FORMAL
+  always_comb begin
+      assert (count_o == $countones(binary_i)) else $display("Count_o not equal to countones!");
+  end
+  `endif
   // The synthesized code below does not implement the correct
   // behavior (but the error is simple).
   // 
@@ -60,7 +70,8 @@ module countones_synth
 
   // Use `ifdef FORMAL to hide your concurrent assertion from iverilog
 `ifdef FORMAL
-
+   assert property (count_o == (width_p - $countones(binary_i)));
+   assert property (count_o == $countones(binary_i));
 `endif
 
   yosys_countones
