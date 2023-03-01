@@ -5,11 +5,21 @@
 `endif
 module testbench();
    localparam width_lp = `WIDTH;
+   localparam iterations_lp = 64;
 
    wire [0:0] up_i;
    wire [0:0]  clk_i;
    wire [0:0]  reset_i;
-
+   logic reset_done = 1'b0;
+   wire error_o;
+   int itervar;
+   logic [width_lp - 1:0] graycode_i = '0;
+   logic [width_lp - 1:0] gray_o;
+   logic [width_lp - 1:0] binary_i = '0;
+   
+   assign error_o = (graycode_i != gray_o);
+   assign up_i = 1'b1;
+   
    nonsynth_clock_gen
      #(.cycle_time_p(10))
    cg
@@ -24,11 +34,11 @@ module testbench();
      ,.async_reset_o(reset_i));
 
    graycounter
-     #(.width_p(width_lp))
+     //#(.width_p(width_lp))
    dut
      (.clk_i(clk_i)
      // Hint: there is a bug in one of the modules regarding reset.
-     ,.reset_i(/*???*/)
+     ,.reset_i(reset_i)
      ,.up_i(up_i)
      ,.gray_o(gray_o));
 
@@ -39,10 +49,31 @@ module testbench();
       $dumpfile("iverilog.vcd");
 `endif
       $dumpvars;
-
-      // Good Luck!
+      
+      graycode_i = '0;
+      
+      @(negedge reset_i);
+      
+      reset_done = 1'b1;
+      
+      for(itervar = 0; itervar < iterations_lp; itervar++) begin
+          @(posedge clk_i);
+          if(~up_i) begin
+          //Do nothing
+          end else if(!reset_i & up_i) begin
+             binary_i += 1;
+             graycode_i = ((binary_i >> 1) ^ binary_i);
+          end
+          $display("Graycode is %b", graycode_i);
+      end
+      $finish();
    end
-
+   
+   always @(negedge clk_i) begin 
+        if(reset_done & !reset_i & error_o) begin
+             $error("\033[0;31mError!\033[0m: gray_o should be %b, got %b", graycode_i, gray_o);
+        end
+   end
 
    final begin
       $display("Simulation time is %t", $time);
