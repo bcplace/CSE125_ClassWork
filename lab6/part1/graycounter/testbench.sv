@@ -13,11 +13,12 @@ module testbench();
    logic reset_done = 1'b0;
    wire error_o;
    int itervar;
-   logic [width_lp - 1:0] graycode_i = '0;
-   logic [width_lp - 1:0] gray_o;
-   logic [width_lp - 1:0] binary_i = '0;
+   logic [width_lp - 1:0] graycode_correct;
+   wire [width_lp - 1:0] gray_o;
+   logic [width_lp - 1:0] binary_i;
+   //logic [width_lp - 1:0] binary_decode;
    
-   assign error_o = (graycode_i != gray_o);
+   assign error_o = (graycode_correct != gray_o);
    assign up_i = 1'b1;
    
    nonsynth_clock_gen
@@ -34,7 +35,7 @@ module testbench();
      ,.async_reset_o(reset_i));
 
    graycounter
-     //#(.width_p(width_lp))
+     #(.width_p(width_lp))
    dut
      (.clk_i(clk_i)
      // Hint: there is a bug in one of the modules regarding reset.
@@ -50,7 +51,8 @@ module testbench();
 `endif
       $dumpvars;
       
-      graycode_i = '0;
+      graycode_correct = '0;
+      binary_i = '0;
       
       @(negedge reset_i);
       
@@ -62,16 +64,17 @@ module testbench();
           //Do nothing
           end else if(!reset_i & up_i) begin
              binary_i += 1;
-             graycode_i = ((binary_i >> 1) ^ binary_i);
+             graycode_correct = ((binary_i >> 1) ^ binary_i);
           end
-          $display("Graycode is %b", graycode_i);
+          $display("Graycode is %b", graycode_correct);
       end
       $finish();
    end
    
    always @(negedge clk_i) begin 
         if(reset_done & !reset_i & error_o) begin
-             $error("\033[0;31mError!\033[0m: gray_o should be %b, got %b", graycode_i, gray_o);
+             $error("\033[0;31mError!\033[0m: gray_o should be %b, got %b", graycode_correct, gray_o);
+             $finish(); 
         end
    end
 

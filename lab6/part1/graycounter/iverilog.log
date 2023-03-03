@@ -15,194 +15,74 @@ __________ ___________  _______________________________
  ASYNC  \/         \/         \/         \/            
 Graycode is 0001
 Graycode is 0011
-ERROR: testbench.sv:74: [0;31mError![0m: gray_o should be 0011, got 0010
-       Time: 130000 Scope: testbench
 Graycode is 0010
-ERROR: testbench.sv:74: [0;31mError![0m: gray_o should be 0010, got 0101
-       Time: 140000 Scope: testbench
 Graycode is 0110
 Graycode is 0111
-ERROR: testbench.sv:74: [0;31mError![0m: gray_o should be 0111, got 0100
-       Time: 160000 Scope: testbench
 Graycode is 0101
-ERROR: testbench.sv:74: [0;31mError![0m: gray_o should be 0101, got 1010
-       Time: 170000 Scope: testbench
 Graycode is 0100
-ERROR: testbench.sv:74: [0;31mError![0m: gray_o should be 0100, got 1110
-       Time: 180000 Scope: testbench
 Graycode is 1100
-ERROR: testbench.sv:74: [0;31mError![0m: gray_o should be 1100, got 1111
-       Time: 190000 Scope: testbench
 Graycode is 1101
-ERROR: testbench.sv:74: [0;31mError![0m: gray_o should be 1101, got 1001
-       Time: 200000 Scope: testbench
 Graycode is 1111
-ERROR: testbench.sv:74: [0;31mError![0m: gray_o should be 1111, got 1100
-       Time: 210000 Scope: testbench
 Graycode is 1110
-ERROR: testbench.sv:74: [0;31mError![0m: gray_o should be 1110, got 1011
-       Time: 220000 Scope: testbench
 Graycode is 1010
-ERROR: testbench.sv:74: [0;31mError![0m: gray_o should be 1010, got 1101
-       Time: 230000 Scope: testbench
 Graycode is 1011
-ERROR: testbench.sv:74: [0;31mError![0m: gray_o should be 1011, got 1000
-       Time: 240000 Scope: testbench
 Graycode is 1001
-ERROR: testbench.sv:74: [0;31mError![0m: gray_o should be 1001, got 0000
-       Time: 250000 Scope: testbench
 Graycode is 1000
-ERROR: testbench.sv:74: [0;31mError![0m: gray_o should be 1000, got 0001
-       Time: 260000 Scope: testbench
 Graycode is 0000
-ERROR: testbench.sv:74: [0;31mError![0m: gray_o should be 0000, got 0010
-       Time: 270000 Scope: testbench
 Graycode is 0001
-ERROR: testbench.sv:74: [0;31mError![0m: gray_o should be 0001, got 0101
-       Time: 280000 Scope: testbench
 Graycode is 0011
-ERROR: testbench.sv:74: [0;31mError![0m: gray_o should be 0011, got 0110
-       Time: 290000 Scope: testbench
 Graycode is 0010
-ERROR: testbench.sv:74: [0;31mError![0m: gray_o should be 0010, got 0100
-       Time: 300000 Scope: testbench
 Graycode is 0110
-ERROR: testbench.sv:74: [0;31mError![0m: gray_o should be 0110, got 1010
-       Time: 310000 Scope: testbench
 Graycode is 0111
-ERROR: testbench.sv:74: [0;31mError![0m: gray_o should be 0111, got 1110
-       Time: 320000 Scope: testbench
 Graycode is 0101
-ERROR: testbench.sv:74: [0;31mError![0m: gray_o should be 0101, got 1111
-       Time: 330000 Scope: testbench
 Graycode is 0100
-ERROR: testbench.sv:74: [0;31mError![0m: gray_o should be 0100, got 1001
-       Time: 340000 Scope: testbench
 Graycode is 1100
 Graycode is 1101
-ERROR: testbench.sv:74: [0;31mError![0m: gray_o should be 1101, got 1011
-       Time: 360000 Scope: testbench
 Graycode is 1111
-ERROR: testbench.sv:74: [0;31mError![0m: gray_o should be 1111, got 1101
-       Time: 370000 Scope: testbench
 Graycode is 1110
-ERROR: testbench.sv:74: [0;31mError![0m: gray_o should be 1110, got 1000
-       Time: 380000 Scope: testbench
 Graycode is 1010
-ERROR: testbench.sv:74: [0;31mError![0m: gray_o should be 1010, got 0000
-       Time: 390000 Scope: testbench
 Graycode is 1011
-ERROR: testbench.sv:74: [0;31mError![0m: gray_o should be 1011, got 0001
-       Time: 400000 Scope: testbench
 Graycode is 1001
-ERROR: testbench.sv:74: [0;31mError![0m: gray_o should be 1001, got 0010
-       Time: 410000 Scope: testbench
 Graycode is 1000
-ERROR: testbench.sv:74: [0;31mError![0m: gray_o should be 1000, got 0101
-       Time: 420000 Scope: testbench
 Graycode is 0000
-ERROR: testbench.sv:74: [0;31mError![0m: gray_o should be 0000, got 0110
-       Time: 430000 Scope: testbench
 Graycode is 0001
-ERROR: testbench.sv:74: [0;31mError![0m: gray_o should be 0001, got 0100
-       Time: 440000 Scope: testbench
 Graycode is 0011
-ERROR: testbench.sv:74: [0;31mError![0m: gray_o should be 0011, got 1010
-       Time: 450000 Scope: testbench
 Graycode is 0010
-ERROR: testbench.sv:74: [0;31mError![0m: gray_o should be 0010, got 1110
-       Time: 460000 Scope: testbench
 Graycode is 0110
-ERROR: testbench.sv:74: [0;31mError![0m: gray_o should be 0110, got 1111
-       Time: 470000 Scope: testbench
 Graycode is 0111
-ERROR: testbench.sv:74: [0;31mError![0m: gray_o should be 0111, got 1001
-       Time: 480000 Scope: testbench
 Graycode is 0101
-ERROR: testbench.sv:74: [0;31mError![0m: gray_o should be 0101, got 1100
-       Time: 490000 Scope: testbench
 Graycode is 0100
-ERROR: testbench.sv:74: [0;31mError![0m: gray_o should be 0100, got 1011
-       Time: 500000 Scope: testbench
 Graycode is 1100
-ERROR: testbench.sv:74: [0;31mError![0m: gray_o should be 1100, got 1101
-       Time: 510000 Scope: testbench
 Graycode is 1101
-ERROR: testbench.sv:74: [0;31mError![0m: gray_o should be 1101, got 1000
-       Time: 520000 Scope: testbench
 Graycode is 1111
-ERROR: testbench.sv:74: [0;31mError![0m: gray_o should be 1111, got 0000
-       Time: 530000 Scope: testbench
 Graycode is 1110
-ERROR: testbench.sv:74: [0;31mError![0m: gray_o should be 1110, got 0001
-       Time: 540000 Scope: testbench
 Graycode is 1010
-ERROR: testbench.sv:74: [0;31mError![0m: gray_o should be 1010, got 0010
-       Time: 550000 Scope: testbench
 Graycode is 1011
-ERROR: testbench.sv:74: [0;31mError![0m: gray_o should be 1011, got 0101
-       Time: 560000 Scope: testbench
 Graycode is 1001
-ERROR: testbench.sv:74: [0;31mError![0m: gray_o should be 1001, got 0110
-       Time: 570000 Scope: testbench
 Graycode is 1000
-ERROR: testbench.sv:74: [0;31mError![0m: gray_o should be 1000, got 0100
-       Time: 580000 Scope: testbench
 Graycode is 0000
-ERROR: testbench.sv:74: [0;31mError![0m: gray_o should be 0000, got 1010
-       Time: 590000 Scope: testbench
 Graycode is 0001
-ERROR: testbench.sv:74: [0;31mError![0m: gray_o should be 0001, got 1110
-       Time: 600000 Scope: testbench
 Graycode is 0011
-ERROR: testbench.sv:74: [0;31mError![0m: gray_o should be 0011, got 1111
-       Time: 610000 Scope: testbench
 Graycode is 0010
-ERROR: testbench.sv:74: [0;31mError![0m: gray_o should be 0010, got 1001
-       Time: 620000 Scope: testbench
 Graycode is 0110
-ERROR: testbench.sv:74: [0;31mError![0m: gray_o should be 0110, got 1100
-       Time: 630000 Scope: testbench
 Graycode is 0111
-ERROR: testbench.sv:74: [0;31mError![0m: gray_o should be 0111, got 1011
-       Time: 640000 Scope: testbench
 Graycode is 0101
-ERROR: testbench.sv:74: [0;31mError![0m: gray_o should be 0101, got 1101
-       Time: 650000 Scope: testbench
 Graycode is 0100
-ERROR: testbench.sv:74: [0;31mError![0m: gray_o should be 0100, got 1000
-       Time: 660000 Scope: testbench
 Graycode is 1100
-ERROR: testbench.sv:74: [0;31mError![0m: gray_o should be 1100, got 0000
-       Time: 670000 Scope: testbench
 Graycode is 1101
-ERROR: testbench.sv:74: [0;31mError![0m: gray_o should be 1101, got 0001
-       Time: 680000 Scope: testbench
 Graycode is 1111
-ERROR: testbench.sv:74: [0;31mError![0m: gray_o should be 1111, got 0010
-       Time: 690000 Scope: testbench
 Graycode is 1110
-ERROR: testbench.sv:74: [0;31mError![0m: gray_o should be 1110, got 0101
-       Time: 700000 Scope: testbench
 Graycode is 1010
-ERROR: testbench.sv:74: [0;31mError![0m: gray_o should be 1010, got 0110
-       Time: 710000 Scope: testbench
 Graycode is 1011
-ERROR: testbench.sv:74: [0;31mError![0m: gray_o should be 1011, got 0100
-       Time: 720000 Scope: testbench
 Graycode is 1001
-ERROR: testbench.sv:74: [0;31mError![0m: gray_o should be 1001, got 1010
-       Time: 730000 Scope: testbench
 Graycode is 1000
-ERROR: testbench.sv:74: [0;31mError![0m: gray_o should be 1000, got 1110
-       Time: 740000 Scope: testbench
 Graycode is 0000
 Simulation time is               745000
-[0;31m    ______                    [0m
-[0;31m   / ____/_____________  _____[0m
-[0;31m  / __/ / ___/ ___/ __ \/ ___/[0m
-[0;31m / /___/ /  / /  / /_/ / /    [0m
-[0;31m/_____/_/  /_/   \____/_/     [0m
+[0;32m    ____  ___   __________[0m
+[0;32m   / __ \/   | / ___/ ___/[0m
+[0;32m  / /_/ / /| | \__ \__  [0m
+[0;32m / ____/ ___ |___/ /__/ / [0m
+[0;32m/_/   /_/  |_/____/____/  [0m
 
-Simulation Failed
-Current System Time is: 05:11:01 PM--02/28/2023
+Simulation Succeeded!
+Current System Time is: 06:40:34 PM--03/02/2023

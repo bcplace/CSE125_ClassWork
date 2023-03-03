@@ -13,6 +13,74 @@ __________ ___________  _______________________________
  ASYNC  \/         \/         \/         \/            
 Graycode is 0001
 Graycode is 0011
-[130000] %Error: testbench.sv:74: Assertion failed in TOP.testbench: [0;31mError![0m: gray_o should be 0011, got 0010
-%Error: testbench.sv:74: Verilog $stop
-Aborting...
+Graycode is 0010
+Graycode is 0110
+Graycode is 0111
+Graycode is 0101
+Graycode is 0100
+Graycode is 1100
+Graycode is 1101
+Graycode is 1111
+Graycode is 1110
+Graycode is 1010
+Graycode is 1011
+Graycode is 1001
+Graycode is 1000
+Graycode is 0000
+Graycode is 0001
+Graycode is 0011
+Graycode is 0010
+Graycode is 0110
+Graycode is 0111
+Graycode is 0101
+Graycode is 0100
+Graycode is 1100
+Graycode is 1101
+Graycode is 1111
+Graycode is 1110
+Graycode is 1010
+Graycode is 1011
+Graycode is 1001
+Graycode is 1000
+Graycode is 0000
+Graycode is 0001
+Graycode is 0011
+Graycode is 0010
+Graycode is 0110
+Graycode is 0111
+Graycode is 0101
+Graycode is 0100
+Graycode is 1100
+Graycode is 1101
+Graycode is 1111
+Graycode is 1110
+Graycode is 1010
+Graycode is 1011
+Graycode is 1001
+Graycode is 1000
+Graycode is 0000
+Graycode is 0001
+Graycode is 0011
+Graycode is 0010
+Graycode is 0110
+Graycode is 0111
+Graycode is 0101
+Graycode is 0100
+Graycode is 1100
+Graycode is 1101
+Graycode is 1111
+Graycode is 1110
+Graycode is 1010
+Graycode is 1011
+Graycode is 1001
+Graycode is 1000
+Graycode is 0000
+- testbench.sv:71: Verilog $finish
+Simulation time is               750000
+[0;32m    ____  ___   __________[0m
+[0;32m   / __ \/   | / ___/ ___/[0m
+[0;32m  / /_/ / /| | \__ \__  [0m
+[0;32m / ____/ ___ |___/ /__/ / [0m
+[0;32m/_/   /_/  |_/____/____/  [0m
+
+Simulation Succeeded!
